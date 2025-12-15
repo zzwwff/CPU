@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Mon Dec 15 14:56:38 2025
+# Process ID: 48816
+# Current directory: E:/source/VIVADOScource/CPU/CPU.runs/FontRom_synth_1
+# Command line: vivado.exe -log FontRom.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source FontRom.tcl
+# Log file: E:/source/VIVADOScource/CPU/CPU.runs/FontRom_synth_1/FontRom.vds
+# Journal file: E:/source/VIVADOScource/CPU/CPU.runs/FontRom_synth_1\vivado.jou
+#-----------------------------------------------------------
+source FontRom.tcl -notrace

@@ -1,0 +1,309 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="impl_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1765808971">
+  <File Type="BITSTR-BMM" Name="SOC_bd.bmm"/>
+  <File Type="OPT-METHODOLOGY-DRC" Name="SOC_methodology_drc_opted.rpt"/>
+  <File Type="INIT-TIMING" Name="SOC_timing_summary_init.rpt"/>
+  <File Type="ROUTE-PWR" Name="SOC_power_routed.rpt"/>
+  <File Type="PA-TCL" Name="SOC.tcl"/>
+  <File Type="OPT-TIMING" Name="SOC_timing_summary_opted.rpt"/>
+  <File Type="OPT-DCP" Name="SOC_opt.dcp"/>
+  <File Type="ROUTE-PWR-SUM" Name="SOC_power_summary_routed.pb"/>
+  <File Type="REPORTS-TCL" Name="SOC_reports.tcl"/>
+  <File Type="OPT-DRC" Name="SOC_drc_opted.rpt"/>
+  <File Type="OPT-HWDEF" Name="SOC.hwdef"/>
+  <File Type="PWROPT-DCP" Name="SOC_pwropt.dcp"/>
+  <File Type="PWROPT-DRC" Name="SOC_drc_pwropted.rpt"/>
+  <File Type="PWROPT-TIMING" Name="SOC_timing_summary_pwropted.rpt"/>
+  <File Type="PLACE-DCP" Name="SOC_placed.dcp"/>
+  <File Type="PLACE-IO" Name="SOC_io_placed.rpt"/>
+  <File Type="PLACE-CLK" Name="SOC_clock_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL" Name="SOC_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL-PB" Name="SOC_utilization_placed.pb"/>
+  <File Type="PLACE-CTRL" Name="SOC_control_sets_placed.rpt"/>
+  <File Type="PLACE-SIMILARITY" Name="SOC_incremental_reuse_placed.rpt"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="SOC_incremental_reuse_pre_placed.rpt"/>
+  <File Type="BG-BGN" Name="SOC.bgn"/>
+  <File Type="PLACE-TIMING" Name="SOC_timing_summary_placed.rpt"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="SOC_postplace_pwropt.dcp"/>
+  <File Type="BG-BIN" Name="SOC.bin"/>
+  <File Type="POSTPLACE-PWROPT-TIMING" Name="SOC_timing_summary_postplace_pwropted.rpt"/>
+  <File Type="PHYSOPT-DCP" Name="SOC_physopt.dcp"/>
+  <File Type="PHYSOPT-DRC" Name="SOC_drc_physopted.rpt"/>
+  <File Type="BITSTR-MSK" Name="SOC.msk"/>
+  <File Type="PHYSOPT-TIMING" Name="SOC_timing_summary_physopted.rpt"/>
+  <File Type="ROUTE-ERROR-DCP" Name="SOC_routed_error.dcp"/>
+  <File Type="ROUTE-DCP" Name="SOC_routed.dcp"/>
+  <File Type="ROUTE-BLACKBOX-DCP" Name="SOC_routed_bb.dcp"/>
+  <File Type="ROUTE-DRC" Name="SOC_drc_routed.rpt"/>
+  <File Type="ROUTE-DRC-PB" Name="SOC_drc_routed.pb"/>
+  <File Type="BITSTR-LTX" Name="debug_nets.ltx"/>
+  <File Type="BITSTR-LTX" Name="SOC.ltx"/>
+  <File Type="ROUTE-DRC-RPX" Name="SOC_drc_routed.rpx"/>
+  <File Type="BITSTR-MMI" Name="SOC.mmi"/>
+  <File Type="ROUTE-METHODOLOGY-DRC" Name="SOC_methodology_drc_routed.rpt"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="SOC_methodology_drc_routed.rpx"/>
+  <File Type="BITSTR-SYSDEF" Name="SOC.sysdef"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="SOC_methodology_drc_routed.pb"/>
+  <File Type="ROUTE-PWR-RPX" Name="SOC_power_routed.rpx"/>
+  <File Type="ROUTE-STATUS" Name="SOC_route_status.rpt"/>
+  <File Type="ROUTE-STATUS-PB" Name="SOC_route_status.pb"/>
+  <File Type="ROUTE-TIMINGSUMMARY" Name="SOC_timing_summary_routed.rpt"/>
+  <File Type="ROUTE-TIMING-PB" Name="SOC_timing_summary_routed.pb"/>
+  <File Type="ROUTE-TIMING-RPX" Name="SOC_timing_summary_routed.rpx"/>
+  <File Type="ROUTE-SIMILARITY" Name="SOC_incremental_reuse_routed.rpt"/>
+  <File Type="ROUTE-CLK" Name="SOC_clock_utilization_routed.rpt"/>
+  <File Type="ROUTE-BUS-SKEW" Name="SOC_bus_skew_routed.rpt"/>
+  <File Type="ROUTE-BUS-SKEW-PB" Name="SOC_bus_skew_routed.pb"/>
+  <File Type="ROUTE-BUS-SKEW-RPX" Name="SOC_bus_skew_routed.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="SOC_postroute_physopt.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="SOC_postroute_physopt_bb.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="SOC_timing_summary_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="SOC_timing_summary_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="SOC_timing_summary_postroute_physopted.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW" Name="SOC_bus_skew_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-PB" Name="SOC_bus_skew_postroute_physopted.pb"/>
+  <File Type="BG-BIT" Name="SOC.bit"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-RPX" Name="SOC_bus_skew_postroute_physopted.rpx"/>
+  <File Type="BITSTR-RBT" Name="SOC.rbt"/>
+  <File Type="BITSTR-NKY" Name="SOC.nky"/>
+  <File Type="BG-DRC" Name="SOC.drc"/>
+  <File Type="RDI-RDI" Name="SOC.vdi"/>
+  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/new/Define.v">
+      <FileInfo>
+        <Attr Name="IsGlobalInclude" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/CPURam.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/CPUTop.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/CharStream.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/Control.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/Decode.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/DecodeExecute.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/Division.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/Execute.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/ExecuteMemory.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/Fetch.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/FetchDecode.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/Forwarding.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/HiLo.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/Memory.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/MemoryReceiverAutomation.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/MemoryTransmitter.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/MemoryWriteback.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/Padding.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/RegisterFile.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/StdOutRam.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/TimeDisplay.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/USBReceiver.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/VGADesign.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/VGATop.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/SOC.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="c:/Users/wufan/Desktop/data.coe">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/Font.coe">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="SOC"/>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PSRCDIR/constrs_1/new/cons.xdc">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1">
+    <Filter Type="Utils"/>
+    <Config>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2019"/>
+    <Step Id="init_design"/>
+    <Step Id="opt_design"/>
+    <Step Id="power_opt_design"/>
+    <Step Id="place_design"/>
+    <Step Id="post_place_power_opt_design"/>
+    <Step Id="phys_opt_design"/>
+    <Step Id="route_design"/>
+    <Step Id="post_route_phys_opt_design"/>
+    <Step Id="write_bitstream"/>
+  </Strategy>
+  <BlockFileSet Type="BlockSrcs" Name="ram8"/>
+  <BlockFileSet Type="BlockSrcs" Name="ram"/>
+  <BlockFileSet Type="BlockSrcs" Name="VGAClock"/>
+  <BlockFileSet Type="BlockSrcs" Name="FontRom"/>
+</GenRun>
