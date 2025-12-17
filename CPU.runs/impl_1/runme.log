@@ -24,3 +24,35 @@ INFO: [Project 1-570] Preparing netlist for logic optimization
 Parsing XDC File [e:/source/VIVADOScource/CPU/CPU.srcs/sources_1/ip/VGAClock/VGAClock_board.xdc] for cell 'clk60/inst'
 Finished Parsing XDC File [e:/source/VIVADOScource/CPU/CPU.srcs/sources_1/ip/VGAClock/VGAClock_board.xdc] for cell 'clk60/inst'
 Parsing XDC File [e:/source/VIVADOScource/CPU/CPU.srcs/sources_1/ip/VGAClock/VGAClock.xdc] for cell 'clk60/inst'
+INFO: [Timing 38-35] Done setting XDC timing constraints. [e:/source/VIVADOScource/CPU/CPU.srcs/sources_1/ip/VGAClock/VGAClock.xdc:57]
+INFO: [Timing 38-2] Deriving generated clocks [e:/source/VIVADOScource/CPU/CPU.srcs/sources_1/ip/VGAClock/VGAClock.xdc:57]
+get_clocks: Time (s): cpu = 00:00:11 ; elapsed = 00:00:10 . Memory (MB): peak = 1386.383 ; gain = 571.039
+Finished Parsing XDC File [e:/source/VIVADOScource/CPU/CPU.srcs/sources_1/ip/VGAClock/VGAClock.xdc] for cell 'clk60/inst'
+Parsing XDC File [E:/source/VIVADOScource/CPU/CPU.srcs/constrs_1/new/cons.xdc]
+Finished Parsing XDC File [E:/source/VIVADOScource/CPU/CPU.srcs/constrs_1/new/cons.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.007 . Memory (MB): peak = 1386.383 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 2 instances were transformed.
+  LDCP => LDCP (GND, LUT3, LUT3, LDCE, VCC): 2 instances
+
+13 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+link_design completed successfully
+link_design: Time (s): cpu = 00:00:21 ; elapsed = 00:00:23 . Memory (MB): peak = 1386.383 ; gain = 997.617
+Command: opt_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7a35t'
+Running DRC as a precondition to command opt_design
+
+Starting DRC Task
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Project 1-461] DRC finished with 0 Errors
+INFO: [Project 1-462] Please refer to the DRC report (report_drc) for more information.
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:01 . Memory (MB): peak = 1386.383 ; gain = 0.000
+
+Starting Cache Timing Information Task
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Ending Cache Timing Information Task | Checksum: 15e0e2be3
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:01 . Memory (MB): peak = 1388.383 ; gain = 2.000
