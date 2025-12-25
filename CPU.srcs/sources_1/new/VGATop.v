@@ -27,8 +27,8 @@ module Console(
     
     VGADesign design1(
         .clk(clk),
-        .rst(rst),
-        .char(char),
+        .rst(0),
+        .char(rst ? 8'd0 : char),
         .rgb_r(rgb_r),
         .rgb_g(rgb_g),
         .rgb_b(rgb_b),

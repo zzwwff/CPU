@@ -1,0 +1,2270 @@
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.1 (win64) Build 2552052 Fri May 24 14:49:42 MDT 2019
+| Date         : Sun Dec 21 13:28:26 2025
+| Host         : zwfpc running 64-bit major release  (build 9200)
+| Command      : report_timing_summary -max_paths 10 -file SOC_timing_summary_routed.rpt -pb SOC_timing_summary_routed.pb -rpx SOC_timing_summary_routed.rpx -warn_on_violation
+| Design       : SOC
+| Device       : 7a35t-cpg236
+| Speed File   : -1  PRODUCTION 1.23 2018-06-13
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Timing Summary Report
+
+------------------------------------------------------------------------------------------------
+| Timer Settings
+| --------------
+------------------------------------------------------------------------------------------------
+
+  Enable Multi Corner Analysis               :  Yes
+  Enable Pessimism Removal                   :  Yes
+  Pessimism Removal Resolution               :  Nearest Common Node
+  Enable Input Delay Default Clock           :  No
+  Enable Preset / Clear Arcs                 :  No
+  Disable Flight Delays                      :  No
+  Ignore I/O Paths                           :  No
+  Timing Early Launch at Borrowing Latches   :  No
+  Borrow Time for Max Delay Exceptions       :  Yes
+
+  Corner  Analyze    Analyze    
+  Name    Max Paths  Min Paths  
+  ------  ---------  ---------  
+  Slow    Yes        Yes        
+  Fast    Yes        Yes        
+
+
+
+check_timing report
+
+Table of Contents
+-----------------
+1. checking no_clock
+2. checking constant_clock
+3. checking pulse_width_clock
+4. checking unconstrained_internal_endpoints
+5. checking no_input_delay
+6. checking no_output_delay
+7. checking multiple_clock
+8. checking generated_clocks
+9. checking loops
+10. checking partial_input_delay
+11. checking partial_output_delay
+12. checking latch_loops
+
+1. checking no_clock
+--------------------
+ There are 96 register/latch pins with no clock driven by root clock pin: read (HIGH)
+
+ There are 96 register/latch pins with no clock driven by root clock pin: rst (HIGH)
+
+ There are 10 register/latch pins with no clock driven by root clock pin: clks_reg[15]/Q (HIGH)
+
+ There are 1077 register/latch pins with no clock driven by root clock pin: clks_reg[2]/Q (HIGH)
+
+ There are 16470 register/latch pins with no clock driven by root clock pin: console/stream/clks_reg[2]/Q (HIGH)
+
+ There is 1 register/latch pin with no clock driven by root clock pin: cpuTop/control/hltClk_reg[0]/Q (HIGH)
+
+ There is 1 register/latch pin with no clock driven by root clock pin: cpuTop/control/hltClk_reg[1]/Q (HIGH)
+
+ There is 1 register/latch pin with no clock driven by root clock pin: cpuTop/control/hltClk_reg[2]/Q (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: cpuTop/decode/padIn1_reg[0]/Q (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: cpuTop/decode/padIn1_reg[10]/Q (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: cpuTop/decode/padIn1_reg[11]/Q (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: cpuTop/decode/padIn1_reg[12]/Q (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: cpuTop/decode/padIn1_reg[13]/Q (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: cpuTop/decode/padIn1_reg[14]/Q (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: cpuTop/decode/padIn1_reg[15]/Q (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: cpuTop/decode/padIn1_reg[16]/Q (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: cpuTop/decode/padIn1_reg[17]/Q (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: cpuTop/decode/padIn1_reg[18]/Q (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: cpuTop/decode/padIn1_reg[19]/Q (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: cpuTop/decode/padIn1_reg[1]/Q (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: cpuTop/decode/padIn1_reg[20]/Q (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: cpuTop/decode/padIn1_reg[21]/Q (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: cpuTop/decode/padIn1_reg[22]/Q (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: cpuTop/decode/padIn1_reg[23]/Q (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: cpuTop/decode/padIn1_reg[24]/Q (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: cpuTop/decode/padIn1_reg[25]/Q (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: cpuTop/decode/padIn1_reg[26]/Q (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: cpuTop/decode/padIn1_reg[27]/Q (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: cpuTop/decode/padIn1_reg[28]/Q (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: cpuTop/decode/padIn1_reg[29]/Q (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: cpuTop/decode/padIn1_reg[2]/Q (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: cpuTop/decode/padIn1_reg[30]/Q (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: cpuTop/decode/padIn1_reg[31]/Q (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: cpuTop/decode/padIn1_reg[3]/Q (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: cpuTop/decode/padIn1_reg[4]/Q (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: cpuTop/decode/padIn1_reg[5]/Q (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: cpuTop/decode/padIn1_reg[6]/Q (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: cpuTop/decode/padIn1_reg[7]/Q (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: cpuTop/decode/padIn1_reg[8]/Q (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: cpuTop/decode/padIn1_reg[9]/Q (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: cpuTop/decode/padIn2_reg[0]/Q (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: cpuTop/decode/padIn2_reg[10]/Q (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: cpuTop/decode/padIn2_reg[11]/Q (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: cpuTop/decode/padIn2_reg[12]/Q (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: cpuTop/decode/padIn2_reg[13]/Q (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: cpuTop/decode/padIn2_reg[14]/Q (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: cpuTop/decode/padIn2_reg[15]/Q (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: cpuTop/decode/padIn2_reg[16]/Q (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: cpuTop/decode/padIn2_reg[17]/Q (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: cpuTop/decode/padIn2_reg[18]/Q (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: cpuTop/decode/padIn2_reg[19]/Q (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: cpuTop/decode/padIn2_reg[1]/Q (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: cpuTop/decode/padIn2_reg[20]/Q (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: cpuTop/decode/padIn2_reg[21]/Q (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: cpuTop/decode/padIn2_reg[22]/Q (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: cpuTop/decode/padIn2_reg[23]/Q (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: cpuTop/decode/padIn2_reg[24]/Q (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: cpuTop/decode/padIn2_reg[25]/Q (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: cpuTop/decode/padIn2_reg[26]/Q (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: cpuTop/decode/padIn2_reg[27]/Q (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: cpuTop/decode/padIn2_reg[28]/Q (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: cpuTop/decode/padIn2_reg[29]/Q (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: cpuTop/decode/padIn2_reg[2]/Q (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: cpuTop/decode/padIn2_reg[30]/Q (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: cpuTop/decode/padIn2_reg[31]/Q (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: cpuTop/decode/padIn2_reg[3]/Q (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: cpuTop/decode/padIn2_reg[4]/Q (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: cpuTop/decode/padIn2_reg[5]/Q (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: cpuTop/decode/padIn2_reg[6]/Q (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: cpuTop/decode/padIn2_reg[7]/Q (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: cpuTop/decode/padIn2_reg[8]/Q (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: cpuTop/decode/padIn2_reg[9]/Q (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: cpuTop/decode/padType1_reg[0]/Q (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: cpuTop/decode/padType1_reg[1]/Q (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: cpuTop/decode/padType1_reg[2]/Q (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: cpuTop/decode/padType2_reg[0]/Q (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: cpuTop/decode/padType2_reg[2]/Q (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: cpuTop/decode/regAddr1_reg[0]/Q (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: cpuTop/decode/regAddr1_reg[1]/Q (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: cpuTop/decode/regAddr1_reg[2]/Q (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: cpuTop/decode/regAddr1_reg[3]/Q (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: cpuTop/decode/regAddr1_reg[4]/Q (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: cpuTop/decode/regAddr2_reg[0]/Q (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: cpuTop/decode/regAddr2_reg[1]/Q (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: cpuTop/decode/regAddr2_reg[2]/Q (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: cpuTop/decode/regAddr2_reg[3]/Q (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: cpuTop/decode/regAddr2_reg[4]/Q (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: cpuTop/decode/regEnable2_reg/Q (HIGH)
+
+ There are 229 register/latch pins with no clock driven by root clock pin: cpuTop/decodeExecute/eAluOp_reg[0]/Q (HIGH)
+
+ There are 229 register/latch pins with no clock driven by root clock pin: cpuTop/decodeExecute/eAluOp_reg[1]/Q (HIGH)
+
+ There are 229 register/latch pins with no clock driven by root clock pin: cpuTop/decodeExecute/eAluOp_reg[2]/Q (HIGH)
+
+ There are 229 register/latch pins with no clock driven by root clock pin: cpuTop/decodeExecute/eAluOp_reg[3]/Q (HIGH)
+
+ There are 229 register/latch pins with no clock driven by root clock pin: cpuTop/decodeExecute/eAluOp_reg[4]/Q (HIGH)
+
+ There are 229 register/latch pins with no clock driven by root clock pin: cpuTop/decodeExecute/eAluOp_reg[5]/Q (HIGH)
+
+ There are 197 register/latch pins with no clock driven by root clock pin: cpuTop/decodeExecute/eAluSel_reg[0]/Q (HIGH)
+
+ There are 160 register/latch pins with no clock driven by root clock pin: cpuTop/decodeExecute/eAluSel_reg[1]/Q (HIGH)
+
+ There are 197 register/latch pins with no clock driven by root clock pin: cpuTop/decodeExecute/eAluSel_reg[2]/Q (HIGH)
+
+ There are 197 register/latch pins with no clock driven by root clock pin: cpuTop/decodeExecute/eAluSel_reg[3]/Q (HIGH)
+
+ There are 197 register/latch pins with no clock driven by root clock pin: cpuTop/decodeExecute/eAluSel_reg[4]/Q (HIGH)
+
+ There are 197 register/latch pins with no clock driven by root clock pin: cpuTop/decodeExecute/eAluSel_reg[5]/Q (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: cpuTop/decodeExecute/eDataSource1_reg[0]/Q (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: cpuTop/decodeExecute/eDataSource1_reg[10]/Q (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: cpuTop/decodeExecute/eDataSource1_reg[11]/Q (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: cpuTop/decodeExecute/eDataSource1_reg[12]/Q (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: cpuTop/decodeExecute/eDataSource1_reg[13]/Q (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: cpuTop/decodeExecute/eDataSource1_reg[14]/Q (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: cpuTop/decodeExecute/eDataSource1_reg[15]/Q (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: cpuTop/decodeExecute/eDataSource1_reg[16]/Q (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: cpuTop/decodeExecute/eDataSource1_reg[17]/Q (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: cpuTop/decodeExecute/eDataSource1_reg[18]/Q (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: cpuTop/decodeExecute/eDataSource1_reg[19]/Q (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: cpuTop/decodeExecute/eDataSource1_reg[1]/Q (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: cpuTop/decodeExecute/eDataSource1_reg[20]/Q (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: cpuTop/decodeExecute/eDataSource1_reg[21]/Q (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: cpuTop/decodeExecute/eDataSource1_reg[22]/Q (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: cpuTop/decodeExecute/eDataSource1_reg[23]/Q (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: cpuTop/decodeExecute/eDataSource1_reg[24]/Q (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: cpuTop/decodeExecute/eDataSource1_reg[25]/Q (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: cpuTop/decodeExecute/eDataSource1_reg[26]/Q (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: cpuTop/decodeExecute/eDataSource1_reg[27]/Q (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: cpuTop/decodeExecute/eDataSource1_reg[28]/Q (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: cpuTop/decodeExecute/eDataSource1_reg[29]/Q (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: cpuTop/decodeExecute/eDataSource1_reg[2]/Q (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: cpuTop/decodeExecute/eDataSource1_reg[30]/Q (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: cpuTop/decodeExecute/eDataSource1_reg[31]/Q (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: cpuTop/decodeExecute/eDataSource1_reg[3]/Q (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: cpuTop/decodeExecute/eDataSource1_reg[4]/Q (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: cpuTop/decodeExecute/eDataSource1_reg[5]/Q (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: cpuTop/decodeExecute/eDataSource1_reg[6]/Q (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: cpuTop/decodeExecute/eDataSource1_reg[7]/Q (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: cpuTop/decodeExecute/eDataSource1_reg[8]/Q (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: cpuTop/decodeExecute/eDataSource1_reg[9]/Q (HIGH)
+
+ There are 192 register/latch pins with no clock driven by root clock pin: cpuTop/division/FSM_sequential_status_reg[0]/Q (HIGH)
+
+ There are 192 register/latch pins with no clock driven by root clock pin: cpuTop/division/FSM_sequential_status_reg[1]/Q (HIGH)
+
+ There are 192 register/latch pins with no clock driven by root clock pin: cpuTop/division/resultReady_reg/Q (HIGH)
+
+ There are 242 register/latch pins with no clock driven by root clock pin: cpuTop/excuteMemory/mAluOp_reg[0]/Q (HIGH)
+
+ There are 242 register/latch pins with no clock driven by root clock pin: cpuTop/excuteMemory/mAluOp_reg[1]/Q (HIGH)
+
+ There are 242 register/latch pins with no clock driven by root clock pin: cpuTop/excuteMemory/mAluOp_reg[2]/Q (HIGH)
+
+ There are 242 register/latch pins with no clock driven by root clock pin: cpuTop/excuteMemory/mAluOp_reg[3]/Q (HIGH)
+
+ There are 242 register/latch pins with no clock driven by root clock pin: cpuTop/excuteMemory/mAluOp_reg[4]/Q (HIGH)
+
+ There are 242 register/latch pins with no clock driven by root clock pin: cpuTop/excuteMemory/mAluOp_reg[5]/Q (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: cpuTop/excuteMemory/mWriteEnable_reg/Q (HIGH)
+
+ There are 64 register/latch pins with no clock driven by root clock pin: cpuTop/excuteMemory/mWriteMemEnable_reg/Q (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: cpuTop/execute/writeAddr_reg[0]/Q (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: cpuTop/execute/writeAddr_reg[1]/Q (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: cpuTop/execute/writeAddr_reg[2]/Q (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: cpuTop/execute/writeAddr_reg[3]/Q (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: cpuTop/execute/writeAddr_reg[4]/Q (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: cpuTop/execute/writeData_reg[0]/Q (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: cpuTop/execute/writeData_reg[10]/Q (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: cpuTop/execute/writeData_reg[11]/Q (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: cpuTop/execute/writeData_reg[12]/Q (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: cpuTop/execute/writeData_reg[13]/Q (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: cpuTop/execute/writeData_reg[14]/Q (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: cpuTop/execute/writeData_reg[15]/Q (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: cpuTop/execute/writeData_reg[16]/Q (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: cpuTop/execute/writeData_reg[17]/Q (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: cpuTop/execute/writeData_reg[18]/Q (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: cpuTop/execute/writeData_reg[19]/Q (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: cpuTop/execute/writeData_reg[1]/Q (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: cpuTop/execute/writeData_reg[20]/Q (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: cpuTop/execute/writeData_reg[21]/Q (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: cpuTop/execute/writeData_reg[22]/Q (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: cpuTop/execute/writeData_reg[23]/Q (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: cpuTop/execute/writeData_reg[24]/Q (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: cpuTop/execute/writeData_reg[25]/Q (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: cpuTop/execute/writeData_reg[26]/Q (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: cpuTop/execute/writeData_reg[27]/Q (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: cpuTop/execute/writeData_reg[28]/Q (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: cpuTop/execute/writeData_reg[29]/Q (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: cpuTop/execute/writeData_reg[2]/Q (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: cpuTop/execute/writeData_reg[30]/Q (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: cpuTop/execute/writeData_reg[31]/Q (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: cpuTop/execute/writeData_reg[3]/Q (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: cpuTop/execute/writeData_reg[4]/Q (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: cpuTop/execute/writeData_reg[5]/Q (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: cpuTop/execute/writeData_reg[6]/Q (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: cpuTop/execute/writeData_reg[7]/Q (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: cpuTop/execute/writeData_reg[8]/Q (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: cpuTop/execute/writeData_reg[9]/Q (HIGH)
+
+ There are 117 register/latch pins with no clock driven by root clock pin: cpuTop/fetchDecode/dInst_reg[0]/Q (HIGH)
+
+ There are 116 register/latch pins with no clock driven by root clock pin: cpuTop/fetchDecode/dInst_reg[1]/Q (HIGH)
+
+ There are 136 register/latch pins with no clock driven by root clock pin: cpuTop/fetchDecode/dInst_reg[26]/Q (HIGH)
+
+ There are 136 register/latch pins with no clock driven by root clock pin: cpuTop/fetchDecode/dInst_reg[27]/Q (HIGH)
+
+ There are 136 register/latch pins with no clock driven by root clock pin: cpuTop/fetchDecode/dInst_reg[28]/Q (HIGH)
+
+ There are 136 register/latch pins with no clock driven by root clock pin: cpuTop/fetchDecode/dInst_reg[29]/Q (HIGH)
+
+ There are 117 register/latch pins with no clock driven by root clock pin: cpuTop/fetchDecode/dInst_reg[2]/Q (HIGH)
+
+ There are 136 register/latch pins with no clock driven by root clock pin: cpuTop/fetchDecode/dInst_reg[30]/Q (HIGH)
+
+ There are 136 register/latch pins with no clock driven by root clock pin: cpuTop/fetchDecode/dInst_reg[31]/Q (HIGH)
+
+ There are 117 register/latch pins with no clock driven by root clock pin: cpuTop/fetchDecode/dInst_reg[3]/Q (HIGH)
+
+ There are 117 register/latch pins with no clock driven by root clock pin: cpuTop/fetchDecode/dInst_reg[4]/Q (HIGH)
+
+ There are 117 register/latch pins with no clock driven by root clock pin: cpuTop/fetchDecode/dInst_reg[5]/Q (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: cpuTop/memory/padIn_reg[0]/Q (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: cpuTop/memory/padIn_reg[10]/Q (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: cpuTop/memory/padIn_reg[11]/Q (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: cpuTop/memory/padIn_reg[12]/Q (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: cpuTop/memory/padIn_reg[13]/Q (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: cpuTop/memory/padIn_reg[14]/Q (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: cpuTop/memory/padIn_reg[15]/Q (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: cpuTop/memory/padIn_reg[16]/Q (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: cpuTop/memory/padIn_reg[17]/Q (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: cpuTop/memory/padIn_reg[18]/Q (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: cpuTop/memory/padIn_reg[19]/Q (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: cpuTop/memory/padIn_reg[1]/Q (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: cpuTop/memory/padIn_reg[20]/Q (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: cpuTop/memory/padIn_reg[21]/Q (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: cpuTop/memory/padIn_reg[22]/Q (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: cpuTop/memory/padIn_reg[23]/Q (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: cpuTop/memory/padIn_reg[24]/Q (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: cpuTop/memory/padIn_reg[25]/Q (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: cpuTop/memory/padIn_reg[26]/Q (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: cpuTop/memory/padIn_reg[27]/Q (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: cpuTop/memory/padIn_reg[28]/Q (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: cpuTop/memory/padIn_reg[29]/Q (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: cpuTop/memory/padIn_reg[2]/Q (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: cpuTop/memory/padIn_reg[30]/Q (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: cpuTop/memory/padIn_reg[31]/Q (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: cpuTop/memory/padIn_reg[3]/Q (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: cpuTop/memory/padIn_reg[4]/Q (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: cpuTop/memory/padIn_reg[5]/Q (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: cpuTop/memory/padIn_reg[6]/Q (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: cpuTop/memory/padIn_reg[7]/Q (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: cpuTop/memory/padIn_reg[8]/Q (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: cpuTop/memory/padIn_reg[9]/Q (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: cpuTop/memory/padType_reg[0]/Q (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: cpuTop/memory/padType_reg[1]/Q (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: cpuTop/memory/padType_reg[2]/Q (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: cpuTop/memory/writeAddr_reg[0]/Q (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: cpuTop/memory/writeAddr_reg[1]/Q (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: cpuTop/memory/writeAddr_reg[2]/Q (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: cpuTop/memory/writeAddr_reg[3]/Q (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: cpuTop/memory/writeAddr_reg[4]/Q (HIGH)
+
+ There are 64 register/latch pins with no clock driven by root clock pin: memoryTransmitter/memoryReceiverAutomation/rxMemEnable_reg/Q (HIGH)
+
+ There are 2 register/latch pins with no clock driven by root clock pin: memoryTransmitter/memoryReceiverAutomation/status_reg[0]/Q (HIGH)
+
+ There are 4 register/latch pins with no clock driven by root clock pin: memoryTransmitter/memoryReceiverAutomation/status_reg[1]/Q (HIGH)
+
+ There are 4 register/latch pins with no clock driven by root clock pin: memoryTransmitter/memoryReceiverAutomation/status_reg[2]/Q (HIGH)
+
+ There are 4 register/latch pins with no clock driven by root clock pin: memoryTransmitter/memoryReceiverAutomation/status_reg[3]/Q (HIGH)
+
+ There are 4 register/latch pins with no clock driven by root clock pin: memoryTransmitter/usbReceiver/done_reg/Q (HIGH)
+
+
+2. checking constant_clock
+--------------------------
+ There are 0 register/latch pins with constant_clock.
+
+
+3. checking pulse_width_clock
+-----------------------------
+ There are 0 register/latch pins which need pulse_width check
+
+
+4. checking unconstrained_internal_endpoints
+--------------------------------------------
+ There are 53569 pins that are not constrained for maximum delay. (HIGH)
+
+ There are 0 pins that are not constrained for maximum delay due to constant clock.
+
+
+5. checking no_input_delay
+--------------------------
+ There are 8 input ports with no input delay specified. (HIGH)
+
+ There are 0 input ports with no input delay but user has a false path constraint.
+
+
+6. checking no_output_delay
+---------------------------
+ There are 27 ports with no output delay specified. (HIGH)
+
+ There are 0 ports with no output delay but user has a false path constraint
+
+ There are 0 ports with no output delay but with a timing clock defined on it or propagating through it
+
+
+7. checking multiple_clock
+--------------------------
+ There are 0 register/latch pins with multiple clocks.
+
+
+8. checking generated_clocks
+----------------------------
+ There are 0 generated clocks that are not connected to a clock source.
+
+
+9. checking loops
+-----------------
+ There are 0 combinational loops in the design.
+
+
+10. checking partial_input_delay
+--------------------------------
+ There are 0 input ports with partial input delay specified.
+
+
+11. checking partial_output_delay
+---------------------------------
+ There are 0 ports with partial output delay specified.
+
+
+12. checking latch_loops
+------------------------
+ There are 0 combinational latch loops in the design through latch input
+
+
+
+------------------------------------------------------------------------------------------------
+| Design Timing Summary
+| ---------------------
+------------------------------------------------------------------------------------------------
+
+    WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints     WPWS(ns)     TPWS(ns)  TPWS Failing Endpoints  TPWS Total Endpoints  
+    -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------     --------     --------  ----------------------  --------------------  
+     15.671        0.000                      0                  977        0.089        0.000                      0                  977        3.000        0.000                       0                   449  
+
+
+All user specified timing constraints are met.
+
+
+------------------------------------------------------------------------------------------------
+| Clock Summary
+| -------------
+------------------------------------------------------------------------------------------------
+
+Clock                Waveform(ns)       Period(ns)      Frequency(MHz)
+-----                ------------       ----------      --------------
+CLK                  {0.000 5.000}      10.000          100.000         
+  clk_out1_VGAClock  {0.000 20.000}     40.000          25.000          
+  clkfbout_VGAClock  {0.000 5.000}      10.000          100.000         
+
+
+------------------------------------------------------------------------------------------------
+| Intra Clock Table
+| -----------------
+------------------------------------------------------------------------------------------------
+
+Clock                    WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints     WPWS(ns)     TPWS(ns)  TPWS Failing Endpoints  TPWS Total Endpoints  
+-----                    -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------     --------     --------  ----------------------  --------------------  
+CLK                                                                                                                                                                    3.000        0.000                       0                     1  
+  clk_out1_VGAClock       15.671        0.000                      0                  977        0.089        0.000                      0                  977       19.500        0.000                       0                   445  
+  clkfbout_VGAClock                                                                                                                                                    7.845        0.000                       0                     3  
+
+
+------------------------------------------------------------------------------------------------
+| Inter Clock Table
+| -----------------
+------------------------------------------------------------------------------------------------
+
+From Clock    To Clock          WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints  
+----------    --------          -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------  
+
+
+------------------------------------------------------------------------------------------------
+| Other Path Groups Table
+| -----------------------
+------------------------------------------------------------------------------------------------
+
+Path Group    From Clock    To Clock          WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints  
+----------    ----------    --------          -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------  
+
+
+------------------------------------------------------------------------------------------------
+| Timing Details
+| --------------
+------------------------------------------------------------------------------------------------
+
+
+---------------------------------------------------------------------------------------------------
+From Clock:  CLK
+  To Clock:  CLK
+
+Setup :           NA  Failing Endpoints,  Worst Slack           NA  ,  Total Violation           NA
+Hold  :           NA  Failing Endpoints,  Worst Slack           NA  ,  Total Violation           NA
+PW    :            0  Failing Endpoints,  Worst Slack        3.000ns,  Total Violation        0.000ns
+---------------------------------------------------------------------------------------------------
+
+
+Pulse Width Checks
+--------------------------------------------------------------------------------------
+Clock Name:         CLK
+Waveform(ns):       { 0.000 5.000 }
+Period(ns):         10.000
+Sources:            { CLK }
+
+Check Type        Corner  Lib Pin            Reference Pin  Required(ns)  Actual(ns)  Slack(ns)  Location         Pin
+Min Period        n/a     MMCME2_ADV/CLKIN1  n/a            1.249         10.000      8.751      MMCME2_ADV_X1Y0  clk60/inst/mmcm_adv_inst/CLKIN1
+Max Period        n/a     MMCME2_ADV/CLKIN1  n/a            100.000       10.000      90.000     MMCME2_ADV_X1Y0  clk60/inst/mmcm_adv_inst/CLKIN1
+Low Pulse Width   Fast    MMCME2_ADV/CLKIN1  n/a            2.000         5.000       3.000      MMCME2_ADV_X1Y0  clk60/inst/mmcm_adv_inst/CLKIN1
+Low Pulse Width   Slow    MMCME2_ADV/CLKIN1  n/a            2.000         5.000       3.000      MMCME2_ADV_X1Y0  clk60/inst/mmcm_adv_inst/CLKIN1
+High Pulse Width  Slow    MMCME2_ADV/CLKIN1  n/a            2.000         5.000       3.000      MMCME2_ADV_X1Y0  clk60/inst/mmcm_adv_inst/CLKIN1
+High Pulse Width  Fast    MMCME2_ADV/CLKIN1  n/a            2.000         5.000       3.000      MMCME2_ADV_X1Y0  clk60/inst/mmcm_adv_inst/CLKIN1
+
+
+
+---------------------------------------------------------------------------------------------------
+From Clock:  clk_out1_VGAClock
+  To Clock:  clk_out1_VGAClock
+
+Setup :            0  Failing Endpoints,  Worst Slack       15.671ns,  Total Violation        0.000ns
+Hold  :            0  Failing Endpoints,  Worst Slack        0.089ns,  Total Violation        0.000ns
+PW    :            0  Failing Endpoints,  Worst Slack       19.500ns,  Total Violation        0.000ns
+---------------------------------------------------------------------------------------------------
+
+
+Max Delay Paths
+--------------------------------------------------------------------------------------
+Slack (MET) :             15.671ns  (required time - arrival time)
+  Source:                 console/design1/charRow_reg[1]/C
+                            (rising edge-triggered cell FDRE clocked by clk_out1_VGAClock  {rise@0.000ns fall@20.000ns period=40.000ns})
+  Destination:            console/design1/fontrom/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[14].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.SIMPLE_PRIM36.ram/ENARDEN
+                            (rising edge-triggered cell RAMB36E1 clocked by clk_out1_VGAClock  {rise@0.000ns fall@20.000ns period=40.000ns})
+  Path Group:             clk_out1_VGAClock
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            40.000ns  (clk_out1_VGAClock rise@40.000ns - clk_out1_VGAClock rise@0.000ns)
+  Data Path Delay:        23.729ns  (logic 5.289ns (22.289%)  route 18.440ns (77.711%))
+  Logic Levels:           15  (CARRY4=3 DSP48E1=1 LUT3=3 LUT6=5 MUXF7=2 MUXF8=1)
+  Clock Path Skew:        -0.059ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    -1.509ns = ( 38.491 - 40.000 ) 
+    Source Clock Delay      (SCD):    -0.966ns
+    Clock Pessimism Removal (CPR):    0.484ns
+  Clock Uncertainty:      0.098ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Discrete Jitter          (DJ):    0.182ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_out1_VGAClock rise edge)
+                                                      0.000     0.000 r  
+    W5                                                0.000     0.000 r  CLK (IN)
+                         net (fo=0)                   0.000     0.000    clk60/inst/clk_in1
+    W5                   IBUF (Prop_ibuf_I_O)         1.458     1.458 r  clk60/inst/clkin1_ibufg/O
+                         net (fo=1, routed)           1.233     2.691    clk60/inst/clk_in1_VGAClock
+    MMCME2_ADV_X1Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -6.961    -4.269 r  clk60/inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           1.661    -2.608    clk60/inst/clk_out1_VGAClock
+    BUFGCTRL_X0Y2        BUFG (Prop_bufg_I_O)         0.096    -2.512 r  clk60/inst/clkout1_buf/O
+                         net (fo=445, routed)         1.546    -0.966    console/design1/clk_out1
+    SLICE_X10Y81         FDRE                                         r  console/design1/charRow_reg[1]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X10Y81         FDRE (Prop_fdre_C_Q)         0.518    -0.448 r  console/design1/charRow_reg[1]/Q
+                         net (fo=159, routed)         5.970     5.522    console/stream/fontAddr0_i_415_0[1]
+    SLICE_X53Y142        LUT6 (Prop_lut6_I2_O)        0.124     5.646 r  console/stream/fontAddr0_i_4466/O
+                         net (fo=1, routed)           0.000     5.646    console/stream/fontAddr0_i_4466_n_10
+    SLICE_X53Y142        MUXF7 (Prop_muxf7_I1_O)      0.217     5.863 r  console/stream/fontAddr0_i_1861/O
+                         net (fo=1, routed)           0.795     6.658    console/stream/fontAddr0_i_1861_n_10
+    SLICE_X53Y139        LUT6 (Prop_lut6_I0_O)        0.299     6.957 r  console/stream/fontAddr0_i_729/O
+                         net (fo=1, routed)           1.732     8.690    console/stream/fontAddr0_i_729_n_10
+    SLICE_X27Y126        LUT3 (Prop_lut3_I2_O)        0.124     8.814 r  console/stream/fontAddr0_i_326/O
+                         net (fo=1, routed)           0.000     8.814    console/stream/fontAddr0_i_326_n_10
+    SLICE_X27Y126        MUXF7 (Prop_muxf7_I1_O)      0.245     9.059 r  console/stream/fontAddr0_i_163/O
+                         net (fo=1, routed)           0.000     9.059    console/stream/fontAddr0_i_163_n_10
+    SLICE_X27Y126        MUXF8 (Prop_muxf8_I0_O)      0.104     9.163 r  console/stream/fontAddr0_i_79/O
+                         net (fo=1, routed)           1.219    10.382    console/stream/fontAddr0_i_79_n_10
+    SLICE_X17Y109        LUT6 (Prop_lut6_I1_O)        0.316    10.698 r  console/stream/fontAddr0_i_30/O
+                         net (fo=1, routed)           1.960    12.657    console/design1/fontAddr0_0
+    SLICE_X15Y69         LUT6 (Prop_lut6_I0_O)        0.124    12.781 r  console/design1/fontAddr0_i_15/O
+                         net (fo=12, routed)          1.865    14.647    console/design1/char[0]
+    SLICE_X15Y41         LUT3 (Prop_lut3_I2_O)        0.124    14.771 r  console/design1/fontAddr0_i_45/O
+                         net (fo=1, routed)           0.000    14.771    console/design1/fontAddr0_i_45_n_10
+    SLICE_X15Y41         CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.550    15.321 r  console/design1/fontAddr0_i_18/CO[3]
+                         net (fo=1, routed)           0.000    15.321    console/design1/fontAddr0_i_18_n_10
+    SLICE_X15Y42         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114    15.435 r  console/design1/fontAddr0_i_17/CO[3]
+                         net (fo=1, routed)           0.000    15.435    console/design1/fontAddr0_i_17_n_10
+    SLICE_X15Y43         CARRY4 (Prop_carry4_CI_CO[1])
+                                                      0.157    15.592 r  console/design1/fontAddr0_i_16/CO[1]
+                         net (fo=1, routed)           0.554    16.146    console/design1/fontAddr1__0[11]
+    SLICE_X13Y42         LUT6 (Prop_lut6_I5_O)        0.329    16.475 r  console/design1/fontAddr0_i_1/O
+                         net (fo=1, routed)           0.402    16.877    console/design1/C[11]
+    DSP48_X0Y17          DSP48E1 (Prop_dsp48e1_C[11]_P[13])
+                                                      1.820    18.697 r  console/design1/fontAddr0/P[13]
+                         net (fo=13, routed)          3.052    21.749    console/design1/fontrom/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[14].ram.r/prim_init.ram/addra[13]
+    SLICE_X8Y13          LUT3 (Prop_lut3_I0_O)        0.124    21.873 r  console/design1/fontrom/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[14].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.SIMPLE_PRIM36.ram_i_1/O
+                         net (fo=1, routed)           0.890    22.763    console/design1/fontrom/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[14].ram.r/prim_init.ram/ena_array[7]
+    RAMB36_X0Y0          RAMB36E1                                     r  console/design1/fontrom/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[14].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.SIMPLE_PRIM36.ram/ENARDEN
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_out1_VGAClock rise edge)
+                                                     40.000    40.000 r  
+    W5                                                0.000    40.000 r  CLK (IN)
+                         net (fo=0)                   0.000    40.000    clk60/inst/clk_in1
+    W5                   IBUF (Prop_ibuf_I_O)         1.388    41.388 r  clk60/inst/clkin1_ibufg/O
+                         net (fo=1, routed)           1.162    42.550    clk60/inst/clk_in1_VGAClock
+    MMCME2_ADV_X1Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -7.217    35.332 r  clk60/inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           1.581    36.914    clk60/inst/clk_out1_VGAClock
+    BUFGCTRL_X0Y2        BUFG (Prop_bufg_I_O)         0.091    37.005 r  clk60/inst/clkout1_buf/O
+                         net (fo=445, routed)         1.487    38.491    console/design1/fontrom/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[14].ram.r/prim_init.ram/clka
+    RAMB36_X0Y0          RAMB36E1                                     r  console/design1/fontrom/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[14].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.SIMPLE_PRIM36.ram/CLKARDCLK
+                         clock pessimism              0.484    38.975    
+                         clock uncertainty           -0.098    38.877    
+    RAMB36_X0Y0          RAMB36E1 (Setup_ramb36e1_CLKARDCLK_ENARDEN)
+                                                     -0.443    38.434    console/design1/fontrom/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[14].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.SIMPLE_PRIM36.ram
+  -------------------------------------------------------------------
+                         required time                         38.434    
+                         arrival time                         -22.763    
+  -------------------------------------------------------------------
+                         slack                                 15.671    
+
+Slack (MET) :             16.165ns  (required time - arrival time)
+  Source:                 console/design1/charRow_reg[1]/C
+                            (rising edge-triggered cell FDRE clocked by clk_out1_VGAClock  {rise@0.000ns fall@20.000ns period=40.000ns})
+  Destination:            console/design1/fontrom/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[13].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.SIMPLE_PRIM36.ram/ENARDEN
+                            (rising edge-triggered cell RAMB36E1 clocked by clk_out1_VGAClock  {rise@0.000ns fall@20.000ns period=40.000ns})
+  Path Group:             clk_out1_VGAClock
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            40.000ns  (clk_out1_VGAClock rise@40.000ns - clk_out1_VGAClock rise@0.000ns)
+  Data Path Delay:        23.234ns  (logic 5.289ns (22.764%)  route 17.945ns (77.236%))
+  Logic Levels:           15  (CARRY4=3 DSP48E1=1 LUT3=3 LUT6=5 MUXF7=2 MUXF8=1)
+  Clock Path Skew:        -0.061ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    -1.511ns = ( 38.489 - 40.000 ) 
+    Source Clock Delay      (SCD):    -0.966ns
+    Clock Pessimism Removal (CPR):    0.484ns
+  Clock Uncertainty:      0.098ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Discrete Jitter          (DJ):    0.182ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_out1_VGAClock rise edge)
+                                                      0.000     0.000 r  
+    W5                                                0.000     0.000 r  CLK (IN)
+                         net (fo=0)                   0.000     0.000    clk60/inst/clk_in1
+    W5                   IBUF (Prop_ibuf_I_O)         1.458     1.458 r  clk60/inst/clkin1_ibufg/O
+                         net (fo=1, routed)           1.233     2.691    clk60/inst/clk_in1_VGAClock
+    MMCME2_ADV_X1Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -6.961    -4.269 r  clk60/inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           1.661    -2.608    clk60/inst/clk_out1_VGAClock
+    BUFGCTRL_X0Y2        BUFG (Prop_bufg_I_O)         0.096    -2.512 r  clk60/inst/clkout1_buf/O
+                         net (fo=445, routed)         1.546    -0.966    console/design1/clk_out1
+    SLICE_X10Y81         FDRE                                         r  console/design1/charRow_reg[1]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X10Y81         FDRE (Prop_fdre_C_Q)         0.518    -0.448 r  console/design1/charRow_reg[1]/Q
+                         net (fo=159, routed)         5.970     5.522    console/stream/fontAddr0_i_415_0[1]
+    SLICE_X53Y142        LUT6 (Prop_lut6_I2_O)        0.124     5.646 r  console/stream/fontAddr0_i_4466/O
+                         net (fo=1, routed)           0.000     5.646    console/stream/fontAddr0_i_4466_n_10
+    SLICE_X53Y142        MUXF7 (Prop_muxf7_I1_O)      0.217     5.863 r  console/stream/fontAddr0_i_1861/O
+                         net (fo=1, routed)           0.795     6.658    console/stream/fontAddr0_i_1861_n_10
+    SLICE_X53Y139        LUT6 (Prop_lut6_I0_O)        0.299     6.957 r  console/stream/fontAddr0_i_729/O
+                         net (fo=1, routed)           1.732     8.690    console/stream/fontAddr0_i_729_n_10
+    SLICE_X27Y126        LUT3 (Prop_lut3_I2_O)        0.124     8.814 r  console/stream/fontAddr0_i_326/O
+                         net (fo=1, routed)           0.000     8.814    console/stream/fontAddr0_i_326_n_10
+    SLICE_X27Y126        MUXF7 (Prop_muxf7_I1_O)      0.245     9.059 r  console/stream/fontAddr0_i_163/O
+                         net (fo=1, routed)           0.000     9.059    console/stream/fontAddr0_i_163_n_10
+    SLICE_X27Y126        MUXF8 (Prop_muxf8_I0_O)      0.104     9.163 r  console/stream/fontAddr0_i_79/O
+                         net (fo=1, routed)           1.219    10.382    console/stream/fontAddr0_i_79_n_10
+    SLICE_X17Y109        LUT6 (Prop_lut6_I1_O)        0.316    10.698 r  console/stream/fontAddr0_i_30/O
+                         net (fo=1, routed)           1.960    12.657    console/design1/fontAddr0_0
+    SLICE_X15Y69         LUT6 (Prop_lut6_I0_O)        0.124    12.781 r  console/design1/fontAddr0_i_15/O
+                         net (fo=12, routed)          1.865    14.647    console/design1/char[0]
+    SLICE_X15Y41         LUT3 (Prop_lut3_I2_O)        0.124    14.771 r  console/design1/fontAddr0_i_45/O
+                         net (fo=1, routed)           0.000    14.771    console/design1/fontAddr0_i_45_n_10
+    SLICE_X15Y41         CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.550    15.321 r  console/design1/fontAddr0_i_18/CO[3]
+                         net (fo=1, routed)           0.000    15.321    console/design1/fontAddr0_i_18_n_10
+    SLICE_X15Y42         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114    15.435 r  console/design1/fontAddr0_i_17/CO[3]
+                         net (fo=1, routed)           0.000    15.435    console/design1/fontAddr0_i_17_n_10
+    SLICE_X15Y43         CARRY4 (Prop_carry4_CI_CO[1])
+                                                      0.157    15.592 r  console/design1/fontAddr0_i_16/CO[1]
+                         net (fo=1, routed)           0.554    16.146    console/design1/fontAddr1__0[11]
+    SLICE_X13Y42         LUT6 (Prop_lut6_I5_O)        0.329    16.475 r  console/design1/fontAddr0_i_1/O
+                         net (fo=1, routed)           0.402    16.877    console/design1/C[11]
+    DSP48_X0Y17          DSP48E1 (Prop_dsp48e1_C[11]_P[13])
+                                                      1.820    18.697 r  console/design1/fontAddr0/P[13]
+                         net (fo=13, routed)          2.901    21.598    console/design1/fontrom/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/bindec_a.bindec_inst_a/addra[1]
+    SLICE_X8Y13          LUT3 (Prop_lut3_I0_O)        0.124    21.722 r  console/design1/fontrom/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/bindec_a.bindec_inst_a/ENOUT__4/O
+                         net (fo=1, routed)           0.546    22.268    console/design1/fontrom/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[13].ram.r/prim_init.ram/ena_array[0]
+    RAMB36_X0Y1          RAMB36E1                                     r  console/design1/fontrom/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[13].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.SIMPLE_PRIM36.ram/ENARDEN
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_out1_VGAClock rise edge)
+                                                     40.000    40.000 r  
+    W5                                                0.000    40.000 r  CLK (IN)
+                         net (fo=0)                   0.000    40.000    clk60/inst/clk_in1
+    W5                   IBUF (Prop_ibuf_I_O)         1.388    41.388 r  clk60/inst/clkin1_ibufg/O
+                         net (fo=1, routed)           1.162    42.550    clk60/inst/clk_in1_VGAClock
+    MMCME2_ADV_X1Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -7.217    35.332 r  clk60/inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           1.581    36.914    clk60/inst/clk_out1_VGAClock
+    BUFGCTRL_X0Y2        BUFG (Prop_bufg_I_O)         0.091    37.005 r  clk60/inst/clkout1_buf/O
+                         net (fo=445, routed)         1.485    38.489    console/design1/fontrom/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[13].ram.r/prim_init.ram/clka
+    RAMB36_X0Y1          RAMB36E1                                     r  console/design1/fontrom/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[13].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.SIMPLE_PRIM36.ram/CLKARDCLK
+                         clock pessimism              0.484    38.973    
+                         clock uncertainty           -0.098    38.875    
+    RAMB36_X0Y1          RAMB36E1 (Setup_ramb36e1_CLKARDCLK_ENARDEN)
+                                                     -0.443    38.432    console/design1/fontrom/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[13].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.SIMPLE_PRIM36.ram
+  -------------------------------------------------------------------
+                         required time                         38.432    
+                         arrival time                         -22.268    
+  -------------------------------------------------------------------
+                         slack                                 16.165    
+
+Slack (MET) :             16.349ns  (required time - arrival time)
+  Source:                 console/design1/charRow_reg[1]/C
+                            (rising edge-triggered cell FDRE clocked by clk_out1_VGAClock  {rise@0.000ns fall@20.000ns period=40.000ns})
+  Destination:            console/design1/fontrom/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[8].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.SIMPLE_PRIM36.ram/ENARDEN
+                            (rising edge-triggered cell RAMB36E1 clocked by clk_out1_VGAClock  {rise@0.000ns fall@20.000ns period=40.000ns})
+  Path Group:             clk_out1_VGAClock
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            40.000ns  (clk_out1_VGAClock rise@40.000ns - clk_out1_VGAClock rise@0.000ns)
+  Data Path Delay:        23.046ns  (logic 5.289ns (22.950%)  route 17.757ns (77.050%))
+  Logic Levels:           15  (CARRY4=3 DSP48E1=1 LUT3=3 LUT6=5 MUXF7=2 MUXF8=1)
+  Clock Path Skew:        -0.064ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    -1.514ns = ( 38.486 - 40.000 ) 
+    Source Clock Delay      (SCD):    -0.966ns
+    Clock Pessimism Removal (CPR):    0.484ns
+  Clock Uncertainty:      0.098ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Discrete Jitter          (DJ):    0.182ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_out1_VGAClock rise edge)
+                                                      0.000     0.000 r  
+    W5                                                0.000     0.000 r  CLK (IN)
+                         net (fo=0)                   0.000     0.000    clk60/inst/clk_in1
+    W5                   IBUF (Prop_ibuf_I_O)         1.458     1.458 r  clk60/inst/clkin1_ibufg/O
+                         net (fo=1, routed)           1.233     2.691    clk60/inst/clk_in1_VGAClock
+    MMCME2_ADV_X1Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -6.961    -4.269 r  clk60/inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           1.661    -2.608    clk60/inst/clk_out1_VGAClock
+    BUFGCTRL_X0Y2        BUFG (Prop_bufg_I_O)         0.096    -2.512 r  clk60/inst/clkout1_buf/O
+                         net (fo=445, routed)         1.546    -0.966    console/design1/clk_out1
+    SLICE_X10Y81         FDRE                                         r  console/design1/charRow_reg[1]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X10Y81         FDRE (Prop_fdre_C_Q)         0.518    -0.448 r  console/design1/charRow_reg[1]/Q
+                         net (fo=159, routed)         5.970     5.522    console/stream/fontAddr0_i_415_0[1]
+    SLICE_X53Y142        LUT6 (Prop_lut6_I2_O)        0.124     5.646 r  console/stream/fontAddr0_i_4466/O
+                         net (fo=1, routed)           0.000     5.646    console/stream/fontAddr0_i_4466_n_10
+    SLICE_X53Y142        MUXF7 (Prop_muxf7_I1_O)      0.217     5.863 r  console/stream/fontAddr0_i_1861/O
+                         net (fo=1, routed)           0.795     6.658    console/stream/fontAddr0_i_1861_n_10
+    SLICE_X53Y139        LUT6 (Prop_lut6_I0_O)        0.299     6.957 r  console/stream/fontAddr0_i_729/O
+                         net (fo=1, routed)           1.732     8.690    console/stream/fontAddr0_i_729_n_10
+    SLICE_X27Y126        LUT3 (Prop_lut3_I2_O)        0.124     8.814 r  console/stream/fontAddr0_i_326/O
+                         net (fo=1, routed)           0.000     8.814    console/stream/fontAddr0_i_326_n_10
+    SLICE_X27Y126        MUXF7 (Prop_muxf7_I1_O)      0.245     9.059 r  console/stream/fontAddr0_i_163/O
+                         net (fo=1, routed)           0.000     9.059    console/stream/fontAddr0_i_163_n_10
+    SLICE_X27Y126        MUXF8 (Prop_muxf8_I0_O)      0.104     9.163 r  console/stream/fontAddr0_i_79/O
+                         net (fo=1, routed)           1.219    10.382    console/stream/fontAddr0_i_79_n_10
+    SLICE_X17Y109        LUT6 (Prop_lut6_I1_O)        0.316    10.698 r  console/stream/fontAddr0_i_30/O
+                         net (fo=1, routed)           1.960    12.657    console/design1/fontAddr0_0
+    SLICE_X15Y69         LUT6 (Prop_lut6_I0_O)        0.124    12.781 r  console/design1/fontAddr0_i_15/O
+                         net (fo=12, routed)          1.865    14.647    console/design1/char[0]
+    SLICE_X15Y41         LUT3 (Prop_lut3_I2_O)        0.124    14.771 r  console/design1/fontAddr0_i_45/O
+                         net (fo=1, routed)           0.000    14.771    console/design1/fontAddr0_i_45_n_10
+    SLICE_X15Y41         CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.550    15.321 r  console/design1/fontAddr0_i_18/CO[3]
+                         net (fo=1, routed)           0.000    15.321    console/design1/fontAddr0_i_18_n_10
+    SLICE_X15Y42         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114    15.435 r  console/design1/fontAddr0_i_17/CO[3]
+                         net (fo=1, routed)           0.000    15.435    console/design1/fontAddr0_i_17_n_10
+    SLICE_X15Y43         CARRY4 (Prop_carry4_CI_CO[1])
+                                                      0.157    15.592 r  console/design1/fontAddr0_i_16/CO[1]
+                         net (fo=1, routed)           0.554    16.146    console/design1/fontAddr1__0[11]
+    SLICE_X13Y42         LUT6 (Prop_lut6_I5_O)        0.329    16.475 r  console/design1/fontAddr0_i_1/O
+                         net (fo=1, routed)           0.402    16.877    console/design1/C[11]
+    DSP48_X0Y17          DSP48E1 (Prop_dsp48e1_C[11]_P[13])
+                                                      1.820    18.697 f  console/design1/fontAddr0/P[13]
+                         net (fo=13, routed)          2.903    21.600    console/design1/fontrom/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/bindec_a.bindec_inst_a/addra[1]
+    SLICE_X8Y13          LUT3 (Prop_lut3_I2_O)        0.124    21.724 r  console/design1/fontrom/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/bindec_a.bindec_inst_a/ENOUT__0/O
+                         net (fo=1, routed)           0.356    22.080    console/design1/fontrom/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[8].ram.r/prim_init.ram/ena_array[0]
+    RAMB36_X0Y2          RAMB36E1                                     r  console/design1/fontrom/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[8].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.SIMPLE_PRIM36.ram/ENARDEN
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_out1_VGAClock rise edge)
+                                                     40.000    40.000 r  
+    W5                                                0.000    40.000 r  CLK (IN)
+                         net (fo=0)                   0.000    40.000    clk60/inst/clk_in1
+    W5                   IBUF (Prop_ibuf_I_O)         1.388    41.388 r  clk60/inst/clkin1_ibufg/O
+                         net (fo=1, routed)           1.162    42.550    clk60/inst/clk_in1_VGAClock
+    MMCME2_ADV_X1Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -7.217    35.332 r  clk60/inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           1.581    36.914    clk60/inst/clk_out1_VGAClock
+    BUFGCTRL_X0Y2        BUFG (Prop_bufg_I_O)         0.091    37.005 r  clk60/inst/clkout1_buf/O
+                         net (fo=445, routed)         1.482    38.486    console/design1/fontrom/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[8].ram.r/prim_init.ram/clka
+    RAMB36_X0Y2          RAMB36E1                                     r  console/design1/fontrom/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[8].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.SIMPLE_PRIM36.ram/CLKARDCLK
+                         clock pessimism              0.484    38.970    
+                         clock uncertainty           -0.098    38.872    
+    RAMB36_X0Y2          RAMB36E1 (Setup_ramb36e1_CLKARDCLK_ENARDEN)
+                                                     -0.443    38.429    console/design1/fontrom/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[8].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.SIMPLE_PRIM36.ram
+  -------------------------------------------------------------------
+                         required time                         38.429    
+                         arrival time                         -22.080    
+  -------------------------------------------------------------------
+                         slack                                 16.349    
+
+Slack (MET) :             16.434ns  (required time - arrival time)
+  Source:                 console/design1/charRow_reg[1]/C
+                            (rising edge-triggered cell FDRE clocked by clk_out1_VGAClock  {rise@0.000ns fall@20.000ns period=40.000ns})
+  Destination:            console/design1/fontrom/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[14].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.SIMPLE_PRIM36.ram/ADDRARDADDR[14]
+                            (rising edge-triggered cell RAMB36E1 clocked by clk_out1_VGAClock  {rise@0.000ns fall@20.000ns period=40.000ns})
+  Path Group:             clk_out1_VGAClock
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            40.000ns  (clk_out1_VGAClock rise@40.000ns - clk_out1_VGAClock rise@0.000ns)
+  Data Path Delay:        22.843ns  (logic 5.165ns (22.611%)  route 17.678ns (77.389%))
+  Logic Levels:           14  (CARRY4=3 DSP48E1=1 LUT3=2 LUT6=5 MUXF7=2 MUXF8=1)
+  Clock Path Skew:        -0.059ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    -1.509ns = ( 38.491 - 40.000 ) 
+    Source Clock Delay      (SCD):    -0.966ns
+    Clock Pessimism Removal (CPR):    0.484ns
+  Clock Uncertainty:      0.098ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Discrete Jitter          (DJ):    0.182ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_out1_VGAClock rise edge)
+                                                      0.000     0.000 r  
+    W5                                                0.000     0.000 r  CLK (IN)
+                         net (fo=0)                   0.000     0.000    clk60/inst/clk_in1
+    W5                   IBUF (Prop_ibuf_I_O)         1.458     1.458 r  clk60/inst/clkin1_ibufg/O
+                         net (fo=1, routed)           1.233     2.691    clk60/inst/clk_in1_VGAClock
+    MMCME2_ADV_X1Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -6.961    -4.269 r  clk60/inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           1.661    -2.608    clk60/inst/clk_out1_VGAClock
+    BUFGCTRL_X0Y2        BUFG (Prop_bufg_I_O)         0.096    -2.512 r  clk60/inst/clkout1_buf/O
+                         net (fo=445, routed)         1.546    -0.966    console/design1/clk_out1
+    SLICE_X10Y81         FDRE                                         r  console/design1/charRow_reg[1]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X10Y81         FDRE (Prop_fdre_C_Q)         0.518    -0.448 r  console/design1/charRow_reg[1]/Q
+                         net (fo=159, routed)         5.970     5.522    console/stream/fontAddr0_i_415_0[1]
+    SLICE_X53Y142        LUT6 (Prop_lut6_I2_O)        0.124     5.646 r  console/stream/fontAddr0_i_4466/O
+                         net (fo=1, routed)           0.000     5.646    console/stream/fontAddr0_i_4466_n_10
+    SLICE_X53Y142        MUXF7 (Prop_muxf7_I1_O)      0.217     5.863 r  console/stream/fontAddr0_i_1861/O
+                         net (fo=1, routed)           0.795     6.658    console/stream/fontAddr0_i_1861_n_10
+    SLICE_X53Y139        LUT6 (Prop_lut6_I0_O)        0.299     6.957 r  console/stream/fontAddr0_i_729/O
+                         net (fo=1, routed)           1.732     8.690    console/stream/fontAddr0_i_729_n_10
+    SLICE_X27Y126        LUT3 (Prop_lut3_I2_O)        0.124     8.814 r  console/stream/fontAddr0_i_326/O
+                         net (fo=1, routed)           0.000     8.814    console/stream/fontAddr0_i_326_n_10
+    SLICE_X27Y126        MUXF7 (Prop_muxf7_I1_O)      0.245     9.059 r  console/stream/fontAddr0_i_163/O
+                         net (fo=1, routed)           0.000     9.059    console/stream/fontAddr0_i_163_n_10
+    SLICE_X27Y126        MUXF8 (Prop_muxf8_I0_O)      0.104     9.163 r  console/stream/fontAddr0_i_79/O
+                         net (fo=1, routed)           1.219    10.382    console/stream/fontAddr0_i_79_n_10
+    SLICE_X17Y109        LUT6 (Prop_lut6_I1_O)        0.316    10.698 r  console/stream/fontAddr0_i_30/O
+                         net (fo=1, routed)           1.960    12.657    console/design1/fontAddr0_0
+    SLICE_X15Y69         LUT6 (Prop_lut6_I0_O)        0.124    12.781 r  console/design1/fontAddr0_i_15/O
+                         net (fo=12, routed)          1.865    14.647    console/design1/char[0]
+    SLICE_X15Y41         LUT3 (Prop_lut3_I2_O)        0.124    14.771 r  console/design1/fontAddr0_i_45/O
+                         net (fo=1, routed)           0.000    14.771    console/design1/fontAddr0_i_45_n_10
+    SLICE_X15Y41         CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.550    15.321 r  console/design1/fontAddr0_i_18/CO[3]
+                         net (fo=1, routed)           0.000    15.321    console/design1/fontAddr0_i_18_n_10
+    SLICE_X15Y42         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114    15.435 r  console/design1/fontAddr0_i_17/CO[3]
+                         net (fo=1, routed)           0.000    15.435    console/design1/fontAddr0_i_17_n_10
+    SLICE_X15Y43         CARRY4 (Prop_carry4_CI_CO[1])
+                                                      0.157    15.592 r  console/design1/fontAddr0_i_16/CO[1]
+                         net (fo=1, routed)           0.554    16.146    console/design1/fontAddr1__0[11]
+    SLICE_X13Y42         LUT6 (Prop_lut6_I5_O)        0.329    16.475 r  console/design1/fontAddr0_i_1/O
+                         net (fo=1, routed)           0.402    16.877    console/design1/C[11]
+    DSP48_X0Y17          DSP48E1 (Prop_dsp48e1_C[11]_P[11])
+                                                      1.820    18.697 r  console/design1/fontAddr0/P[11]
+                         net (fo=12, routed)          3.181    21.877    console/design1/fontrom/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[14].ram.r/prim_init.ram/addra[11]
+    RAMB36_X0Y0          RAMB36E1                                     r  console/design1/fontrom/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[14].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.SIMPLE_PRIM36.ram/ADDRARDADDR[14]
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_out1_VGAClock rise edge)
+                                                     40.000    40.000 r  
+    W5                                                0.000    40.000 r  CLK (IN)
+                         net (fo=0)                   0.000    40.000    clk60/inst/clk_in1
+    W5                   IBUF (Prop_ibuf_I_O)         1.388    41.388 r  clk60/inst/clkin1_ibufg/O
+                         net (fo=1, routed)           1.162    42.550    clk60/inst/clk_in1_VGAClock
+    MMCME2_ADV_X1Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -7.217    35.332 r  clk60/inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           1.581    36.914    clk60/inst/clk_out1_VGAClock
+    BUFGCTRL_X0Y2        BUFG (Prop_bufg_I_O)         0.091    37.005 r  clk60/inst/clkout1_buf/O
+                         net (fo=445, routed)         1.487    38.491    console/design1/fontrom/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[14].ram.r/prim_init.ram/clka
+    RAMB36_X0Y0          RAMB36E1                                     r  console/design1/fontrom/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[14].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.SIMPLE_PRIM36.ram/CLKARDCLK
+                         clock pessimism              0.484    38.975    
+                         clock uncertainty           -0.098    38.877    
+    RAMB36_X0Y0          RAMB36E1 (Setup_ramb36e1_CLKARDCLK_ADDRARDADDR[14])
+                                                     -0.566    38.311    console/design1/fontrom/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[14].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.SIMPLE_PRIM36.ram
+  -------------------------------------------------------------------
+                         required time                         38.311    
+                         arrival time                         -21.877    
+  -------------------------------------------------------------------
+                         slack                                 16.434    
+
+Slack (MET) :             16.476ns  (required time - arrival time)
+  Source:                 console/design1/charRow_reg[1]/C
+                            (rising edge-triggered cell FDRE clocked by clk_out1_VGAClock  {rise@0.000ns fall@20.000ns period=40.000ns})
+  Destination:            console/design1/fontrom/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[14].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.SIMPLE_PRIM36.ram/ADDRARDADDR[4]
+                            (rising edge-triggered cell RAMB36E1 clocked by clk_out1_VGAClock  {rise@0.000ns fall@20.000ns period=40.000ns})
+  Path Group:             clk_out1_VGAClock
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            40.000ns  (clk_out1_VGAClock rise@40.000ns - clk_out1_VGAClock rise@0.000ns)
+  Data Path Delay:        22.801ns  (logic 5.165ns (22.652%)  route 17.636ns (77.348%))
+  Logic Levels:           14  (CARRY4=3 DSP48E1=1 LUT3=2 LUT6=5 MUXF7=2 MUXF8=1)
+  Clock Path Skew:        -0.059ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    -1.509ns = ( 38.491 - 40.000 ) 
+    Source Clock Delay      (SCD):    -0.966ns
+    Clock Pessimism Removal (CPR):    0.484ns
+  Clock Uncertainty:      0.098ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Discrete Jitter          (DJ):    0.182ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_out1_VGAClock rise edge)
+                                                      0.000     0.000 r  
+    W5                                                0.000     0.000 r  CLK (IN)
+                         net (fo=0)                   0.000     0.000    clk60/inst/clk_in1
+    W5                   IBUF (Prop_ibuf_I_O)         1.458     1.458 r  clk60/inst/clkin1_ibufg/O
+                         net (fo=1, routed)           1.233     2.691    clk60/inst/clk_in1_VGAClock
+    MMCME2_ADV_X1Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -6.961    -4.269 r  clk60/inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           1.661    -2.608    clk60/inst/clk_out1_VGAClock
+    BUFGCTRL_X0Y2        BUFG (Prop_bufg_I_O)         0.096    -2.512 r  clk60/inst/clkout1_buf/O
+                         net (fo=445, routed)         1.546    -0.966    console/design1/clk_out1
+    SLICE_X10Y81         FDRE                                         r  console/design1/charRow_reg[1]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X10Y81         FDRE (Prop_fdre_C_Q)         0.518    -0.448 r  console/design1/charRow_reg[1]/Q
+                         net (fo=159, routed)         5.970     5.522    console/stream/fontAddr0_i_415_0[1]
+    SLICE_X53Y142        LUT6 (Prop_lut6_I2_O)        0.124     5.646 r  console/stream/fontAddr0_i_4466/O
+                         net (fo=1, routed)           0.000     5.646    console/stream/fontAddr0_i_4466_n_10
+    SLICE_X53Y142        MUXF7 (Prop_muxf7_I1_O)      0.217     5.863 r  console/stream/fontAddr0_i_1861/O
+                         net (fo=1, routed)           0.795     6.658    console/stream/fontAddr0_i_1861_n_10
+    SLICE_X53Y139        LUT6 (Prop_lut6_I0_O)        0.299     6.957 r  console/stream/fontAddr0_i_729/O
+                         net (fo=1, routed)           1.732     8.690    console/stream/fontAddr0_i_729_n_10
+    SLICE_X27Y126        LUT3 (Prop_lut3_I2_O)        0.124     8.814 r  console/stream/fontAddr0_i_326/O
+                         net (fo=1, routed)           0.000     8.814    console/stream/fontAddr0_i_326_n_10
+    SLICE_X27Y126        MUXF7 (Prop_muxf7_I1_O)      0.245     9.059 r  console/stream/fontAddr0_i_163/O
+                         net (fo=1, routed)           0.000     9.059    console/stream/fontAddr0_i_163_n_10
+    SLICE_X27Y126        MUXF8 (Prop_muxf8_I0_O)      0.104     9.163 r  console/stream/fontAddr0_i_79/O
+                         net (fo=1, routed)           1.219    10.382    console/stream/fontAddr0_i_79_n_10
+    SLICE_X17Y109        LUT6 (Prop_lut6_I1_O)        0.316    10.698 r  console/stream/fontAddr0_i_30/O
+                         net (fo=1, routed)           1.960    12.657    console/design1/fontAddr0_0
+    SLICE_X15Y69         LUT6 (Prop_lut6_I0_O)        0.124    12.781 r  console/design1/fontAddr0_i_15/O
+                         net (fo=12, routed)          1.865    14.647    console/design1/char[0]
+    SLICE_X15Y41         LUT3 (Prop_lut3_I2_O)        0.124    14.771 r  console/design1/fontAddr0_i_45/O
+                         net (fo=1, routed)           0.000    14.771    console/design1/fontAddr0_i_45_n_10
+    SLICE_X15Y41         CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.550    15.321 r  console/design1/fontAddr0_i_18/CO[3]
+                         net (fo=1, routed)           0.000    15.321    console/design1/fontAddr0_i_18_n_10
+    SLICE_X15Y42         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114    15.435 r  console/design1/fontAddr0_i_17/CO[3]
+                         net (fo=1, routed)           0.000    15.435    console/design1/fontAddr0_i_17_n_10
+    SLICE_X15Y43         CARRY4 (Prop_carry4_CI_CO[1])
+                                                      0.157    15.592 r  console/design1/fontAddr0_i_16/CO[1]
+                         net (fo=1, routed)           0.554    16.146    console/design1/fontAddr1__0[11]
+    SLICE_X13Y42         LUT6 (Prop_lut6_I5_O)        0.329    16.475 r  console/design1/fontAddr0_i_1/O
+                         net (fo=1, routed)           0.402    16.877    console/design1/C[11]
+    DSP48_X0Y17          DSP48E1 (Prop_dsp48e1_C[11]_P[1])
+                                                      1.820    18.697 r  console/design1/fontAddr0/P[1]
+                         net (fo=12, routed)          3.139    21.835    console/design1/fontrom/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[14].ram.r/prim_init.ram/addra[1]
+    RAMB36_X0Y0          RAMB36E1                                     r  console/design1/fontrom/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[14].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.SIMPLE_PRIM36.ram/ADDRARDADDR[4]
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_out1_VGAClock rise edge)
+                                                     40.000    40.000 r  
+    W5                                                0.000    40.000 r  CLK (IN)
+                         net (fo=0)                   0.000    40.000    clk60/inst/clk_in1
+    W5                   IBUF (Prop_ibuf_I_O)         1.388    41.388 r  clk60/inst/clkin1_ibufg/O
+                         net (fo=1, routed)           1.162    42.550    clk60/inst/clk_in1_VGAClock
+    MMCME2_ADV_X1Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -7.217    35.332 r  clk60/inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           1.581    36.914    clk60/inst/clk_out1_VGAClock
+    BUFGCTRL_X0Y2        BUFG (Prop_bufg_I_O)         0.091    37.005 r  clk60/inst/clkout1_buf/O
+                         net (fo=445, routed)         1.487    38.491    console/design1/fontrom/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[14].ram.r/prim_init.ram/clka
+    RAMB36_X0Y0          RAMB36E1                                     r  console/design1/fontrom/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[14].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.SIMPLE_PRIM36.ram/CLKARDCLK
+                         clock pessimism              0.484    38.975    
+                         clock uncertainty           -0.098    38.877    
+    RAMB36_X0Y0          RAMB36E1 (Setup_ramb36e1_CLKARDCLK_ADDRARDADDR[4])
+                                                     -0.566    38.311    console/design1/fontrom/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[14].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.SIMPLE_PRIM36.ram
+  -------------------------------------------------------------------
+                         required time                         38.311    
+                         arrival time                         -21.835    
+  -------------------------------------------------------------------
+                         slack                                 16.476    
+
+Slack (MET) :             16.536ns  (required time - arrival time)
+  Source:                 console/design1/charRow_reg[1]/C
+                            (rising edge-triggered cell FDRE clocked by clk_out1_VGAClock  {rise@0.000ns fall@20.000ns period=40.000ns})
+  Destination:            console/design1/fontrom/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[14].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.SIMPLE_PRIM36.ram/ADDRARDADDR[6]
+                            (rising edge-triggered cell RAMB36E1 clocked by clk_out1_VGAClock  {rise@0.000ns fall@20.000ns period=40.000ns})
+  Path Group:             clk_out1_VGAClock
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            40.000ns  (clk_out1_VGAClock rise@40.000ns - clk_out1_VGAClock rise@0.000ns)
+  Data Path Delay:        22.741ns  (logic 5.165ns (22.712%)  route 17.576ns (77.288%))
+  Logic Levels:           14  (CARRY4=3 DSP48E1=1 LUT3=2 LUT6=5 MUXF7=2 MUXF8=1)
+  Clock Path Skew:        -0.059ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    -1.509ns = ( 38.491 - 40.000 ) 
+    Source Clock Delay      (SCD):    -0.966ns
+    Clock Pessimism Removal (CPR):    0.484ns
+  Clock Uncertainty:      0.098ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Discrete Jitter          (DJ):    0.182ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_out1_VGAClock rise edge)
+                                                      0.000     0.000 r  
+    W5                                                0.000     0.000 r  CLK (IN)
+                         net (fo=0)                   0.000     0.000    clk60/inst/clk_in1
+    W5                   IBUF (Prop_ibuf_I_O)         1.458     1.458 r  clk60/inst/clkin1_ibufg/O
+                         net (fo=1, routed)           1.233     2.691    clk60/inst/clk_in1_VGAClock
+    MMCME2_ADV_X1Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -6.961    -4.269 r  clk60/inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           1.661    -2.608    clk60/inst/clk_out1_VGAClock
+    BUFGCTRL_X0Y2        BUFG (Prop_bufg_I_O)         0.096    -2.512 r  clk60/inst/clkout1_buf/O
+                         net (fo=445, routed)         1.546    -0.966    console/design1/clk_out1
+    SLICE_X10Y81         FDRE                                         r  console/design1/charRow_reg[1]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X10Y81         FDRE (Prop_fdre_C_Q)         0.518    -0.448 r  console/design1/charRow_reg[1]/Q
+                         net (fo=159, routed)         5.970     5.522    console/stream/fontAddr0_i_415_0[1]
+    SLICE_X53Y142        LUT6 (Prop_lut6_I2_O)        0.124     5.646 r  console/stream/fontAddr0_i_4466/O
+                         net (fo=1, routed)           0.000     5.646    console/stream/fontAddr0_i_4466_n_10
+    SLICE_X53Y142        MUXF7 (Prop_muxf7_I1_O)      0.217     5.863 r  console/stream/fontAddr0_i_1861/O
+                         net (fo=1, routed)           0.795     6.658    console/stream/fontAddr0_i_1861_n_10
+    SLICE_X53Y139        LUT6 (Prop_lut6_I0_O)        0.299     6.957 r  console/stream/fontAddr0_i_729/O
+                         net (fo=1, routed)           1.732     8.690    console/stream/fontAddr0_i_729_n_10
+    SLICE_X27Y126        LUT3 (Prop_lut3_I2_O)        0.124     8.814 r  console/stream/fontAddr0_i_326/O
+                         net (fo=1, routed)           0.000     8.814    console/stream/fontAddr0_i_326_n_10
+    SLICE_X27Y126        MUXF7 (Prop_muxf7_I1_O)      0.245     9.059 r  console/stream/fontAddr0_i_163/O
+                         net (fo=1, routed)           0.000     9.059    console/stream/fontAddr0_i_163_n_10
+    SLICE_X27Y126        MUXF8 (Prop_muxf8_I0_O)      0.104     9.163 r  console/stream/fontAddr0_i_79/O
+                         net (fo=1, routed)           1.219    10.382    console/stream/fontAddr0_i_79_n_10
+    SLICE_X17Y109        LUT6 (Prop_lut6_I1_O)        0.316    10.698 r  console/stream/fontAddr0_i_30/O
+                         net (fo=1, routed)           1.960    12.657    console/design1/fontAddr0_0
+    SLICE_X15Y69         LUT6 (Prop_lut6_I0_O)        0.124    12.781 r  console/design1/fontAddr0_i_15/O
+                         net (fo=12, routed)          1.865    14.647    console/design1/char[0]
+    SLICE_X15Y41         LUT3 (Prop_lut3_I2_O)        0.124    14.771 r  console/design1/fontAddr0_i_45/O
+                         net (fo=1, routed)           0.000    14.771    console/design1/fontAddr0_i_45_n_10
+    SLICE_X15Y41         CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.550    15.321 r  console/design1/fontAddr0_i_18/CO[3]
+                         net (fo=1, routed)           0.000    15.321    console/design1/fontAddr0_i_18_n_10
+    SLICE_X15Y42         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114    15.435 r  console/design1/fontAddr0_i_17/CO[3]
+                         net (fo=1, routed)           0.000    15.435    console/design1/fontAddr0_i_17_n_10
+    SLICE_X15Y43         CARRY4 (Prop_carry4_CI_CO[1])
+                                                      0.157    15.592 r  console/design1/fontAddr0_i_16/CO[1]
+                         net (fo=1, routed)           0.554    16.146    console/design1/fontAddr1__0[11]
+    SLICE_X13Y42         LUT6 (Prop_lut6_I5_O)        0.329    16.475 r  console/design1/fontAddr0_i_1/O
+                         net (fo=1, routed)           0.402    16.877    console/design1/C[11]
+    DSP48_X0Y17          DSP48E1 (Prop_dsp48e1_C[11]_P[3])
+                                                      1.820    18.697 r  console/design1/fontAddr0/P[3]
+                         net (fo=12, routed)          3.078    21.775    console/design1/fontrom/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[14].ram.r/prim_init.ram/addra[3]
+    RAMB36_X0Y0          RAMB36E1                                     r  console/design1/fontrom/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[14].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.SIMPLE_PRIM36.ram/ADDRARDADDR[6]
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_out1_VGAClock rise edge)
+                                                     40.000    40.000 r  
+    W5                                                0.000    40.000 r  CLK (IN)
+                         net (fo=0)                   0.000    40.000    clk60/inst/clk_in1
+    W5                   IBUF (Prop_ibuf_I_O)         1.388    41.388 r  clk60/inst/clkin1_ibufg/O
+                         net (fo=1, routed)           1.162    42.550    clk60/inst/clk_in1_VGAClock
+    MMCME2_ADV_X1Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -7.217    35.332 r  clk60/inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           1.581    36.914    clk60/inst/clk_out1_VGAClock
+    BUFGCTRL_X0Y2        BUFG (Prop_bufg_I_O)         0.091    37.005 r  clk60/inst/clkout1_buf/O
+                         net (fo=445, routed)         1.487    38.491    console/design1/fontrom/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[14].ram.r/prim_init.ram/clka
+    RAMB36_X0Y0          RAMB36E1                                     r  console/design1/fontrom/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[14].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.SIMPLE_PRIM36.ram/CLKARDCLK
+                         clock pessimism              0.484    38.975    
+                         clock uncertainty           -0.098    38.877    
+    RAMB36_X0Y0          RAMB36E1 (Setup_ramb36e1_CLKARDCLK_ADDRARDADDR[6])
+                                                     -0.566    38.311    console/design1/fontrom/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[14].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.SIMPLE_PRIM36.ram
+  -------------------------------------------------------------------
+                         required time                         38.311    
+                         arrival time                         -21.775    
+  -------------------------------------------------------------------
+                         slack                                 16.536    
+
+Slack (MET) :             16.544ns  (required time - arrival time)
+  Source:                 console/design1/charRow_reg[1]/C
+                            (rising edge-triggered cell FDRE clocked by clk_out1_VGAClock  {rise@0.000ns fall@20.000ns period=40.000ns})
+  Destination:            console/design1/fontrom/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[9].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.SIMPLE_PRIM36.ram/ENARDEN
+                            (rising edge-triggered cell RAMB36E1 clocked by clk_out1_VGAClock  {rise@0.000ns fall@20.000ns period=40.000ns})
+  Path Group:             clk_out1_VGAClock
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            40.000ns  (clk_out1_VGAClock rise@40.000ns - clk_out1_VGAClock rise@0.000ns)
+  Data Path Delay:        22.846ns  (logic 5.289ns (23.151%)  route 17.557ns (76.849%))
+  Logic Levels:           15  (CARRY4=3 DSP48E1=1 LUT3=3 LUT6=5 MUXF7=2 MUXF8=1)
+  Clock Path Skew:        -0.070ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    -1.520ns = ( 38.480 - 40.000 ) 
+    Source Clock Delay      (SCD):    -0.966ns
+    Clock Pessimism Removal (CPR):    0.484ns
+  Clock Uncertainty:      0.098ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Discrete Jitter          (DJ):    0.182ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_out1_VGAClock rise edge)
+                                                      0.000     0.000 r  
+    W5                                                0.000     0.000 r  CLK (IN)
+                         net (fo=0)                   0.000     0.000    clk60/inst/clk_in1
+    W5                   IBUF (Prop_ibuf_I_O)         1.458     1.458 r  clk60/inst/clkin1_ibufg/O
+                         net (fo=1, routed)           1.233     2.691    clk60/inst/clk_in1_VGAClock
+    MMCME2_ADV_X1Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -6.961    -4.269 r  clk60/inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           1.661    -2.608    clk60/inst/clk_out1_VGAClock
+    BUFGCTRL_X0Y2        BUFG (Prop_bufg_I_O)         0.096    -2.512 r  clk60/inst/clkout1_buf/O
+                         net (fo=445, routed)         1.546    -0.966    console/design1/clk_out1
+    SLICE_X10Y81         FDRE                                         r  console/design1/charRow_reg[1]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X10Y81         FDRE (Prop_fdre_C_Q)         0.518    -0.448 r  console/design1/charRow_reg[1]/Q
+                         net (fo=159, routed)         5.970     5.522    console/stream/fontAddr0_i_415_0[1]
+    SLICE_X53Y142        LUT6 (Prop_lut6_I2_O)        0.124     5.646 r  console/stream/fontAddr0_i_4466/O
+                         net (fo=1, routed)           0.000     5.646    console/stream/fontAddr0_i_4466_n_10
+    SLICE_X53Y142        MUXF7 (Prop_muxf7_I1_O)      0.217     5.863 r  console/stream/fontAddr0_i_1861/O
+                         net (fo=1, routed)           0.795     6.658    console/stream/fontAddr0_i_1861_n_10
+    SLICE_X53Y139        LUT6 (Prop_lut6_I0_O)        0.299     6.957 r  console/stream/fontAddr0_i_729/O
+                         net (fo=1, routed)           1.732     8.690    console/stream/fontAddr0_i_729_n_10
+    SLICE_X27Y126        LUT3 (Prop_lut3_I2_O)        0.124     8.814 r  console/stream/fontAddr0_i_326/O
+                         net (fo=1, routed)           0.000     8.814    console/stream/fontAddr0_i_326_n_10
+    SLICE_X27Y126        MUXF7 (Prop_muxf7_I1_O)      0.245     9.059 r  console/stream/fontAddr0_i_163/O
+                         net (fo=1, routed)           0.000     9.059    console/stream/fontAddr0_i_163_n_10
+    SLICE_X27Y126        MUXF8 (Prop_muxf8_I0_O)      0.104     9.163 r  console/stream/fontAddr0_i_79/O
+                         net (fo=1, routed)           1.219    10.382    console/stream/fontAddr0_i_79_n_10
+    SLICE_X17Y109        LUT6 (Prop_lut6_I1_O)        0.316    10.698 r  console/stream/fontAddr0_i_30/O
+                         net (fo=1, routed)           1.960    12.657    console/design1/fontAddr0_0
+    SLICE_X15Y69         LUT6 (Prop_lut6_I0_O)        0.124    12.781 r  console/design1/fontAddr0_i_15/O
+                         net (fo=12, routed)          1.865    14.647    console/design1/char[0]
+    SLICE_X15Y41         LUT3 (Prop_lut3_I2_O)        0.124    14.771 r  console/design1/fontAddr0_i_45/O
+                         net (fo=1, routed)           0.000    14.771    console/design1/fontAddr0_i_45_n_10
+    SLICE_X15Y41         CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.550    15.321 r  console/design1/fontAddr0_i_18/CO[3]
+                         net (fo=1, routed)           0.000    15.321    console/design1/fontAddr0_i_18_n_10
+    SLICE_X15Y42         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114    15.435 r  console/design1/fontAddr0_i_17/CO[3]
+                         net (fo=1, routed)           0.000    15.435    console/design1/fontAddr0_i_17_n_10
+    SLICE_X15Y43         CARRY4 (Prop_carry4_CI_CO[1])
+                                                      0.157    15.592 r  console/design1/fontAddr0_i_16/CO[1]
+                         net (fo=1, routed)           0.554    16.146    console/design1/fontAddr1__0[11]
+    SLICE_X13Y42         LUT6 (Prop_lut6_I5_O)        0.329    16.475 r  console/design1/fontAddr0_i_1/O
+                         net (fo=1, routed)           0.402    16.877    console/design1/C[11]
+    DSP48_X0Y17          DSP48E1 (Prop_dsp48e1_C[11]_P[12])
+                                                      1.820    18.697 f  console/design1/fontAddr0/P[12]
+                         net (fo=13, routed)          2.526    21.223    console/design1/fontrom/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/bindec_a.bindec_inst_a/addra[0]
+    SLICE_X8Y17          LUT3 (Prop_lut3_I0_O)        0.124    21.347 r  console/design1/fontrom/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/bindec_a.bindec_inst_a/ENOUT__1/O
+                         net (fo=1, routed)           0.533    21.880    console/design1/fontrom/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[9].ram.r/prim_init.ram/ena_array[0]
+    RAMB36_X0Y3          RAMB36E1                                     r  console/design1/fontrom/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[9].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.SIMPLE_PRIM36.ram/ENARDEN
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_out1_VGAClock rise edge)
+                                                     40.000    40.000 r  
+    W5                                                0.000    40.000 r  CLK (IN)
+                         net (fo=0)                   0.000    40.000    clk60/inst/clk_in1
+    W5                   IBUF (Prop_ibuf_I_O)         1.388    41.388 r  clk60/inst/clkin1_ibufg/O
+                         net (fo=1, routed)           1.162    42.550    clk60/inst/clk_in1_VGAClock
+    MMCME2_ADV_X1Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -7.217    35.332 r  clk60/inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           1.581    36.914    clk60/inst/clk_out1_VGAClock
+    BUFGCTRL_X0Y2        BUFG (Prop_bufg_I_O)         0.091    37.005 r  clk60/inst/clkout1_buf/O
+                         net (fo=445, routed)         1.476    38.480    console/design1/fontrom/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[9].ram.r/prim_init.ram/clka
+    RAMB36_X0Y3          RAMB36E1                                     r  console/design1/fontrom/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[9].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.SIMPLE_PRIM36.ram/CLKARDCLK
+                         clock pessimism              0.484    38.964    
+                         clock uncertainty           -0.098    38.866    
+    RAMB36_X0Y3          RAMB36E1 (Setup_ramb36e1_CLKARDCLK_ENARDEN)
+                                                     -0.443    38.423    console/design1/fontrom/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[9].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.SIMPLE_PRIM36.ram
+  -------------------------------------------------------------------
+                         required time                         38.423    
+                         arrival time                         -21.880    
+  -------------------------------------------------------------------
+                         slack                                 16.544    
+
+Slack (MET) :             16.547ns  (required time - arrival time)
+  Source:                 console/design1/charRow_reg[1]/C
+                            (rising edge-triggered cell FDRE clocked by clk_out1_VGAClock  {rise@0.000ns fall@20.000ns period=40.000ns})
+  Destination:            console/design1/fontrom/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[3].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.SIMPLE_PRIM36.ram/ADDRARDADDR[12]
+                            (rising edge-triggered cell RAMB36E1 clocked by clk_out1_VGAClock  {rise@0.000ns fall@20.000ns period=40.000ns})
+  Path Group:             clk_out1_VGAClock
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            40.000ns  (clk_out1_VGAClock rise@40.000ns - clk_out1_VGAClock rise@0.000ns)
+  Data Path Delay:        22.731ns  (logic 5.165ns (22.722%)  route 17.566ns (77.278%))
+  Logic Levels:           14  (CARRY4=3 DSP48E1=1 LUT3=2 LUT6=5 MUXF7=2 MUXF8=1)
+  Clock Path Skew:        -0.058ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    -1.508ns = ( 38.492 - 40.000 ) 
+    Source Clock Delay      (SCD):    -0.966ns
+    Clock Pessimism Removal (CPR):    0.484ns
+  Clock Uncertainty:      0.098ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Discrete Jitter          (DJ):    0.182ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_out1_VGAClock rise edge)
+                                                      0.000     0.000 r  
+    W5                                                0.000     0.000 r  CLK (IN)
+                         net (fo=0)                   0.000     0.000    clk60/inst/clk_in1
+    W5                   IBUF (Prop_ibuf_I_O)         1.458     1.458 r  clk60/inst/clkin1_ibufg/O
+                         net (fo=1, routed)           1.233     2.691    clk60/inst/clk_in1_VGAClock
+    MMCME2_ADV_X1Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -6.961    -4.269 r  clk60/inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           1.661    -2.608    clk60/inst/clk_out1_VGAClock
+    BUFGCTRL_X0Y2        BUFG (Prop_bufg_I_O)         0.096    -2.512 r  clk60/inst/clkout1_buf/O
+                         net (fo=445, routed)         1.546    -0.966    console/design1/clk_out1
+    SLICE_X10Y81         FDRE                                         r  console/design1/charRow_reg[1]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X10Y81         FDRE (Prop_fdre_C_Q)         0.518    -0.448 r  console/design1/charRow_reg[1]/Q
+                         net (fo=159, routed)         5.970     5.522    console/stream/fontAddr0_i_415_0[1]
+    SLICE_X53Y142        LUT6 (Prop_lut6_I2_O)        0.124     5.646 r  console/stream/fontAddr0_i_4466/O
+                         net (fo=1, routed)           0.000     5.646    console/stream/fontAddr0_i_4466_n_10
+    SLICE_X53Y142        MUXF7 (Prop_muxf7_I1_O)      0.217     5.863 r  console/stream/fontAddr0_i_1861/O
+                         net (fo=1, routed)           0.795     6.658    console/stream/fontAddr0_i_1861_n_10
+    SLICE_X53Y139        LUT6 (Prop_lut6_I0_O)        0.299     6.957 r  console/stream/fontAddr0_i_729/O
+                         net (fo=1, routed)           1.732     8.690    console/stream/fontAddr0_i_729_n_10
+    SLICE_X27Y126        LUT3 (Prop_lut3_I2_O)        0.124     8.814 r  console/stream/fontAddr0_i_326/O
+                         net (fo=1, routed)           0.000     8.814    console/stream/fontAddr0_i_326_n_10
+    SLICE_X27Y126        MUXF7 (Prop_muxf7_I1_O)      0.245     9.059 r  console/stream/fontAddr0_i_163/O
+                         net (fo=1, routed)           0.000     9.059    console/stream/fontAddr0_i_163_n_10
+    SLICE_X27Y126        MUXF8 (Prop_muxf8_I0_O)      0.104     9.163 r  console/stream/fontAddr0_i_79/O
+                         net (fo=1, routed)           1.219    10.382    console/stream/fontAddr0_i_79_n_10
+    SLICE_X17Y109        LUT6 (Prop_lut6_I1_O)        0.316    10.698 r  console/stream/fontAddr0_i_30/O
+                         net (fo=1, routed)           1.960    12.657    console/design1/fontAddr0_0
+    SLICE_X15Y69         LUT6 (Prop_lut6_I0_O)        0.124    12.781 r  console/design1/fontAddr0_i_15/O
+                         net (fo=12, routed)          1.865    14.647    console/design1/char[0]
+    SLICE_X15Y41         LUT3 (Prop_lut3_I2_O)        0.124    14.771 r  console/design1/fontAddr0_i_45/O
+                         net (fo=1, routed)           0.000    14.771    console/design1/fontAddr0_i_45_n_10
+    SLICE_X15Y41         CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.550    15.321 r  console/design1/fontAddr0_i_18/CO[3]
+                         net (fo=1, routed)           0.000    15.321    console/design1/fontAddr0_i_18_n_10
+    SLICE_X15Y42         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114    15.435 r  console/design1/fontAddr0_i_17/CO[3]
+                         net (fo=1, routed)           0.000    15.435    console/design1/fontAddr0_i_17_n_10
+    SLICE_X15Y43         CARRY4 (Prop_carry4_CI_CO[1])
+                                                      0.157    15.592 r  console/design1/fontAddr0_i_16/CO[1]
+                         net (fo=1, routed)           0.554    16.146    console/design1/fontAddr1__0[11]
+    SLICE_X13Y42         LUT6 (Prop_lut6_I5_O)        0.329    16.475 r  console/design1/fontAddr0_i_1/O
+                         net (fo=1, routed)           0.402    16.877    console/design1/C[11]
+    DSP48_X0Y17          DSP48E1 (Prop_dsp48e1_C[11]_P[12])
+                                                      1.820    18.697 r  console/design1/fontAddr0/P[12]
+                         net (fo=13, routed)          3.068    21.765    console/design1/fontrom/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[3].ram.r/prim_init.ram/addra[12]
+    RAMB36_X1Y8          RAMB36E1                                     r  console/design1/fontrom/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[3].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.SIMPLE_PRIM36.ram/ADDRARDADDR[12]
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_out1_VGAClock rise edge)
+                                                     40.000    40.000 r  
+    W5                                                0.000    40.000 r  CLK (IN)
+                         net (fo=0)                   0.000    40.000    clk60/inst/clk_in1
+    W5                   IBUF (Prop_ibuf_I_O)         1.388    41.388 r  clk60/inst/clkin1_ibufg/O
+                         net (fo=1, routed)           1.162    42.550    clk60/inst/clk_in1_VGAClock
+    MMCME2_ADV_X1Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -7.217    35.332 r  clk60/inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           1.581    36.914    clk60/inst/clk_out1_VGAClock
+    BUFGCTRL_X0Y2        BUFG (Prop_bufg_I_O)         0.091    37.005 r  clk60/inst/clkout1_buf/O
+                         net (fo=445, routed)         1.488    38.492    console/design1/fontrom/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[3].ram.r/prim_init.ram/clka
+    RAMB36_X1Y8          RAMB36E1                                     r  console/design1/fontrom/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[3].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.SIMPLE_PRIM36.ram/CLKARDCLK
+                         clock pessimism              0.484    38.976    
+                         clock uncertainty           -0.098    38.878    
+    RAMB36_X1Y8          RAMB36E1 (Setup_ramb36e1_CLKARDCLK_ADDRARDADDR[12])
+                                                     -0.566    38.312    console/design1/fontrom/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[3].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.SIMPLE_PRIM36.ram
+  -------------------------------------------------------------------
+                         required time                         38.312    
+                         arrival time                         -21.765    
+  -------------------------------------------------------------------
+                         slack                                 16.547    
+
+Slack (MET) :             16.595ns  (required time - arrival time)
+  Source:                 console/design1/charRow_reg[1]/C
+                            (rising edge-triggered cell FDRE clocked by clk_out1_VGAClock  {rise@0.000ns fall@20.000ns period=40.000ns})
+  Destination:            console/design1/fontrom/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[14].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.SIMPLE_PRIM36.ram/ADDRARDADDR[12]
+                            (rising edge-triggered cell RAMB36E1 clocked by clk_out1_VGAClock  {rise@0.000ns fall@20.000ns period=40.000ns})
+  Path Group:             clk_out1_VGAClock
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            40.000ns  (clk_out1_VGAClock rise@40.000ns - clk_out1_VGAClock rise@0.000ns)
+  Data Path Delay:        22.682ns  (logic 5.165ns (22.772%)  route 17.517ns (77.228%))
+  Logic Levels:           14  (CARRY4=3 DSP48E1=1 LUT3=2 LUT6=5 MUXF7=2 MUXF8=1)
+  Clock Path Skew:        -0.059ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    -1.509ns = ( 38.491 - 40.000 ) 
+    Source Clock Delay      (SCD):    -0.966ns
+    Clock Pessimism Removal (CPR):    0.484ns
+  Clock Uncertainty:      0.098ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Discrete Jitter          (DJ):    0.182ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_out1_VGAClock rise edge)
+                                                      0.000     0.000 r  
+    W5                                                0.000     0.000 r  CLK (IN)
+                         net (fo=0)                   0.000     0.000    clk60/inst/clk_in1
+    W5                   IBUF (Prop_ibuf_I_O)         1.458     1.458 r  clk60/inst/clkin1_ibufg/O
+                         net (fo=1, routed)           1.233     2.691    clk60/inst/clk_in1_VGAClock
+    MMCME2_ADV_X1Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -6.961    -4.269 r  clk60/inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           1.661    -2.608    clk60/inst/clk_out1_VGAClock
+    BUFGCTRL_X0Y2        BUFG (Prop_bufg_I_O)         0.096    -2.512 r  clk60/inst/clkout1_buf/O
+                         net (fo=445, routed)         1.546    -0.966    console/design1/clk_out1
+    SLICE_X10Y81         FDRE                                         r  console/design1/charRow_reg[1]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X10Y81         FDRE (Prop_fdre_C_Q)         0.518    -0.448 r  console/design1/charRow_reg[1]/Q
+                         net (fo=159, routed)         5.970     5.522    console/stream/fontAddr0_i_415_0[1]
+    SLICE_X53Y142        LUT6 (Prop_lut6_I2_O)        0.124     5.646 r  console/stream/fontAddr0_i_4466/O
+                         net (fo=1, routed)           0.000     5.646    console/stream/fontAddr0_i_4466_n_10
+    SLICE_X53Y142        MUXF7 (Prop_muxf7_I1_O)      0.217     5.863 r  console/stream/fontAddr0_i_1861/O
+                         net (fo=1, routed)           0.795     6.658    console/stream/fontAddr0_i_1861_n_10
+    SLICE_X53Y139        LUT6 (Prop_lut6_I0_O)        0.299     6.957 r  console/stream/fontAddr0_i_729/O
+                         net (fo=1, routed)           1.732     8.690    console/stream/fontAddr0_i_729_n_10
+    SLICE_X27Y126        LUT3 (Prop_lut3_I2_O)        0.124     8.814 r  console/stream/fontAddr0_i_326/O
+                         net (fo=1, routed)           0.000     8.814    console/stream/fontAddr0_i_326_n_10
+    SLICE_X27Y126        MUXF7 (Prop_muxf7_I1_O)      0.245     9.059 r  console/stream/fontAddr0_i_163/O
+                         net (fo=1, routed)           0.000     9.059    console/stream/fontAddr0_i_163_n_10
+    SLICE_X27Y126        MUXF8 (Prop_muxf8_I0_O)      0.104     9.163 r  console/stream/fontAddr0_i_79/O
+                         net (fo=1, routed)           1.219    10.382    console/stream/fontAddr0_i_79_n_10
+    SLICE_X17Y109        LUT6 (Prop_lut6_I1_O)        0.316    10.698 r  console/stream/fontAddr0_i_30/O
+                         net (fo=1, routed)           1.960    12.657    console/design1/fontAddr0_0
+    SLICE_X15Y69         LUT6 (Prop_lut6_I0_O)        0.124    12.781 r  console/design1/fontAddr0_i_15/O
+                         net (fo=12, routed)          1.865    14.647    console/design1/char[0]
+    SLICE_X15Y41         LUT3 (Prop_lut3_I2_O)        0.124    14.771 r  console/design1/fontAddr0_i_45/O
+                         net (fo=1, routed)           0.000    14.771    console/design1/fontAddr0_i_45_n_10
+    SLICE_X15Y41         CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.550    15.321 r  console/design1/fontAddr0_i_18/CO[3]
+                         net (fo=1, routed)           0.000    15.321    console/design1/fontAddr0_i_18_n_10
+    SLICE_X15Y42         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114    15.435 r  console/design1/fontAddr0_i_17/CO[3]
+                         net (fo=1, routed)           0.000    15.435    console/design1/fontAddr0_i_17_n_10
+    SLICE_X15Y43         CARRY4 (Prop_carry4_CI_CO[1])
+                                                      0.157    15.592 r  console/design1/fontAddr0_i_16/CO[1]
+                         net (fo=1, routed)           0.554    16.146    console/design1/fontAddr1__0[11]
+    SLICE_X13Y42         LUT6 (Prop_lut6_I5_O)        0.329    16.475 r  console/design1/fontAddr0_i_1/O
+                         net (fo=1, routed)           0.402    16.877    console/design1/C[11]
+    DSP48_X0Y17          DSP48E1 (Prop_dsp48e1_C[11]_P[9])
+                                                      1.820    18.697 r  console/design1/fontAddr0/P[9]
+                         net (fo=12, routed)          3.019    21.716    console/design1/fontrom/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[14].ram.r/prim_init.ram/addra[9]
+    RAMB36_X0Y0          RAMB36E1                                     r  console/design1/fontrom/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[14].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.SIMPLE_PRIM36.ram/ADDRARDADDR[12]
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_out1_VGAClock rise edge)
+                                                     40.000    40.000 r  
+    W5                                                0.000    40.000 r  CLK (IN)
+                         net (fo=0)                   0.000    40.000    clk60/inst/clk_in1
+    W5                   IBUF (Prop_ibuf_I_O)         1.388    41.388 r  clk60/inst/clkin1_ibufg/O
+                         net (fo=1, routed)           1.162    42.550    clk60/inst/clk_in1_VGAClock
+    MMCME2_ADV_X1Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -7.217    35.332 r  clk60/inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           1.581    36.914    clk60/inst/clk_out1_VGAClock
+    BUFGCTRL_X0Y2        BUFG (Prop_bufg_I_O)         0.091    37.005 r  clk60/inst/clkout1_buf/O
+                         net (fo=445, routed)         1.487    38.491    console/design1/fontrom/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[14].ram.r/prim_init.ram/clka
+    RAMB36_X0Y0          RAMB36E1                                     r  console/design1/fontrom/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[14].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.SIMPLE_PRIM36.ram/CLKARDCLK
+                         clock pessimism              0.484    38.975    
+                         clock uncertainty           -0.098    38.877    
+    RAMB36_X0Y0          RAMB36E1 (Setup_ramb36e1_CLKARDCLK_ADDRARDADDR[12])
+                                                     -0.566    38.311    console/design1/fontrom/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[14].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.SIMPLE_PRIM36.ram
+  -------------------------------------------------------------------
+                         required time                         38.311    
+                         arrival time                         -21.716    
+  -------------------------------------------------------------------
+                         slack                                 16.595    
+
+Slack (MET) :             16.674ns  (required time - arrival time)
+  Source:                 console/design1/charRow_reg[1]/C
+                            (rising edge-triggered cell FDRE clocked by clk_out1_VGAClock  {rise@0.000ns fall@20.000ns period=40.000ns})
+  Destination:            console/design1/fontrom/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[14].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.SIMPLE_PRIM36.ram/ADDRARDADDR[8]
+                            (rising edge-triggered cell RAMB36E1 clocked by clk_out1_VGAClock  {rise@0.000ns fall@20.000ns period=40.000ns})
+  Path Group:             clk_out1_VGAClock
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            40.000ns  (clk_out1_VGAClock rise@40.000ns - clk_out1_VGAClock rise@0.000ns)
+  Data Path Delay:        22.603ns  (logic 5.165ns (22.851%)  route 17.438ns (77.149%))
+  Logic Levels:           14  (CARRY4=3 DSP48E1=1 LUT3=2 LUT6=5 MUXF7=2 MUXF8=1)
+  Clock Path Skew:        -0.059ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    -1.509ns = ( 38.491 - 40.000 ) 
+    Source Clock Delay      (SCD):    -0.966ns
+    Clock Pessimism Removal (CPR):    0.484ns
+  Clock Uncertainty:      0.098ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Discrete Jitter          (DJ):    0.182ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_out1_VGAClock rise edge)
+                                                      0.000     0.000 r  
+    W5                                                0.000     0.000 r  CLK (IN)
+                         net (fo=0)                   0.000     0.000    clk60/inst/clk_in1
+    W5                   IBUF (Prop_ibuf_I_O)         1.458     1.458 r  clk60/inst/clkin1_ibufg/O
+                         net (fo=1, routed)           1.233     2.691    clk60/inst/clk_in1_VGAClock
+    MMCME2_ADV_X1Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -6.961    -4.269 r  clk60/inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           1.661    -2.608    clk60/inst/clk_out1_VGAClock
+    BUFGCTRL_X0Y2        BUFG (Prop_bufg_I_O)         0.096    -2.512 r  clk60/inst/clkout1_buf/O
+                         net (fo=445, routed)         1.546    -0.966    console/design1/clk_out1
+    SLICE_X10Y81         FDRE                                         r  console/design1/charRow_reg[1]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X10Y81         FDRE (Prop_fdre_C_Q)         0.518    -0.448 r  console/design1/charRow_reg[1]/Q
+                         net (fo=159, routed)         5.970     5.522    console/stream/fontAddr0_i_415_0[1]
+    SLICE_X53Y142        LUT6 (Prop_lut6_I2_O)        0.124     5.646 r  console/stream/fontAddr0_i_4466/O
+                         net (fo=1, routed)           0.000     5.646    console/stream/fontAddr0_i_4466_n_10
+    SLICE_X53Y142        MUXF7 (Prop_muxf7_I1_O)      0.217     5.863 r  console/stream/fontAddr0_i_1861/O
+                         net (fo=1, routed)           0.795     6.658    console/stream/fontAddr0_i_1861_n_10
+    SLICE_X53Y139        LUT6 (Prop_lut6_I0_O)        0.299     6.957 r  console/stream/fontAddr0_i_729/O
+                         net (fo=1, routed)           1.732     8.690    console/stream/fontAddr0_i_729_n_10
+    SLICE_X27Y126        LUT3 (Prop_lut3_I2_O)        0.124     8.814 r  console/stream/fontAddr0_i_326/O
+                         net (fo=1, routed)           0.000     8.814    console/stream/fontAddr0_i_326_n_10
+    SLICE_X27Y126        MUXF7 (Prop_muxf7_I1_O)      0.245     9.059 r  console/stream/fontAddr0_i_163/O
+                         net (fo=1, routed)           0.000     9.059    console/stream/fontAddr0_i_163_n_10
+    SLICE_X27Y126        MUXF8 (Prop_muxf8_I0_O)      0.104     9.163 r  console/stream/fontAddr0_i_79/O
+                         net (fo=1, routed)           1.219    10.382    console/stream/fontAddr0_i_79_n_10
+    SLICE_X17Y109        LUT6 (Prop_lut6_I1_O)        0.316    10.698 r  console/stream/fontAddr0_i_30/O
+                         net (fo=1, routed)           1.960    12.657    console/design1/fontAddr0_0
+    SLICE_X15Y69         LUT6 (Prop_lut6_I0_O)        0.124    12.781 r  console/design1/fontAddr0_i_15/O
+                         net (fo=12, routed)          1.865    14.647    console/design1/char[0]
+    SLICE_X15Y41         LUT3 (Prop_lut3_I2_O)        0.124    14.771 r  console/design1/fontAddr0_i_45/O
+                         net (fo=1, routed)           0.000    14.771    console/design1/fontAddr0_i_45_n_10
+    SLICE_X15Y41         CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.550    15.321 r  console/design1/fontAddr0_i_18/CO[3]
+                         net (fo=1, routed)           0.000    15.321    console/design1/fontAddr0_i_18_n_10
+    SLICE_X15Y42         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114    15.435 r  console/design1/fontAddr0_i_17/CO[3]
+                         net (fo=1, routed)           0.000    15.435    console/design1/fontAddr0_i_17_n_10
+    SLICE_X15Y43         CARRY4 (Prop_carry4_CI_CO[1])
+                                                      0.157    15.592 r  console/design1/fontAddr0_i_16/CO[1]
+                         net (fo=1, routed)           0.554    16.146    console/design1/fontAddr1__0[11]
+    SLICE_X13Y42         LUT6 (Prop_lut6_I5_O)        0.329    16.475 r  console/design1/fontAddr0_i_1/O
+                         net (fo=1, routed)           0.402    16.877    console/design1/C[11]
+    DSP48_X0Y17          DSP48E1 (Prop_dsp48e1_C[11]_P[5])
+                                                      1.820    18.697 r  console/design1/fontAddr0/P[5]
+                         net (fo=12, routed)          2.940    21.637    console/design1/fontrom/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[14].ram.r/prim_init.ram/addra[5]
+    RAMB36_X0Y0          RAMB36E1                                     r  console/design1/fontrom/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[14].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.SIMPLE_PRIM36.ram/ADDRARDADDR[8]
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_out1_VGAClock rise edge)
+                                                     40.000    40.000 r  
+    W5                                                0.000    40.000 r  CLK (IN)
+                         net (fo=0)                   0.000    40.000    clk60/inst/clk_in1
+    W5                   IBUF (Prop_ibuf_I_O)         1.388    41.388 r  clk60/inst/clkin1_ibufg/O
+                         net (fo=1, routed)           1.162    42.550    clk60/inst/clk_in1_VGAClock
+    MMCME2_ADV_X1Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -7.217    35.332 r  clk60/inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           1.581    36.914    clk60/inst/clk_out1_VGAClock
+    BUFGCTRL_X0Y2        BUFG (Prop_bufg_I_O)         0.091    37.005 r  clk60/inst/clkout1_buf/O
+                         net (fo=445, routed)         1.487    38.491    console/design1/fontrom/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[14].ram.r/prim_init.ram/clka
+    RAMB36_X0Y0          RAMB36E1                                     r  console/design1/fontrom/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[14].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.SIMPLE_PRIM36.ram/CLKARDCLK
+                         clock pessimism              0.484    38.975    
+                         clock uncertainty           -0.098    38.877    
+    RAMB36_X0Y0          RAMB36E1 (Setup_ramb36e1_CLKARDCLK_ADDRARDADDR[8])
+                                                     -0.566    38.311    console/design1/fontrom/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[14].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.SIMPLE_PRIM36.ram
+  -------------------------------------------------------------------
+                         required time                         38.311    
+                         arrival time                         -21.637    
+  -------------------------------------------------------------------
+                         slack                                 16.674    
+
+
+
+
+
+Min Delay Paths
+--------------------------------------------------------------------------------------
+Slack (MET) :             0.089ns  (arrival time - required time)
+  Source:                 memoryTransmitter/usbReceiver/char_reg[1]/C
+                            (rising edge-triggered cell FDCE clocked by clk_out1_VGAClock  {rise@0.000ns fall@20.000ns period=40.000ns})
+  Destination:            memoryTransmitter/memoryReceiverAutomation/size_reg[25]/D
+                            (rising edge-triggered cell FDCE clocked by clk_out1_VGAClock  {rise@0.000ns fall@20.000ns period=40.000ns})
+  Path Group:             clk_out1_VGAClock
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (clk_out1_VGAClock rise@0.000ns - clk_out1_VGAClock rise@0.000ns)
+  Data Path Delay:        0.417ns  (logic 0.141ns (33.797%)  route 0.276ns (66.203%))
+  Logic Levels:           0  
+  Clock Path Skew:        0.262ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    -0.863ns
+    Source Clock Delay      (SCD):    -0.621ns
+    Clock Pessimism Removal (CPR):    -0.503ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_out1_VGAClock rise edge)
+                                                      0.000     0.000 r  
+    W5                                                0.000     0.000 r  CLK (IN)
+                         net (fo=0)                   0.000     0.000    clk60/inst/clk_in1
+    W5                   IBUF (Prop_ibuf_I_O)         0.226     0.226 r  clk60/inst/clkin1_ibufg/O
+                         net (fo=1, routed)           0.440     0.667    clk60/inst/clk_in1_VGAClock
+    MMCME2_ADV_X1Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -2.360    -1.693 r  clk60/inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           0.486    -1.207    clk60/inst/clk_out1_VGAClock
+    BUFGCTRL_X0Y2        BUFG (Prop_bufg_I_O)         0.026    -1.181 r  clk60/inst/clkout1_buf/O
+                         net (fo=445, routed)         0.560    -0.621    memoryTransmitter/usbReceiver/CLK
+    SLICE_X35Y11         FDCE                                         r  memoryTransmitter/usbReceiver/char_reg[1]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X35Y11         FDCE (Prop_fdce_C_Q)         0.141    -0.480 r  memoryTransmitter/usbReceiver/char_reg[1]/Q
+                         net (fo=6, routed)           0.276    -0.204    memoryTransmitter/memoryReceiverAutomation/Q[1]
+    SLICE_X37Y14         FDCE                                         r  memoryTransmitter/memoryReceiverAutomation/size_reg[25]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_out1_VGAClock rise edge)
+                                                      0.000     0.000 r  
+    W5                                                0.000     0.000 r  CLK (IN)
+                         net (fo=0)                   0.000     0.000    clk60/inst/clk_in1
+    W5                   IBUF (Prop_ibuf_I_O)         0.414     0.414 r  clk60/inst/clkin1_ibufg/O
+                         net (fo=1, routed)           0.480     0.894    clk60/inst/clk_in1_VGAClock
+    MMCME2_ADV_X1Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -3.142    -2.248 r  clk60/inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           0.530    -1.718    clk60/inst/clk_out1_VGAClock
+    BUFGCTRL_X0Y2        BUFG (Prop_bufg_I_O)         0.029    -1.689 r  clk60/inst/clkout1_buf/O
+                         net (fo=445, routed)         0.827    -0.863    memoryTransmitter/memoryReceiverAutomation/CLK
+    SLICE_X37Y14         FDCE                                         r  memoryTransmitter/memoryReceiverAutomation/size_reg[25]/C
+                         clock pessimism              0.503    -0.359    
+    SLICE_X37Y14         FDCE (Hold_fdce_C_D)         0.066    -0.293    memoryTransmitter/memoryReceiverAutomation/size_reg[25]
+  -------------------------------------------------------------------
+                         required time                          0.293    
+                         arrival time                          -0.204    
+  -------------------------------------------------------------------
+                         slack                                  0.089    
+
+Slack (MET) :             0.111ns  (arrival time - required time)
+  Source:                 memoryTransmitter/usbReceiver/char_reg[4]/C
+                            (rising edge-triggered cell FDCE clocked by clk_out1_VGAClock  {rise@0.000ns fall@20.000ns period=40.000ns})
+  Destination:            memoryTransmitter/memoryReceiverAutomation/size_reg[28]/D
+                            (rising edge-triggered cell FDCE clocked by clk_out1_VGAClock  {rise@0.000ns fall@20.000ns period=40.000ns})
+  Path Group:             clk_out1_VGAClock
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (clk_out1_VGAClock rise@0.000ns - clk_out1_VGAClock rise@0.000ns)
+  Data Path Delay:        0.436ns  (logic 0.141ns (32.327%)  route 0.295ns (67.673%))
+  Logic Levels:           0  
+  Clock Path Skew:        0.262ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    -0.863ns
+    Source Clock Delay      (SCD):    -0.621ns
+    Clock Pessimism Removal (CPR):    -0.503ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_out1_VGAClock rise edge)
+                                                      0.000     0.000 r  
+    W5                                                0.000     0.000 r  CLK (IN)
+                         net (fo=0)                   0.000     0.000    clk60/inst/clk_in1
+    W5                   IBUF (Prop_ibuf_I_O)         0.226     0.226 r  clk60/inst/clkin1_ibufg/O
+                         net (fo=1, routed)           0.440     0.667    clk60/inst/clk_in1_VGAClock
+    MMCME2_ADV_X1Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -2.360    -1.693 r  clk60/inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           0.486    -1.207    clk60/inst/clk_out1_VGAClock
+    BUFGCTRL_X0Y2        BUFG (Prop_bufg_I_O)         0.026    -1.181 r  clk60/inst/clkout1_buf/O
+                         net (fo=445, routed)         0.560    -0.621    memoryTransmitter/usbReceiver/CLK
+    SLICE_X33Y12         FDCE                                         r  memoryTransmitter/usbReceiver/char_reg[4]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X33Y12         FDCE (Prop_fdce_C_Q)         0.141    -0.480 r  memoryTransmitter/usbReceiver/char_reg[4]/Q
+                         net (fo=6, routed)           0.295    -0.185    memoryTransmitter/memoryReceiverAutomation/Q[4]
+    SLICE_X38Y14         FDCE                                         r  memoryTransmitter/memoryReceiverAutomation/size_reg[28]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_out1_VGAClock rise edge)
+                                                      0.000     0.000 r  
+    W5                                                0.000     0.000 r  CLK (IN)
+                         net (fo=0)                   0.000     0.000    clk60/inst/clk_in1
+    W5                   IBUF (Prop_ibuf_I_O)         0.414     0.414 r  clk60/inst/clkin1_ibufg/O
+                         net (fo=1, routed)           0.480     0.894    clk60/inst/clk_in1_VGAClock
+    MMCME2_ADV_X1Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -3.142    -2.248 r  clk60/inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           0.530    -1.718    clk60/inst/clk_out1_VGAClock
+    BUFGCTRL_X0Y2        BUFG (Prop_bufg_I_O)         0.029    -1.689 r  clk60/inst/clkout1_buf/O
+                         net (fo=445, routed)         0.827    -0.863    memoryTransmitter/memoryReceiverAutomation/CLK
+    SLICE_X38Y14         FDCE                                         r  memoryTransmitter/memoryReceiverAutomation/size_reg[28]/C
+                         clock pessimism              0.503    -0.359    
+    SLICE_X38Y14         FDCE (Hold_fdce_C_D)         0.063    -0.296    memoryTransmitter/memoryReceiverAutomation/size_reg[28]
+  -------------------------------------------------------------------
+                         required time                          0.296    
+                         arrival time                          -0.185    
+  -------------------------------------------------------------------
+                         slack                                  0.111    
+
+Slack (MET) :             0.124ns  (arrival time - required time)
+  Source:                 memoryTransmitter/usbReceiver/char_reg[3]/C
+                            (rising edge-triggered cell FDCE clocked by clk_out1_VGAClock  {rise@0.000ns fall@20.000ns period=40.000ns})
+  Destination:            memoryTransmitter/memoryReceiverAutomation/size_reg[27]/D
+                            (rising edge-triggered cell FDCE clocked by clk_out1_VGAClock  {rise@0.000ns fall@20.000ns period=40.000ns})
+  Path Group:             clk_out1_VGAClock
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (clk_out1_VGAClock rise@0.000ns - clk_out1_VGAClock rise@0.000ns)
+  Data Path Delay:        0.476ns  (logic 0.164ns (34.486%)  route 0.312ns (65.514%))
+  Logic Levels:           0  
+  Clock Path Skew:        0.262ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    -0.863ns
+    Source Clock Delay      (SCD):    -0.621ns
+    Clock Pessimism Removal (CPR):    -0.503ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_out1_VGAClock rise edge)
+                                                      0.000     0.000 r  
+    W5                                                0.000     0.000 r  CLK (IN)
+                         net (fo=0)                   0.000     0.000    clk60/inst/clk_in1
+    W5                   IBUF (Prop_ibuf_I_O)         0.226     0.226 r  clk60/inst/clkin1_ibufg/O
+                         net (fo=1, routed)           0.440     0.667    clk60/inst/clk_in1_VGAClock
+    MMCME2_ADV_X1Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -2.360    -1.693 r  clk60/inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           0.486    -1.207    clk60/inst/clk_out1_VGAClock
+    BUFGCTRL_X0Y2        BUFG (Prop_bufg_I_O)         0.026    -1.181 r  clk60/inst/clkout1_buf/O
+                         net (fo=445, routed)         0.560    -0.621    memoryTransmitter/usbReceiver/CLK
+    SLICE_X34Y11         FDCE                                         r  memoryTransmitter/usbReceiver/char_reg[3]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X34Y11         FDCE (Prop_fdce_C_Q)         0.164    -0.457 r  memoryTransmitter/usbReceiver/char_reg[3]/Q
+                         net (fo=6, routed)           0.312    -0.146    memoryTransmitter/memoryReceiverAutomation/Q[3]
+    SLICE_X38Y14         FDCE                                         r  memoryTransmitter/memoryReceiverAutomation/size_reg[27]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_out1_VGAClock rise edge)
+                                                      0.000     0.000 r  
+    W5                                                0.000     0.000 r  CLK (IN)
+                         net (fo=0)                   0.000     0.000    clk60/inst/clk_in1
+    W5                   IBUF (Prop_ibuf_I_O)         0.414     0.414 r  clk60/inst/clkin1_ibufg/O
+                         net (fo=1, routed)           0.480     0.894    clk60/inst/clk_in1_VGAClock
+    MMCME2_ADV_X1Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -3.142    -2.248 r  clk60/inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           0.530    -1.718    clk60/inst/clk_out1_VGAClock
+    BUFGCTRL_X0Y2        BUFG (Prop_bufg_I_O)         0.029    -1.689 r  clk60/inst/clkout1_buf/O
+                         net (fo=445, routed)         0.827    -0.863    memoryTransmitter/memoryReceiverAutomation/CLK
+    SLICE_X38Y14         FDCE                                         r  memoryTransmitter/memoryReceiverAutomation/size_reg[27]/C
+                         clock pessimism              0.503    -0.359    
+    SLICE_X38Y14         FDCE (Hold_fdce_C_D)         0.090    -0.269    memoryTransmitter/memoryReceiverAutomation/size_reg[27]
+  -------------------------------------------------------------------
+                         required time                          0.269    
+                         arrival time                          -0.146    
+  -------------------------------------------------------------------
+                         slack                                  0.124    
+
+Slack (MET) :             0.134ns  (arrival time - required time)
+  Source:                 memoryTransmitter/usbReceiver/char_reg[5]/C
+                            (rising edge-triggered cell FDCE clocked by clk_out1_VGAClock  {rise@0.000ns fall@20.000ns period=40.000ns})
+  Destination:            memoryTransmitter/memoryReceiverAutomation/size_reg[29]/D
+                            (rising edge-triggered cell FDCE clocked by clk_out1_VGAClock  {rise@0.000ns fall@20.000ns period=40.000ns})
+  Path Group:             clk_out1_VGAClock
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (clk_out1_VGAClock rise@0.000ns - clk_out1_VGAClock rise@0.000ns)
+  Data Path Delay:        0.406ns  (logic 0.148ns (36.462%)  route 0.258ns (63.538%))
+  Logic Levels:           0  
+  Clock Path Skew:        0.262ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    -0.863ns
+    Source Clock Delay      (SCD):    -0.621ns
+    Clock Pessimism Removal (CPR):    -0.503ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_out1_VGAClock rise edge)
+                                                      0.000     0.000 r  
+    W5                                                0.000     0.000 r  CLK (IN)
+                         net (fo=0)                   0.000     0.000    clk60/inst/clk_in1
+    W5                   IBUF (Prop_ibuf_I_O)         0.226     0.226 r  clk60/inst/clkin1_ibufg/O
+                         net (fo=1, routed)           0.440     0.667    clk60/inst/clk_in1_VGAClock
+    MMCME2_ADV_X1Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -2.360    -1.693 r  clk60/inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           0.486    -1.207    clk60/inst/clk_out1_VGAClock
+    BUFGCTRL_X0Y2        BUFG (Prop_bufg_I_O)         0.026    -1.181 r  clk60/inst/clkout1_buf/O
+                         net (fo=445, routed)         0.560    -0.621    memoryTransmitter/usbReceiver/CLK
+    SLICE_X34Y11         FDCE                                         r  memoryTransmitter/usbReceiver/char_reg[5]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X34Y11         FDCE (Prop_fdce_C_Q)         0.148    -0.473 r  memoryTransmitter/usbReceiver/char_reg[5]/Q
+                         net (fo=6, routed)           0.258    -0.215    memoryTransmitter/memoryReceiverAutomation/Q[5]
+    SLICE_X38Y14         FDCE                                         r  memoryTransmitter/memoryReceiverAutomation/size_reg[29]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_out1_VGAClock rise edge)
+                                                      0.000     0.000 r  
+    W5                                                0.000     0.000 r  CLK (IN)
+                         net (fo=0)                   0.000     0.000    clk60/inst/clk_in1
+    W5                   IBUF (Prop_ibuf_I_O)         0.414     0.414 r  clk60/inst/clkin1_ibufg/O
+                         net (fo=1, routed)           0.480     0.894    clk60/inst/clk_in1_VGAClock
+    MMCME2_ADV_X1Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -3.142    -2.248 r  clk60/inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           0.530    -1.718    clk60/inst/clk_out1_VGAClock
+    BUFGCTRL_X0Y2        BUFG (Prop_bufg_I_O)         0.029    -1.689 r  clk60/inst/clkout1_buf/O
+                         net (fo=445, routed)         0.827    -0.863    memoryTransmitter/memoryReceiverAutomation/CLK
+    SLICE_X38Y14         FDCE                                         r  memoryTransmitter/memoryReceiverAutomation/size_reg[29]/C
+                         clock pessimism              0.503    -0.359    
+    SLICE_X38Y14         FDCE (Hold_fdce_C_D)         0.010    -0.349    memoryTransmitter/memoryReceiverAutomation/size_reg[29]
+  -------------------------------------------------------------------
+                         required time                          0.349    
+                         arrival time                          -0.215    
+  -------------------------------------------------------------------
+                         slack                                  0.134    
+
+Slack (MET) :             0.152ns  (arrival time - required time)
+  Source:                 console/design1/pixelCol_reg[2]/C
+                            (rising edge-triggered cell FDRE clocked by clk_out1_VGAClock  {rise@0.000ns fall@20.000ns period=40.000ns})
+  Destination:            console/design1/pixelCol_reg[4]/D
+                            (rising edge-triggered cell FDRE clocked by clk_out1_VGAClock  {rise@0.000ns fall@20.000ns period=40.000ns})
+  Path Group:             clk_out1_VGAClock
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (clk_out1_VGAClock rise@0.000ns - clk_out1_VGAClock rise@0.000ns)
+  Data Path Delay:        0.286ns  (logic 0.186ns (65.123%)  route 0.100ns (34.877%))
+  Logic Levels:           1  (LUT6=1)
+  Clock Path Skew:        0.013ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    -0.855ns
+    Source Clock Delay      (SCD):    -0.616ns
+    Clock Pessimism Removal (CPR):    -0.251ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_out1_VGAClock rise edge)
+                                                      0.000     0.000 r  
+    W5                                                0.000     0.000 r  CLK (IN)
+                         net (fo=0)                   0.000     0.000    clk60/inst/clk_in1
+    W5                   IBUF (Prop_ibuf_I_O)         0.226     0.226 r  clk60/inst/clkin1_ibufg/O
+                         net (fo=1, routed)           0.440     0.667    clk60/inst/clk_in1_VGAClock
+    MMCME2_ADV_X1Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -2.360    -1.693 r  clk60/inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           0.486    -1.207    clk60/inst/clk_out1_VGAClock
+    BUFGCTRL_X0Y2        BUFG (Prop_bufg_I_O)         0.026    -1.181 r  clk60/inst/clkout1_buf/O
+                         net (fo=445, routed)         0.565    -0.616    console/design1/clk_out1
+    SLICE_X9Y40          FDRE                                         r  console/design1/pixelCol_reg[2]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X9Y40          FDRE (Prop_fdre_C_Q)         0.141    -0.475 r  console/design1/pixelCol_reg[2]/Q
+                         net (fo=6, routed)           0.100    -0.376    console/design1/pixelCol_reg_n_10_[2]
+    SLICE_X8Y40          LUT6 (Prop_lut6_I2_O)        0.045    -0.331 r  console/design1/pixelCol[4]_i_2/O
+                         net (fo=2, routed)           0.000    -0.331    console/design1/pixelCol[4]_i_2_n_10
+    SLICE_X8Y40          FDRE                                         r  console/design1/pixelCol_reg[4]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_out1_VGAClock rise edge)
+                                                      0.000     0.000 r  
+    W5                                                0.000     0.000 r  CLK (IN)
+                         net (fo=0)                   0.000     0.000    clk60/inst/clk_in1
+    W5                   IBUF (Prop_ibuf_I_O)         0.414     0.414 r  clk60/inst/clkin1_ibufg/O
+                         net (fo=1, routed)           0.480     0.894    clk60/inst/clk_in1_VGAClock
+    MMCME2_ADV_X1Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -3.142    -2.248 r  clk60/inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           0.530    -1.718    clk60/inst/clk_out1_VGAClock
+    BUFGCTRL_X0Y2        BUFG (Prop_bufg_I_O)         0.029    -1.689 r  clk60/inst/clkout1_buf/O
+                         net (fo=445, routed)         0.835    -0.855    console/design1/clk_out1
+    SLICE_X8Y40          FDRE                                         r  console/design1/pixelCol_reg[4]/C
+                         clock pessimism              0.251    -0.603    
+    SLICE_X8Y40          FDRE (Hold_fdre_C_D)         0.121    -0.482    console/design1/pixelCol_reg[4]
+  -------------------------------------------------------------------
+                         required time                          0.482    
+                         arrival time                          -0.331    
+  -------------------------------------------------------------------
+                         slack                                  0.152    
+
+Slack (MET) :             0.155ns  (arrival time - required time)
+  Source:                 console/design1/pixelCol_reg[2]/C
+                            (rising edge-triggered cell FDRE clocked by clk_out1_VGAClock  {rise@0.000ns fall@20.000ns period=40.000ns})
+  Destination:            console/design1/pixelCol_reg[3]/D
+                            (rising edge-triggered cell FDRE clocked by clk_out1_VGAClock  {rise@0.000ns fall@20.000ns period=40.000ns})
+  Path Group:             clk_out1_VGAClock
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (clk_out1_VGAClock rise@0.000ns - clk_out1_VGAClock rise@0.000ns)
+  Data Path Delay:        0.288ns  (logic 0.186ns (64.670%)  route 0.102ns (35.330%))
+  Logic Levels:           1  (LUT6=1)
+  Clock Path Skew:        0.013ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    -0.855ns
+    Source Clock Delay      (SCD):    -0.616ns
+    Clock Pessimism Removal (CPR):    -0.251ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_out1_VGAClock rise edge)
+                                                      0.000     0.000 r  
+    W5                                                0.000     0.000 r  CLK (IN)
+                         net (fo=0)                   0.000     0.000    clk60/inst/clk_in1
+    W5                   IBUF (Prop_ibuf_I_O)         0.226     0.226 r  clk60/inst/clkin1_ibufg/O
+                         net (fo=1, routed)           0.440     0.667    clk60/inst/clk_in1_VGAClock
+    MMCME2_ADV_X1Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -2.360    -1.693 r  clk60/inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           0.486    -1.207    clk60/inst/clk_out1_VGAClock
+    BUFGCTRL_X0Y2        BUFG (Prop_bufg_I_O)         0.026    -1.181 r  clk60/inst/clkout1_buf/O
+                         net (fo=445, routed)         0.565    -0.616    console/design1/clk_out1
+    SLICE_X9Y40          FDRE                                         r  console/design1/pixelCol_reg[2]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X9Y40          FDRE (Prop_fdre_C_Q)         0.141    -0.475 r  console/design1/pixelCol_reg[2]/Q
+                         net (fo=6, routed)           0.102    -0.374    console/design1/pixelCol_reg_n_10_[2]
+    SLICE_X8Y40          LUT6 (Prop_lut6_I2_O)        0.045    -0.329 r  console/design1/pixelCol[3]_i_1/O
+                         net (fo=2, routed)           0.000    -0.329    console/design1/pixelCol[3]_i_1_n_10
+    SLICE_X8Y40          FDRE                                         r  console/design1/pixelCol_reg[3]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_out1_VGAClock rise edge)
+                                                      0.000     0.000 r  
+    W5                                                0.000     0.000 r  CLK (IN)
+                         net (fo=0)                   0.000     0.000    clk60/inst/clk_in1
+    W5                   IBUF (Prop_ibuf_I_O)         0.414     0.414 r  clk60/inst/clkin1_ibufg/O
+                         net (fo=1, routed)           0.480     0.894    clk60/inst/clk_in1_VGAClock
+    MMCME2_ADV_X1Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -3.142    -2.248 r  clk60/inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           0.530    -1.718    clk60/inst/clk_out1_VGAClock
+    BUFGCTRL_X0Y2        BUFG (Prop_bufg_I_O)         0.029    -1.689 r  clk60/inst/clkout1_buf/O
+                         net (fo=445, routed)         0.835    -0.855    console/design1/clk_out1
+    SLICE_X8Y40          FDRE                                         r  console/design1/pixelCol_reg[3]/C
+                         clock pessimism              0.251    -0.603    
+    SLICE_X8Y40          FDRE (Hold_fdre_C_D)         0.120    -0.483    console/design1/pixelCol_reg[3]
+  -------------------------------------------------------------------
+                         required time                          0.483    
+                         arrival time                          -0.329    
+  -------------------------------------------------------------------
+                         slack                                  0.155    
+
+Slack (MET) :             0.165ns  (arrival time - required time)
+  Source:                 console/design1/v_cnt_reg[1]/C
+                            (rising edge-triggered cell FDRE clocked by clk_out1_VGAClock  {rise@0.000ns fall@20.000ns period=40.000ns})
+  Destination:            console/design1/v_cnt_reg[4]/D
+                            (rising edge-triggered cell FDRE clocked by clk_out1_VGAClock  {rise@0.000ns fall@20.000ns period=40.000ns})
+  Path Group:             clk_out1_VGAClock
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (clk_out1_VGAClock rise@0.000ns - clk_out1_VGAClock rise@0.000ns)
+  Data Path Delay:        0.270ns  (logic 0.186ns (68.880%)  route 0.084ns (31.120%))
+  Logic Levels:           1  (LUT6=1)
+  Clock Path Skew:        0.013ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    -0.840ns
+    Source Clock Delay      (SCD):    -0.599ns
+    Clock Pessimism Removal (CPR):    -0.253ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_out1_VGAClock rise edge)
+                                                      0.000     0.000 r  
+    W5                                                0.000     0.000 r  CLK (IN)
+                         net (fo=0)                   0.000     0.000    clk60/inst/clk_in1
+    W5                   IBUF (Prop_ibuf_I_O)         0.226     0.226 r  clk60/inst/clkin1_ibufg/O
+                         net (fo=1, routed)           0.440     0.667    clk60/inst/clk_in1_VGAClock
+    MMCME2_ADV_X1Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -2.360    -1.693 r  clk60/inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           0.486    -1.207    clk60/inst/clk_out1_VGAClock
+    BUFGCTRL_X0Y2        BUFG (Prop_bufg_I_O)         0.026    -1.181 r  clk60/inst/clkout1_buf/O
+                         net (fo=445, routed)         0.582    -0.599    console/design1/clk_out1
+    SLICE_X0Y25          FDRE                                         r  console/design1/v_cnt_reg[1]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X0Y25          FDRE (Prop_fdre_C_Q)         0.141    -0.458 r  console/design1/v_cnt_reg[1]/Q
+                         net (fo=8, routed)           0.084    -0.374    console/design1/v_cnt_reg_n_10_[1]
+    SLICE_X1Y25          LUT6 (Prop_lut6_I3_O)        0.045    -0.329 r  console/design1/v_cnt[4]_i_1/O
+                         net (fo=1, routed)           0.000    -0.329    console/design1/v_cnt[4]_i_1_n_10
+    SLICE_X1Y25          FDRE                                         r  console/design1/v_cnt_reg[4]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_out1_VGAClock rise edge)
+                                                      0.000     0.000 r  
+    W5                                                0.000     0.000 r  CLK (IN)
+                         net (fo=0)                   0.000     0.000    clk60/inst/clk_in1
+    W5                   IBUF (Prop_ibuf_I_O)         0.414     0.414 r  clk60/inst/clkin1_ibufg/O
+                         net (fo=1, routed)           0.480     0.894    clk60/inst/clk_in1_VGAClock
+    MMCME2_ADV_X1Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -3.142    -2.248 r  clk60/inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           0.530    -1.718    clk60/inst/clk_out1_VGAClock
+    BUFGCTRL_X0Y2        BUFG (Prop_bufg_I_O)         0.029    -1.689 r  clk60/inst/clkout1_buf/O
+                         net (fo=445, routed)         0.850    -0.840    console/design1/clk_out1
+    SLICE_X1Y25          FDRE                                         r  console/design1/v_cnt_reg[4]/C
+                         clock pessimism              0.253    -0.586    
+    SLICE_X1Y25          FDRE (Hold_fdre_C_D)         0.092    -0.494    console/design1/v_cnt_reg[4]
+  -------------------------------------------------------------------
+                         required time                          0.494    
+                         arrival time                          -0.329    
+  -------------------------------------------------------------------
+                         slack                                  0.165    
+
+Slack (MET) :             0.169ns  (arrival time - required time)
+  Source:                 memoryTransmitter/usbReceiver/char_reg[7]/C
+                            (rising edge-triggered cell FDCE clocked by clk_out1_VGAClock  {rise@0.000ns fall@20.000ns period=40.000ns})
+  Destination:            memoryTransmitter/memoryReceiverAutomation/size_reg[31]/D
+                            (rising edge-triggered cell FDCE clocked by clk_out1_VGAClock  {rise@0.000ns fall@20.000ns period=40.000ns})
+  Path Group:             clk_out1_VGAClock
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (clk_out1_VGAClock rise@0.000ns - clk_out1_VGAClock rise@0.000ns)
+  Data Path Delay:        0.484ns  (logic 0.141ns (29.155%)  route 0.343ns (70.845%))
+  Logic Levels:           0  
+  Clock Path Skew:        0.262ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    -0.863ns
+    Source Clock Delay      (SCD):    -0.621ns
+    Clock Pessimism Removal (CPR):    -0.503ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_out1_VGAClock rise edge)
+                                                      0.000     0.000 r  
+    W5                                                0.000     0.000 r  CLK (IN)
+                         net (fo=0)                   0.000     0.000    clk60/inst/clk_in1
+    W5                   IBUF (Prop_ibuf_I_O)         0.226     0.226 r  clk60/inst/clkin1_ibufg/O
+                         net (fo=1, routed)           0.440     0.667    clk60/inst/clk_in1_VGAClock
+    MMCME2_ADV_X1Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -2.360    -1.693 r  clk60/inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           0.486    -1.207    clk60/inst/clk_out1_VGAClock
+    BUFGCTRL_X0Y2        BUFG (Prop_bufg_I_O)         0.026    -1.181 r  clk60/inst/clkout1_buf/O
+                         net (fo=445, routed)         0.560    -0.621    memoryTransmitter/usbReceiver/CLK
+    SLICE_X32Y12         FDCE                                         r  memoryTransmitter/usbReceiver/char_reg[7]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X32Y12         FDCE (Prop_fdce_C_Q)         0.141    -0.480 r  memoryTransmitter/usbReceiver/char_reg[7]/Q
+                         net (fo=6, routed)           0.343    -0.138    memoryTransmitter/memoryReceiverAutomation/Q[7]
+    SLICE_X38Y14         FDCE                                         r  memoryTransmitter/memoryReceiverAutomation/size_reg[31]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_out1_VGAClock rise edge)
+                                                      0.000     0.000 r  
+    W5                                                0.000     0.000 r  CLK (IN)
+                         net (fo=0)                   0.000     0.000    clk60/inst/clk_in1
+    W5                   IBUF (Prop_ibuf_I_O)         0.414     0.414 r  clk60/inst/clkin1_ibufg/O
+                         net (fo=1, routed)           0.480     0.894    clk60/inst/clk_in1_VGAClock
+    MMCME2_ADV_X1Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -3.142    -2.248 r  clk60/inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           0.530    -1.718    clk60/inst/clk_out1_VGAClock
+    BUFGCTRL_X0Y2        BUFG (Prop_bufg_I_O)         0.029    -1.689 r  clk60/inst/clkout1_buf/O
+                         net (fo=445, routed)         0.827    -0.863    memoryTransmitter/memoryReceiverAutomation/CLK
+    SLICE_X38Y14         FDCE                                         r  memoryTransmitter/memoryReceiverAutomation/size_reg[31]/C
+                         clock pessimism              0.503    -0.359    
+    SLICE_X38Y14         FDCE (Hold_fdce_C_D)         0.053    -0.306    memoryTransmitter/memoryReceiverAutomation/size_reg[31]
+  -------------------------------------------------------------------
+                         required time                          0.306    
+                         arrival time                          -0.138    
+  -------------------------------------------------------------------
+                         slack                                  0.169    
+
+Slack (MET) :             0.191ns  (arrival time - required time)
+  Source:                 memoryTransmitter/usbReceiver/uart_rxd_d1_reg/C
+                            (rising edge-triggered cell FDCE clocked by clk_out1_VGAClock  {rise@0.000ns fall@20.000ns period=40.000ns})
+  Destination:            memoryTransmitter/usbReceiver/tx_data_reg[4]/D
+                            (rising edge-triggered cell FDCE clocked by clk_out1_VGAClock  {rise@0.000ns fall@20.000ns period=40.000ns})
+  Path Group:             clk_out1_VGAClock
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (clk_out1_VGAClock rise@0.000ns - clk_out1_VGAClock rise@0.000ns)
+  Data Path Delay:        0.296ns  (logic 0.186ns (62.754%)  route 0.110ns (37.246%))
+  Logic Levels:           1  (LUT6=1)
+  Clock Path Skew:        0.013ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    -0.862ns
+    Source Clock Delay      (SCD):    -0.621ns
+    Clock Pessimism Removal (CPR):    -0.253ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_out1_VGAClock rise edge)
+                                                      0.000     0.000 r  
+    W5                                                0.000     0.000 r  CLK (IN)
+                         net (fo=0)                   0.000     0.000    clk60/inst/clk_in1
+    W5                   IBUF (Prop_ibuf_I_O)         0.226     0.226 r  clk60/inst/clkin1_ibufg/O
+                         net (fo=1, routed)           0.440     0.667    clk60/inst/clk_in1_VGAClock
+    MMCME2_ADV_X1Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -2.360    -1.693 r  clk60/inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           0.486    -1.207    clk60/inst/clk_out1_VGAClock
+    BUFGCTRL_X0Y2        BUFG (Prop_bufg_I_O)         0.026    -1.181 r  clk60/inst/clkout1_buf/O
+                         net (fo=445, routed)         0.560    -0.621    memoryTransmitter/usbReceiver/CLK
+    SLICE_X32Y12         FDCE                                         r  memoryTransmitter/usbReceiver/uart_rxd_d1_reg/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X32Y12         FDCE (Prop_fdce_C_Q)         0.141    -0.480 r  memoryTransmitter/usbReceiver/uart_rxd_d1_reg/Q
+                         net (fo=9, routed)           0.110    -0.370    memoryTransmitter/usbReceiver/p_7_in[0]
+    SLICE_X33Y12         LUT6 (Prop_lut6_I0_O)        0.045    -0.325 r  memoryTransmitter/usbReceiver/tx_data[4]_i_1/O
+                         net (fo=1, routed)           0.000    -0.325    memoryTransmitter/usbReceiver/tx_data[4]_i_1_n_10
+    SLICE_X33Y12         FDCE                                         r  memoryTransmitter/usbReceiver/tx_data_reg[4]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_out1_VGAClock rise edge)
+                                                      0.000     0.000 r  
+    W5                                                0.000     0.000 r  CLK (IN)
+                         net (fo=0)                   0.000     0.000    clk60/inst/clk_in1
+    W5                   IBUF (Prop_ibuf_I_O)         0.414     0.414 r  clk60/inst/clkin1_ibufg/O
+                         net (fo=1, routed)           0.480     0.894    clk60/inst/clk_in1_VGAClock
+    MMCME2_ADV_X1Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -3.142    -2.248 r  clk60/inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           0.530    -1.718    clk60/inst/clk_out1_VGAClock
+    BUFGCTRL_X0Y2        BUFG (Prop_bufg_I_O)         0.029    -1.689 r  clk60/inst/clkout1_buf/O
+                         net (fo=445, routed)         0.828    -0.862    memoryTransmitter/usbReceiver/CLK
+    SLICE_X33Y12         FDCE                                         r  memoryTransmitter/usbReceiver/tx_data_reg[4]/C
+                         clock pessimism              0.253    -0.608    
+    SLICE_X33Y12         FDCE (Hold_fdce_C_D)         0.092    -0.516    memoryTransmitter/usbReceiver/tx_data_reg[4]
+  -------------------------------------------------------------------
+                         required time                          0.516    
+                         arrival time                          -0.325    
+  -------------------------------------------------------------------
+                         slack                                  0.191    
+
+Slack (MET) :             0.194ns  (arrival time - required time)
+  Source:                 memoryTransmitter/usbReceiver/char_reg[0]/C
+                            (rising edge-triggered cell FDCE clocked by clk_out1_VGAClock  {rise@0.000ns fall@20.000ns period=40.000ns})
+  Destination:            memoryTransmitter/memoryReceiverAutomation/size_reg[24]/D
+                            (rising edge-triggered cell FDCE clocked by clk_out1_VGAClock  {rise@0.000ns fall@20.000ns period=40.000ns})
+  Path Group:             clk_out1_VGAClock
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (clk_out1_VGAClock rise@0.000ns - clk_out1_VGAClock rise@0.000ns)
+  Data Path Delay:        0.527ns  (logic 0.141ns (26.768%)  route 0.386ns (73.232%))
+  Logic Levels:           0  
+  Clock Path Skew:        0.263ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    -0.863ns
+    Source Clock Delay      (SCD):    -0.622ns
+    Clock Pessimism Removal (CPR):    -0.503ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_out1_VGAClock rise edge)
+                                                      0.000     0.000 r  
+    W5                                                0.000     0.000 r  CLK (IN)
+                         net (fo=0)                   0.000     0.000    clk60/inst/clk_in1
+    W5                   IBUF (Prop_ibuf_I_O)         0.226     0.226 r  clk60/inst/clkin1_ibufg/O
+                         net (fo=1, routed)           0.440     0.667    clk60/inst/clk_in1_VGAClock
+    MMCME2_ADV_X1Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -2.360    -1.693 r  clk60/inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           0.486    -1.207    clk60/inst/clk_out1_VGAClock
+    BUFGCTRL_X0Y2        BUFG (Prop_bufg_I_O)         0.026    -1.181 r  clk60/inst/clkout1_buf/O
+                         net (fo=445, routed)         0.559    -0.622    memoryTransmitter/usbReceiver/CLK
+    SLICE_X33Y13         FDCE                                         r  memoryTransmitter/usbReceiver/char_reg[0]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X33Y13         FDCE (Prop_fdce_C_Q)         0.141    -0.481 r  memoryTransmitter/usbReceiver/char_reg[0]/Q
+                         net (fo=6, routed)           0.386    -0.096    memoryTransmitter/memoryReceiverAutomation/Q[0]
+    SLICE_X37Y14         FDCE                                         r  memoryTransmitter/memoryReceiverAutomation/size_reg[24]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_out1_VGAClock rise edge)
+                                                      0.000     0.000 r  
+    W5                                                0.000     0.000 r  CLK (IN)
+                         net (fo=0)                   0.000     0.000    clk60/inst/clk_in1
+    W5                   IBUF (Prop_ibuf_I_O)         0.414     0.414 r  clk60/inst/clkin1_ibufg/O
+                         net (fo=1, routed)           0.480     0.894    clk60/inst/clk_in1_VGAClock
+    MMCME2_ADV_X1Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -3.142    -2.248 r  clk60/inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           0.530    -1.718    clk60/inst/clk_out1_VGAClock
+    BUFGCTRL_X0Y2        BUFG (Prop_bufg_I_O)         0.029    -1.689 r  clk60/inst/clkout1_buf/O
+                         net (fo=445, routed)         0.827    -0.863    memoryTransmitter/memoryReceiverAutomation/CLK
+    SLICE_X37Y14         FDCE                                         r  memoryTransmitter/memoryReceiverAutomation/size_reg[24]/C
+                         clock pessimism              0.503    -0.359    
+    SLICE_X37Y14         FDCE (Hold_fdce_C_D)         0.070    -0.289    memoryTransmitter/memoryReceiverAutomation/size_reg[24]
+  -------------------------------------------------------------------
+                         required time                          0.289    
+                         arrival time                          -0.096    
+  -------------------------------------------------------------------
+                         slack                                  0.194    
+
+
+
+
+
+Pulse Width Checks
+--------------------------------------------------------------------------------------
+Clock Name:         clk_out1_VGAClock
+Waveform(ns):       { 0.000 20.000 }
+Period(ns):         40.000
+Sources:            { clk60/inst/mmcm_adv_inst/CLKOUT0 }
+
+Check Type        Corner  Lib Pin             Reference Pin  Required(ns)  Actual(ns)  Slack(ns)  Location         Pin
+Min Period        n/a     RAMB36E1/CLKARDCLK  n/a            2.576         40.000      37.424     RAMB36_X2Y3      cpuRam/ram1/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[6].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.ram/CLKARDCLK
+Min Period        n/a     RAMB36E1/CLKBWRCLK  n/a            2.576         40.000      37.424     RAMB36_X2Y3      cpuRam/ram1/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[6].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.ram/CLKBWRCLK
+Min Period        n/a     RAMB36E1/CLKARDCLK  n/a            2.576         40.000      37.424     RAMB36_X0Y7      console/design1/fontrom/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[10].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.SIMPLE_PRIM36.ram/CLKARDCLK
+Min Period        n/a     RAMB36E1/CLKBWRCLK  n/a            2.576         40.000      37.424     RAMB36_X0Y7      console/design1/fontrom/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[10].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.SIMPLE_PRIM36.ram/CLKBWRCLK
+Min Period        n/a     RAMB36E1/CLKARDCLK  n/a            2.576         40.000      37.424     RAMB36_X2Y4      cpuRam/ram1/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[7].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.ram/CLKARDCLK
+Min Period        n/a     RAMB36E1/CLKBWRCLK  n/a            2.576         40.000      37.424     RAMB36_X2Y4      cpuRam/ram1/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[7].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.ram/CLKBWRCLK
+Min Period        n/a     RAMB36E1/CLKARDCLK  n/a            2.576         40.000      37.424     RAMB36_X0Y4      console/design1/fontrom/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[11].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.SIMPLE_PRIM36.ram/CLKARDCLK
+Min Period        n/a     RAMB36E1/CLKBWRCLK  n/a            2.576         40.000      37.424     RAMB36_X0Y4      console/design1/fontrom/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[11].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.SIMPLE_PRIM36.ram/CLKBWRCLK
+Min Period        n/a     RAMB36E1/CLKARDCLK  n/a            2.576         40.000      37.424     RAMB36_X0Y6      console/design1/fontrom/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[12].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.SIMPLE_PRIM36.ram/CLKARDCLK
+Min Period        n/a     RAMB36E1/CLKBWRCLK  n/a            2.576         40.000      37.424     RAMB36_X0Y6      console/design1/fontrom/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[12].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.SIMPLE_PRIM36.ram/CLKBWRCLK
+Max Period        n/a     MMCME2_ADV/CLKOUT0  n/a            213.360       40.000      173.360    MMCME2_ADV_X1Y0  clk60/inst/mmcm_adv_inst/CLKOUT0
+Low Pulse Width   Slow    FDCE/C              n/a            0.500         20.000      19.500     SLICE_X45Y23     timeClock/ms_reg[28]/C
+Low Pulse Width   Slow    FDCE/C              n/a            0.500         20.000      19.500     SLICE_X45Y23     timeClock/ms_reg[29]/C
+Low Pulse Width   Slow    FDCE/C              n/a            0.500         20.000      19.500     SLICE_X45Y23     timeClock/ms_reg[30]/C
+Low Pulse Width   Slow    FDCE/C              n/a            0.500         20.000      19.500     SLICE_X45Y23     timeClock/ms_reg[31]/C
+Low Pulse Width   Slow    FDRE/C              n/a            0.500         20.000      19.500     SLICE_X10Y81     console/design1/charRow_reg[0]_rep/C
+Low Pulse Width   Slow    FDRE/C              n/a            0.500         20.000      19.500     SLICE_X7Y76      console/design1/charRow_reg[0]_rep__11/C
+Low Pulse Width   Slow    FDRE/C              n/a            0.500         20.000      19.500     SLICE_X7Y76      console/design1/charRow_reg[0]_rep__12/C
+Low Pulse Width   Slow    FDRE/C              n/a            0.500         20.000      19.500     SLICE_X7Y76      console/design1/charRow_reg[0]_rep__16/C
+Low Pulse Width   Slow    FDRE/C              n/a            0.500         20.000      19.500     SLICE_X7Y76      console/design1/charRow_reg[0]_rep__19/C
+Low Pulse Width   Slow    FDRE/C              n/a            0.500         20.000      19.500     SLICE_X10Y68     console/design1/charRow_reg[0]_rep__30/C
+High Pulse Width  Slow    FDCE/C              n/a            0.500         20.000      19.500     SLICE_X45Y16     timeClock/ms_reg[0]/C
+High Pulse Width  Fast    FDCE/C              n/a            0.500         20.000      19.500     SLICE_X45Y16     timeClock/ms_reg[0]/C
+High Pulse Width  Slow    FDCE/C              n/a            0.500         20.000      19.500     SLICE_X37Y40     clks_reg[0]/C
+High Pulse Width  Fast    FDCE/C              n/a            0.500         20.000      19.500     SLICE_X37Y40     clks_reg[0]/C
+High Pulse Width  Slow    FDCE/C              n/a            0.500         20.000      19.500     SLICE_X36Y42     clks_reg[10]/C
+High Pulse Width  Fast    FDCE/C              n/a            0.500         20.000      19.500     SLICE_X36Y42     clks_reg[10]/C
+High Pulse Width  Slow    FDCE/C              n/a            0.500         20.000      19.500     SLICE_X36Y42     clks_reg[11]/C
+High Pulse Width  Fast    FDCE/C              n/a            0.500         20.000      19.500     SLICE_X36Y42     clks_reg[11]/C
+High Pulse Width  Slow    FDCE/C              n/a            0.500         20.000      19.500     SLICE_X36Y42     clks_reg[12]/C
+High Pulse Width  Fast    FDCE/C              n/a            0.500         20.000      19.500     SLICE_X36Y42     clks_reg[12]/C
+
+
+
+---------------------------------------------------------------------------------------------------
+From Clock:  clkfbout_VGAClock
+  To Clock:  clkfbout_VGAClock
+
+Setup :           NA  Failing Endpoints,  Worst Slack           NA  ,  Total Violation           NA
+Hold  :           NA  Failing Endpoints,  Worst Slack           NA  ,  Total Violation           NA
+PW    :            0  Failing Endpoints,  Worst Slack        7.845ns,  Total Violation        0.000ns
+---------------------------------------------------------------------------------------------------
+
+
+Pulse Width Checks
+--------------------------------------------------------------------------------------
+Clock Name:         clkfbout_VGAClock
+Waveform(ns):       { 0.000 5.000 }
+Period(ns):         10.000
+Sources:            { clk60/inst/mmcm_adv_inst/CLKFBOUT }
+
+Check Type  Corner  Lib Pin              Reference Pin  Required(ns)  Actual(ns)  Slack(ns)  Location         Pin
+Min Period  n/a     BUFG/I               n/a            2.155         10.000      7.845      BUFGCTRL_X0Y13   clk60/inst/clkf_buf/I
+Min Period  n/a     MMCME2_ADV/CLKFBOUT  n/a            1.249         10.000      8.751      MMCME2_ADV_X1Y0  clk60/inst/mmcm_adv_inst/CLKFBOUT
+Min Period  n/a     MMCME2_ADV/CLKFBIN   n/a            1.249         10.000      8.751      MMCME2_ADV_X1Y0  clk60/inst/mmcm_adv_inst/CLKFBIN
+Max Period  n/a     MMCME2_ADV/CLKFBIN   n/a            100.000       10.000      90.000     MMCME2_ADV_X1Y0  clk60/inst/mmcm_adv_inst/CLKFBIN
+Max Period  n/a     MMCME2_ADV/CLKFBOUT  n/a            213.360       10.000      203.360    MMCME2_ADV_X1Y0  clk60/inst/mmcm_adv_inst/CLKFBOUT
+
+
+

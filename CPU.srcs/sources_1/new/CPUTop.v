@@ -5,6 +5,7 @@ module CPUTop(
     input clk,
     input[`WIDTH - 1:0] inst,
     input[`WIDTH - 1:0] readMemData,
+    input[`WIDTH - 1:0] getData,
     output[`WIDTH - 1:0] pc,
     output wire hlt,
     output writeMemEnable,
@@ -16,7 +17,9 @@ module CPUTop(
     output stdOutEnable,
     output [7:0] stdOutData,
     output [7:0] debug,
-    output [`WIDTH - 1:0] rax
+    output [`WIDTH - 1:0] rax,
+    output clr,
+    output [`WIDTH - 1:0] getType
     );
 
     //Control module
@@ -44,7 +47,6 @@ module CPUTop(
                 .stall(stall[0]),
                 .pc(pc));
                 
-    assign debug = pc[7:0];
     
     //connect FD->Decode
     wire[`WIDTH - 1:0] dPc;
@@ -211,7 +213,8 @@ module CPUTop(
                       .resultRem(resultRem),
                       .resultReady(resultReady),
                       .status(divStatus)
-    );
+    );    
+
 
     Execute execute(.rst(rst),
                     .aluOp(eAluOp),
@@ -285,7 +288,7 @@ module CPUTop(
                                .mWriteMemAddr(mWriteMemAddr),
                                .mWriteMemEnable(mWriteMemEnable),
                                .mAluOp(mAluOp));
-
+wire clred;
 
     Memory memory(.rst(rst),
                   .aluOp(mAluOp),
@@ -299,6 +302,7 @@ module CPUTop(
                   .mWriteMemEnable(mWriteMemEnable),
                   .mWriteMemAddr(mWriteMemAddr),
                   .readMemData(readMemData),
+                  .getData(getData),
                   .writeData(mmWriteData),
                   .writeEnable(mmWriteEnable),
                   .writeAddr(mmWriteAddr),  
@@ -312,8 +316,9 @@ module CPUTop(
                   .readMemType(readMemType),
                   .writeMemType(writeMemType),
                   .stdOutEnable(stdOutEnable),
-                  .stdOutData(stdOutData));  
-
+                  .stdOutData(stdOutData),
+                  .clr(clr),
+                  .getType(getType));  
     assign writeMemData = mmWriteData;     
 
     MemoryWriteback memoryWriteback(.clk(clk),                  

@@ -5,6 +5,11 @@ module SOC(
     input read,
     input CLK,
     input rx,
+    input leftButton,
+    input rightButton,
+    input middleButton,
+    input upButton,
+    input downButton,
     output tx,
     output hlt,
     output ready,
@@ -37,16 +42,42 @@ module SOC(
     wire [`WIDTH - 1:0] readMemAddr;
     wire [`TYPE_WIDTH - 1:0] readMemType;
     wire [`TYPE_WIDTH - 1:0] writeMemType;
+    wire clr;
 
     wire [`WIDTH - 1:0] rxMemData;
     wire [`WIDTH - 1:0] rxMemAddr;
     wire rxMemEnable;    
 
-
-
     wire stdOutEnable;
     wire [7:0] stdOutData;
     wire [`WIDTH - 1:0] rax;
+    
+    wire [`WIDTH - 1:0] ms;
+    TimeClock timeClock(.rst(rst),
+                        .clk(clk),
+                        .ms(ms));
+                        
+    reg [`WIDTH - 1:0] getData;
+    wire [`WIDTH - 1:0] getType;
+    
+    always @(*) begin
+        if (rst) getData = `EMPTY;
+        else begin
+            if (getType == `GET_CLOCK)
+                getData = ms;
+            else if (getType == `GET_UP_BUTTON)
+                getData = { 31'b0, upButton };
+            else if (getType == `GET_DOWN_BUTTON)
+                getData = { 31'b0, downButton };
+            else if (getType == `GET_MIDDLE_BUTTON)
+                getData = { 31'b0, middleButton };
+            else if (getType == `GET_RIGHT_BUTTON)
+                getData = { 31'b0, rightButton };
+            else if (getType == `GET_LEFT_BUTTON)
+                getData = { 31'b0, leftButton };
+            else getData = `EMPTY;
+        end
+    end
     
     TimeDisplay timeDisplay(
         .clk(clks[15]),
@@ -64,6 +95,7 @@ module SOC(
         .clk(clks[2]),
         .inst(inst),
         .readMemData(readMemData),
+        .getData(getData),
         .pc(pc),
         .hlt(hlt),
         .writeMemEnable(writeMemEnable),
@@ -75,7 +107,9 @@ module SOC(
         .stdOutData(stdOutData),
         .stdOutEnable(stdOutEnable),
         .rax(rax),
-        .debug(debug)
+        .debug(debug),
+        .clr(clr),
+        .getType(getType)
     );
 
     CPURam cpuRam(
@@ -91,35 +125,6 @@ module SOC(
         .readMemType(readMemType),
         .writeMemType(read ? `WORD : writeMemType)
     );
-
-    wire [`STD_OUT_WIDTH - 1:0] stdOutReadAddr;
-    wire [7:0] stdOutReadData;
-    wire [`STD_OUT_WIDTH - 1:0] outEOF;
-    
-    StdOutRam stdOutRam(
-        .clk(clk),
-        .slowClk(clks[2]),
-        .rst(rst | read),
-        .stdOutEnable(stdOutEnable),
-        .stdOutData(stdOutData),
-        .readAddr(stdOutReadAddr),
-        .readData(stdOutReadData),
-        .outEOF(outEOF)
-    );
-
-    Console console(
-        .clk(clk),
-        .rst(rst | read),
-        .posthChar(stdOutReadData),
-        .eof(outEOF),
-        .pos(stdOutReadAddr),
-        .rgb_g(rgb_g),
-        .rgb_r(rgb_r),
-        .rgb_b(rgb_b),
-        .h_sync(h_sync),
-        .v_sync(v_sync)
-    );
-    
     MemoryTransmitter memoryTransmitter(
         .clk(clk),
         .en(read),
@@ -130,6 +135,36 @@ module SOC(
         .rxMemAddr(rxMemAddr),
         .rxMemEnable(rxMemEnable)
     );
+
+    wire [`STD_OUT_WIDTH - 1:0] stdOutReadAddr;
+    wire [7:0] stdOutReadData;
+    wire [`STD_OUT_WIDTH - 1:0] outEOF;
+    
+    StdOutRam stdOutRam(
+        .clk(clk),
+        .slowClk(clks[2]),
+        .rst(rst | read | clr),
+        .stdOutEnable(stdOutEnable),
+        .stdOutData(stdOutData),
+        .readAddr(stdOutReadAddr),
+        .readData(stdOutReadData),
+        .outEOF(outEOF)
+    );
+
+    Console console(
+        .clk(clk),
+        .rst(rst | read | clr),
+        .posthChar(stdOutReadData),
+        .eof(outEOF),
+        .pos(stdOutReadAddr),
+        .rgb_g(rgb_g),
+        .rgb_r(rgb_r),
+        .rgb_b(rgb_b),
+        .h_sync(h_sync),
+        .v_sync(v_sync)
+    );
+    
+
 
 
 

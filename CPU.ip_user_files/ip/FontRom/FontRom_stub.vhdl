@@ -1,7 +1,7 @@
 -- Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2019.1 (win64) Build 2552052 Fri May 24 14:49:42 MDT 2019
--- Date        : Mon Dec 15 14:57:57 2025
+-- Date        : Sun Dec 21 11:04:32 2025
 -- Host        : zwfpc running 64-bit major release  (build 9200)
 -- Command     : write_vhdl -force -mode synth_stub
 --               E:/source/VIVADOScource/CPU/CPU.srcs/sources_1/ip/FontRom/FontRom_stub.vhdl

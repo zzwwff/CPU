@@ -1,6 +1,8 @@
 `define WIDTH 32
 `define BYTE_WIDTH 4
-`define ADDR_WIDTH 12
+`define ADDR_WIDTH 13
+
+`define FREQ 25000000
 
 `define EMPTY 32'b0
 `define WORD_EMPTY 32'b0
@@ -50,6 +52,8 @@
 `define OP_LBU 6'b100100
 `define OP_LB 6'b100000
 `define OP_OUT 6'b110001
+`define OP_CLR 6'b110010
+`define OP_GET 6'b110011
 
 `define SEL_AND 6'b100100
 `define SEL_OR  6'b100101
@@ -66,7 +70,7 @@
 `define SEL_MOVZ 6'b001010
 `define SEL_JR 6'b001000
 
-`define STACK_TOP 32'd2044
+`define STACK_TOP 32'd16380
 `define REG_WIDTH 5
 `define REG_SIZE 12
 `define RET 5'd11
@@ -83,4 +87,11 @@
 `define HALFWORD 2'b01
 `define BYTE 2'b10
 
-`define STD_OUT_WIDTH 11
+`define STD_OUT_WIDTH 13
+
+`define GET_CLOCK 32'd0
+`define GET_LEFT_BUTTON 32'd1
+`define GET_RIGHT_BUTTON 32'd2
+`define GET_MIDDLE_BUTTON 32'd3
+`define GET_UP_BUTTON 32'd4
+`define GET_DOWN_BUTTON 32'd5

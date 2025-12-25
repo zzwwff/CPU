@@ -14,6 +14,7 @@ module Memory(
     input mWriteMemEnable,
     input [`WIDTH - 1:0] mWriteMemAddr,
     input [`WIDTH - 1:0] readMemData,
+    input [`WIDTH - 1:0] getData,
     output wire[`WIDTH - 1:0] writeData,            //loaded from padding
     output reg writeEnable,
     output reg[`REG_WIDTH - 1:0] writeAddr,
@@ -27,7 +28,9 @@ module Memory(
     output reg [`TYPE_WIDTH - 1:0] readMemType,
     output reg [`TYPE_WIDTH - 1:0] writeMemType,
     output reg stdOutEnable,
-    output reg [7:0] stdOutData
+    output reg [7:0] stdOutData,
+    output reg clr,                                      //instruction clr: clear the VGA output
+    output reg[`WIDTH - 1:0] getType
     );
 
     reg [`PAD_WIDTH - 1:0] padType;
@@ -58,6 +61,8 @@ module Memory(
             padIn = 0;
             stdOutEnable = 0;
             stdOutData = 0;
+            clr = 0;
+            getType = `EMPTY;
         end 
         else begin
             if (aluOp == `OP_OUT) begin
@@ -73,10 +78,40 @@ module Memory(
                 writeMemAddr = mWriteMemAddr;
                 padType = `PAD_S32;
                 padIn = mWriteData;
+                clr = 0;
+                getType = `EMPTY;
             end
             else begin
                 stdOutEnable = 0;
-                if (aluOp == `OP_LW) begin
+                if (aluOp == `OP_CLR) begin
+                    //clear the VGA output
+                    writeEnable = 0;
+                    writeHiEnable = 0;
+                    writeLoEnable = 0;
+                    writeMemEnable = 0;
+                    clr = 1;
+                    getType = `EMPTY;
+                end
+                else if (aluOp == `OP_GET) begin
+                    //getData is data read from SOC
+                    //writeData is auto set by module padding
+                    //writeData = getData;
+                    padIn = getData;
+                    getType = mWriteMemAddr;
+                    writeEnable = mWriteEnable;
+                    writeAddr = mWriteAddr;
+                    writeHiEnable = mWriteHiEnable;
+                    writeHiData = mWriteHiData;
+                    writeLoEnable = mWriteLoEnable;
+                    writeLoData = mWriteLoData;
+                    writeMemEnable = mWriteMemEnable;
+                    writeMemAddr = mWriteMemAddr;
+                    readMemAddr = mWriteMemAddr;
+                    readMemType = `WORD;
+                    padType = `PAD_S32;
+                    clr = 0;
+                end
+                else if (aluOp == `OP_LW) begin
                     //writeData is data read from memory
                     //writeData is auto set by module padding
                     //writeData = readMemData;
@@ -92,6 +127,8 @@ module Memory(
                     readMemAddr = mWriteMemAddr;
                     readMemType = `WORD;
                     padType = `PAD_S32;
+                    clr = 0;
+                    getType = `EMPTY;
                 end
                 else if (aluOp == `OP_LHU) begin
                     //writeData is data read from memory
@@ -108,6 +145,8 @@ module Memory(
                     readMemAddr = mWriteMemAddr;
                     readMemType = `HALFWORD;
                     padType = `PAD_U16;
+                    clr = 0;
+                    getType = `EMPTY;
                 end
                 else if (aluOp == `OP_LH) begin
                     //writeData is data read from memory
@@ -124,6 +163,8 @@ module Memory(
                     readMemAddr = mWriteMemAddr;
                     readMemType = `HALFWORD;
                     padType = `PAD_S16;
+                    clr = 0;
+                    getType = `EMPTY;
                 end
                 else if (aluOp == `OP_LB) begin
                     //writeData is data read from memory
@@ -140,6 +181,8 @@ module Memory(
                     readMemAddr = mWriteMemAddr;
                     readMemType = `BYTE;
                     padType = `PAD_S8;
+                    clr = 0;
+                    getType = `EMPTY;
                 end
                 else if (aluOp == `OP_LBU) begin
                     //writeData is data read from memory
@@ -156,6 +199,8 @@ module Memory(
                     readMemAddr = mWriteMemAddr;
                     readMemType = `BYTE;
                     padType = `PAD_U8;
+                    clr = 0;
+                    getType = `EMPTY;
                 end
                 else if (aluOp == `OP_SW) begin
                     //writeData = mWriteData;
@@ -170,6 +215,8 @@ module Memory(
                     writeMemEnable = mWriteMemEnable;
                     writeMemAddr = mWriteMemAddr;
                     writeMemType = `WORD;
+                    clr = 0;
+                    getType = `EMPTY;
                 end
                 else if (aluOp == `OP_SH) begin
                     //writeData = mWriteData;
@@ -184,6 +231,8 @@ module Memory(
                     writeMemEnable = mWriteMemEnable;
                     writeMemAddr = mWriteMemAddr;
                     writeMemType = `HALFWORD;
+                    clr = 0;
+                    getType = `EMPTY;
                 end
                 else if (aluOp == `OP_SB) begin
                     //writeData = mWriteData;
@@ -198,6 +247,8 @@ module Memory(
                     writeMemEnable = mWriteMemEnable;
                     writeMemAddr = mWriteMemAddr;
                     writeMemType = `BYTE;
+                    clr = 0;
+                    getType = `EMPTY;
                 end
                 else begin 
                     //writeData = mWriteData;
@@ -211,6 +262,8 @@ module Memory(
                     writeMemAddr = mWriteMemAddr;
                     padType = `PAD_S32;
                     padIn = mWriteData;
+                    clr = 0;
+                    getType = `EMPTY;
                 end
 
             end

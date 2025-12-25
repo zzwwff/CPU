@@ -10,6 +10,7 @@ vmap xpm activehdl/xpm
 vmap blk_mem_gen_v8_4_3 activehdl/blk_mem_gen_v8_4_3
 
 vlog -work xil_defaultlib  -sv2k12 \
+"D:/Vivada/Vivado/2019.1/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv" \
 "D:/Vivada/Vivado/2019.1/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv" \
 
 vcom -work xpm -93 \
@@ -20,7 +21,6 @@ vlog -work blk_mem_gen_v8_4_3  -v2k5 \
 
 vlog -work xil_defaultlib  -v2k5 \
 "../../../../CPU.srcs/sources_1/ip/ram8/sim/ram8.v" \
-
 
 vlog -work xil_defaultlib \
 "glbl.v"

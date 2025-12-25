@@ -85,6 +85,7 @@ module Execute(
                     writeLoEnable = 0;   
                     writeMemEnable = 0;
                     divStart = 0;
+                    executeRequest = 1;
             end
             //div finished
             else if (resultReady) begin
@@ -197,6 +198,18 @@ module Execute(
                     divStart = 0;
                     executeRequest = 0;
                 end      
+                `OP_GET: begin
+                    //get
+                    writeEnable = 1;
+                    writeData = `EMPTY;
+                    writeAddr = regTarget;
+                    writeHiEnable = 0;
+                    writeLoEnable = 0;
+                    writeMemEnable = 0;
+                    writeMemAddr = dataSource1;
+                    divStart = 0;
+                    executeRequest = 0;
+                end       
                 `OP_LW: begin
                     //load regTarget from mem[dataSource1 + offset]
                     writeEnable = 1;
@@ -265,7 +278,17 @@ module Execute(
                     writeMemEnable = 0;
                     divStart = 0;
                     executeRequest = 0;
-                end         
+                end       
+                `OP_CLR: begin
+                    writeData = `EMPTY;
+                    writeEnable = 0;
+                    writeAddr = 0;
+                    writeHiEnable = 0;
+                    writeLoEnable = 0;  
+                    writeMemEnable = 0;       
+                    divStart = 0;      
+                    executeRequest = 0;  
+                end  
                 //OP_NON: need to identify the operation specifically by aluSel
                 `OP_NON: begin
                     case (aluSel)
@@ -405,16 +428,15 @@ module Execute(
                         executeRequest = 0;
                     end
                     `SEL_MOVZ: begin
-                        if (dataSource1 == 0) begin
-                            writeEnable = 1;
-                            writeData = dataSource2;
-                            writeAddr = regTarget;
-                            writeLoEnable = 0;
-                            writeHiEnable = 0;
-                            writeMemEnable = 0;
-                            divStart = 0;
-                            executeRequest = 0;
-                        end
+                        writeEnable = (dataSource1 == 0);
+                        writeData = dataSource2;
+                        writeAddr = regTarget;
+                        writeLoEnable = 0;
+                        writeHiEnable = 0;
+                        writeMemEnable = 0;
+                        divStart = 0;
+                        executeRequest = 0;
+                        
                     end
                     `SEL_JR: begin
                         writeData = `EMPTY;

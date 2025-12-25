@@ -45,7 +45,7 @@ module Decode(
             rtLoaded = 0;
         end
         else begin
-            if (eAluOp == `OP_LW) begin
+            if (eAluOp == `OP_LW || eAluOp == `OP_GET) begin
                 if (eRegTarget == inst[`REG_RS_BEGIN:`REG_RS_BEGIN - `REG_WIDTH + 1])
                     rsLoaded = 1;
                 else rsLoaded = 0;
@@ -242,7 +242,7 @@ module Decode(
                     //store the next instruction in ret
                     padType2 = `PAD_S32;
                     padIn2 = pc + 4;
-                    regTarget = `RET;           //$ret will be written
+                    regTarget = 5'b11111;           //$ret will be written
                     regWriteEnable = 1;
                     branchEnable = 1;
                     branchAddr = dataSource1;     //dataSource1 is padded ins
@@ -325,7 +325,21 @@ module Decode(
                     branchEnable = 0;
                     loadRequest = rsLoaded || rtLoaded; 
                     hlt = 0;
-                end           
+                end    
+                `OP_GET: begin
+                    //get $rt $rs
+                    //$rt = get[$rs]
+                    regAddr1 = inst[`REG_RS_BEGIN:`REG_RS_BEGIN - `REG_WIDTH + 1];
+                    regEnable1 = 1;
+                    padType1 = `PAD_S32;
+                    padIn1 = regData1;
+                    regEnable2 = 0;
+                    regTarget = inst[`REG_RT_BEGIN:`REG_RT_BEGIN - `REG_WIDTH + 1];
+                    regWriteEnable = 1;
+                    branchEnable = 0;
+                    loadRequest = rsLoaded; 
+                    hlt = 0;
+                end          
                 `OP_LW: begin
                     //lw $rt (offset)$rs
                     //$rt = mem[offset + $rs]
@@ -411,6 +425,14 @@ module Decode(
                     regWriteEnable = 0;
                     branchEnable = 0;   
                     loadRequest = rsLoaded;
+                    hlt = 0;
+                end  
+                `OP_CLR: begin
+                    regEnable1 = 0;
+                    regEnable2 = 0;
+                    regWriteEnable = 0;
+                    branchEnable = 0;
+                    loadRequest = 0;
                     hlt = 0;
                 end                                             
                 `OP_NON: begin

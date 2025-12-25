@@ -2,8 +2,8 @@
 # Vivado v2019.1 (64-bit)
 # SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
 # IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
-# Start of session at: Mon Dec 15 22:29:34 2025
-# Process ID: 41124
+# Start of session at: Sun Dec 21 13:23:49 2025
+# Process ID: 34632
 # Current directory: E:/source/VIVADOScource/CPU/CPU.runs/synth_1
 # Command line: vivado.exe -log SOC.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source SOC.tcl
 # Log file: E:/source/VIVADOScource/CPU/CPU.runs/synth_1/SOC.vds
@@ -16,60 +16,78 @@ Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
 INFO: [Device 21-403] Loading part xc7a35tcpg236-1
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 14028 
+INFO: Helper process launched with PID 39292 
+WARNING: [Synth 8-2306] macro STD_OUT_WIDTH redefined [E:/source/VIVADOScource/CPU/CPU.srcs/sources_1/new/StdOutRam.v:2]
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 805.383 ; gain = 178.188
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 811.707 ; gain = 184.453
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-6157] synthesizing module 'SOC' [E:/source/VIVADOScource/CPU/CPU.srcs/sources_1/new/SOC.v:3]
-INFO: [Synth 8-6157] synthesizing module 'VGAClock' [E:/source/VIVADOScource/CPU/CPU.runs/synth_1/.Xil/Vivado-41124-zwfpc/realtime/VGAClock_stub.v:5]
-INFO: [Synth 8-6155] done synthesizing module 'VGAClock' (1#1) [E:/source/VIVADOScource/CPU/CPU.runs/synth_1/.Xil/Vivado-41124-zwfpc/realtime/VGAClock_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'VGAClock' [E:/source/VIVADOScource/CPU/CPU.runs/synth_1/.Xil/Vivado-34632-zwfpc/realtime/VGAClock_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'VGAClock' (1#1) [E:/source/VIVADOScource/CPU/CPU.runs/synth_1/.Xil/Vivado-34632-zwfpc/realtime/VGAClock_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'TimeClock' [E:/source/VIVADOScource/CPU/CPU.srcs/sources_1/new/TimeClock.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'TimeClock' (2#1) [E:/source/VIVADOScource/CPU/CPU.srcs/sources_1/new/TimeClock.v:4]
 INFO: [Synth 8-6157] synthesizing module 'TimeDisplay' [E:/source/VIVADOScource/CPU/CPU.srcs/sources_1/new/TimeDisplay.v:7]
-INFO: [Synth 8-6155] done synthesizing module 'TimeDisplay' (2#1) [E:/source/VIVADOScource/CPU/CPU.srcs/sources_1/new/TimeDisplay.v:7]
-WARNING: [Synth 8-689] width (32) of port connection 'n1' does not match port width (4) of module 'TimeDisplay' [E:/source/VIVADOScource/CPU/CPU.srcs/sources_1/new/SOC.v:54]
-WARNING: [Synth 8-689] width (32) of port connection 'n2' does not match port width (4) of module 'TimeDisplay' [E:/source/VIVADOScource/CPU/CPU.srcs/sources_1/new/SOC.v:55]
-WARNING: [Synth 8-689] width (32) of port connection 'n3' does not match port width (4) of module 'TimeDisplay' [E:/source/VIVADOScource/CPU/CPU.srcs/sources_1/new/SOC.v:56]
-WARNING: [Synth 8-689] width (32) of port connection 'n4' does not match port width (4) of module 'TimeDisplay' [E:/source/VIVADOScource/CPU/CPU.srcs/sources_1/new/SOC.v:57]
+INFO: [Synth 8-6155] done synthesizing module 'TimeDisplay' (3#1) [E:/source/VIVADOScource/CPU/CPU.srcs/sources_1/new/TimeDisplay.v:7]
+WARNING: [Synth 8-689] width (32) of port connection 'n1' does not match port width (4) of module 'TimeDisplay' [E:/source/VIVADOScource/CPU/CPU.srcs/sources_1/new/SOC.v:85]
+WARNING: [Synth 8-689] width (32) of port connection 'n2' does not match port width (4) of module 'TimeDisplay' [E:/source/VIVADOScource/CPU/CPU.srcs/sources_1/new/SOC.v:86]
+WARNING: [Synth 8-689] width (32) of port connection 'n3' does not match port width (4) of module 'TimeDisplay' [E:/source/VIVADOScource/CPU/CPU.srcs/sources_1/new/SOC.v:87]
+WARNING: [Synth 8-689] width (32) of port connection 'n4' does not match port width (4) of module 'TimeDisplay' [E:/source/VIVADOScource/CPU/CPU.srcs/sources_1/new/SOC.v:88]
 INFO: [Synth 8-6157] synthesizing module 'CPUTop' [E:/source/VIVADOScource/CPU/CPU.srcs/sources_1/new/CPUTop.v:3]
 INFO: [Synth 8-6157] synthesizing module 'Control' [E:/source/VIVADOScource/CPU/CPU.srcs/sources_1/new/Control.v:2]
-INFO: [Synth 8-6155] done synthesizing module 'Control' (3#1) [E:/source/VIVADOScource/CPU/CPU.srcs/sources_1/new/Control.v:2]
+INFO: [Synth 8-6155] done synthesizing module 'Control' (4#1) [E:/source/VIVADOScource/CPU/CPU.srcs/sources_1/new/Control.v:2]
 INFO: [Synth 8-6157] synthesizing module 'Fetch' [E:/source/VIVADOScource/CPU/CPU.srcs/sources_1/new/Fetch.v:4]
-INFO: [Synth 8-6155] done synthesizing module 'Fetch' (4#1) [E:/source/VIVADOScource/CPU/CPU.srcs/sources_1/new/Fetch.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'Fetch' (5#1) [E:/source/VIVADOScource/CPU/CPU.srcs/sources_1/new/Fetch.v:4]
 INFO: [Synth 8-6157] synthesizing module 'FetchDecode' [E:/source/VIVADOScource/CPU/CPU.srcs/sources_1/new/FetchDecode.v:3]
-INFO: [Synth 8-6155] done synthesizing module 'FetchDecode' (5#1) [E:/source/VIVADOScource/CPU/CPU.srcs/sources_1/new/FetchDecode.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'FetchDecode' (6#1) [E:/source/VIVADOScource/CPU/CPU.srcs/sources_1/new/FetchDecode.v:3]
 INFO: [Synth 8-6157] synthesizing module 'RegisterFile' [E:/source/VIVADOScource/CPU/CPU.srcs/sources_1/new/RegisterFile.v:3]
-INFO: [Synth 8-6155] done synthesizing module 'RegisterFile' (6#1) [E:/source/VIVADOScource/CPU/CPU.srcs/sources_1/new/RegisterFile.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'RegisterFile' (7#1) [E:/source/VIVADOScource/CPU/CPU.srcs/sources_1/new/RegisterFile.v:3]
 INFO: [Synth 8-6157] synthesizing module 'Decode' [E:/source/VIVADOScource/CPU/CPU.srcs/sources_1/new/Decode.v:2]
 INFO: [Synth 8-6157] synthesizing module 'Padding' [E:/source/VIVADOScource/CPU/CPU.srcs/sources_1/new/Padding.v:4]
-INFO: [Synth 8-6155] done synthesizing module 'Padding' (7#1) [E:/source/VIVADOScource/CPU/CPU.srcs/sources_1/new/Padding.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'Padding' (8#1) [E:/source/VIVADOScource/CPU/CPU.srcs/sources_1/new/Padding.v:4]
 INFO: [Synth 8-6157] synthesizing module 'Forwarding' [E:/source/VIVADOScource/CPU/CPU.srcs/sources_1/new/Forwarding.v:3]
-INFO: [Synth 8-6155] done synthesizing module 'Forwarding' (8#1) [E:/source/VIVADOScource/CPU/CPU.srcs/sources_1/new/Forwarding.v:3]
-INFO: [Synth 8-6155] done synthesizing module 'Decode' (9#1) [E:/source/VIVADOScource/CPU/CPU.srcs/sources_1/new/Decode.v:2]
+INFO: [Synth 8-6155] done synthesizing module 'Forwarding' (9#1) [E:/source/VIVADOScource/CPU/CPU.srcs/sources_1/new/Forwarding.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'Decode' (10#1) [E:/source/VIVADOScource/CPU/CPU.srcs/sources_1/new/Decode.v:2]
 INFO: [Synth 8-6157] synthesizing module 'DecodeExecute' [E:/source/VIVADOScource/CPU/CPU.srcs/sources_1/new/DecodeExecute.v:2]
-INFO: [Synth 8-6155] done synthesizing module 'DecodeExecute' (10#1) [E:/source/VIVADOScource/CPU/CPU.srcs/sources_1/new/DecodeExecute.v:2]
+INFO: [Synth 8-6155] done synthesizing module 'DecodeExecute' (11#1) [E:/source/VIVADOScource/CPU/CPU.srcs/sources_1/new/DecodeExecute.v:2]
 INFO: [Synth 8-6157] synthesizing module 'Division' [E:/source/VIVADOScource/CPU/CPU.srcs/sources_1/new/Division.v:3]
 WARNING: [Synth 8-5788] Register num_reg in module Division is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [E:/source/VIVADOScource/CPU/CPU.srcs/sources_1/new/Division.v:81]
 WARNING: [Synth 8-5788] Register currentDigit_reg in module Division is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [E:/source/VIVADOScource/CPU/CPU.srcs/sources_1/new/Division.v:83]
-INFO: [Synth 8-6155] done synthesizing module 'Division' (11#1) [E:/source/VIVADOScource/CPU/CPU.srcs/sources_1/new/Division.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'Division' (12#1) [E:/source/VIVADOScource/CPU/CPU.srcs/sources_1/new/Division.v:3]
 INFO: [Synth 8-6157] synthesizing module 'Execute' [E:/source/VIVADOScource/CPU/CPU.srcs/sources_1/new/Execute.v:3]
-INFO: [Synth 8-6155] done synthesizing module 'Execute' (12#1) [E:/source/VIVADOScource/CPU/CPU.srcs/sources_1/new/Execute.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'Execute' (13#1) [E:/source/VIVADOScource/CPU/CPU.srcs/sources_1/new/Execute.v:3]
 INFO: [Synth 8-6157] synthesizing module 'ExecuteMemory' [E:/source/VIVADOScource/CPU/CPU.srcs/sources_1/new/ExecuteMemory.v:4]
-INFO: [Synth 8-6155] done synthesizing module 'ExecuteMemory' (13#1) [E:/source/VIVADOScource/CPU/CPU.srcs/sources_1/new/ExecuteMemory.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'ExecuteMemory' (14#1) [E:/source/VIVADOScource/CPU/CPU.srcs/sources_1/new/ExecuteMemory.v:4]
 INFO: [Synth 8-6157] synthesizing module 'Memory' [E:/source/VIVADOScource/CPU/CPU.srcs/sources_1/new/Memory.v:4]
-INFO: [Synth 8-6155] done synthesizing module 'Memory' (14#1) [E:/source/VIVADOScource/CPU/CPU.srcs/sources_1/new/Memory.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'Memory' (15#1) [E:/source/VIVADOScource/CPU/CPU.srcs/sources_1/new/Memory.v:4]
 INFO: [Synth 8-6157] synthesizing module 'MemoryWriteback' [E:/source/VIVADOScource/CPU/CPU.srcs/sources_1/new/MemoryWriteback.v:3]
-INFO: [Synth 8-6155] done synthesizing module 'MemoryWriteback' (15#1) [E:/source/VIVADOScource/CPU/CPU.srcs/sources_1/new/MemoryWriteback.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'MemoryWriteback' (16#1) [E:/source/VIVADOScource/CPU/CPU.srcs/sources_1/new/MemoryWriteback.v:3]
 INFO: [Synth 8-6157] synthesizing module 'HiLo' [E:/source/VIVADOScource/CPU/CPU.srcs/sources_1/new/HiLo.v:4]
-INFO: [Synth 8-6155] done synthesizing module 'HiLo' (16#1) [E:/source/VIVADOScource/CPU/CPU.srcs/sources_1/new/HiLo.v:4]
-INFO: [Synth 8-6155] done synthesizing module 'CPUTop' (17#1) [E:/source/VIVADOScource/CPU/CPU.srcs/sources_1/new/CPUTop.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'HiLo' (17#1) [E:/source/VIVADOScource/CPU/CPU.srcs/sources_1/new/HiLo.v:4]
+WARNING: [Synth 8-3848] Net debug in module/entity CPUTop does not have driver. [E:/source/VIVADOScource/CPU/CPU.srcs/sources_1/new/CPUTop.v:19]
+INFO: [Synth 8-6155] done synthesizing module 'CPUTop' (18#1) [E:/source/VIVADOScource/CPU/CPU.srcs/sources_1/new/CPUTop.v:3]
 INFO: [Synth 8-6157] synthesizing module 'CPURam' [E:/source/VIVADOScource/CPU/CPU.srcs/sources_1/new/CPURam.v:3]
-INFO: [Synth 8-6157] synthesizing module 'ram' [E:/source/VIVADOScource/CPU/CPU.runs/synth_1/.Xil/Vivado-41124-zwfpc/realtime/ram_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'ram' (18#1) [E:/source/VIVADOScource/CPU/CPU.runs/synth_1/.Xil/Vivado-41124-zwfpc/realtime/ram_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'CPURam' (19#1) [E:/source/VIVADOScource/CPU/CPU.srcs/sources_1/new/CPURam.v:3]
+INFO: [Synth 8-6157] synthesizing module 'ram' [E:/source/VIVADOScource/CPU/CPU.runs/synth_1/.Xil/Vivado-34632-zwfpc/realtime/ram_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'ram' (19#1) [E:/source/VIVADOScource/CPU/CPU.runs/synth_1/.Xil/Vivado-34632-zwfpc/realtime/ram_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'CPURam' (20#1) [E:/source/VIVADOScource/CPU/CPU.srcs/sources_1/new/CPURam.v:3]
+INFO: [Synth 8-6157] synthesizing module 'MemoryTransmitter' [E:/source/VIVADOScource/CPU/CPU.srcs/sources_1/new/MemoryTransmitter.v:7]
+INFO: [Synth 8-6157] synthesizing module 'MemoryReceiverAutomation' [E:/source/VIVADOScource/CPU/CPU.srcs/sources_1/new/MemoryReceiverAutomation.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'MemoryReceiverAutomation' (21#1) [E:/source/VIVADOScource/CPU/CPU.srcs/sources_1/new/MemoryReceiverAutomation.v:13]
+WARNING: [Synth 8-7023] instance 'memoryReceiverAutomation' of module 'MemoryReceiverAutomation' has 9 connections declared, but only 8 given [E:/source/VIVADOScource/CPU/CPU.srcs/sources_1/new/MemoryTransmitter.v:60]
+INFO: [Synth 8-6157] synthesizing module 'USBReceiver' [E:/source/VIVADOScource/CPU/CPU.srcs/sources_1/new/USBReceiver.v:86]
+	Parameter BPS bound to: 9600 - type: integer 
+	Parameter FREQ bound to: 25000000 - type: integer 
+	Parameter BPS_CNT bound to: 2604 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'USBReceiver' (22#1) [E:/source/VIVADOScource/CPU/CPU.srcs/sources_1/new/USBReceiver.v:86]
+WARNING: [Synth 8-6014] Unused sequential element rxMemEnabled_reg was removed.  [E:/source/VIVADOScource/CPU/CPU.srcs/sources_1/new/MemoryTransmitter.v:27]
+WARNING: [Synth 8-6014] Unused sequential element clks_reg was removed.  [E:/source/VIVADOScource/CPU/CPU.srcs/sources_1/new/MemoryTransmitter.v:51]
+WARNING: [Synth 8-3848] Net tx in module/entity MemoryTransmitter does not have driver. [E:/source/VIVADOScource/CPU/CPU.srcs/sources_1/new/MemoryTransmitter.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'MemoryTransmitter' (23#1) [E:/source/VIVADOScource/CPU/CPU.srcs/sources_1/new/MemoryTransmitter.v:7]
+WARNING: [Synth 8-7023] instance 'memoryTransmitter' of module 'MemoryTransmitter' has 9 connections declared, but only 8 given [E:/source/VIVADOScource/CPU/CPU.srcs/sources_1/new/SOC.v:128]
 INFO: [Synth 8-6157] synthesizing module 'StdOutRam' [E:/source/VIVADOScource/CPU/CPU.srcs/sources_1/new/StdOutRam.v:3]
-INFO: [Synth 8-6157] synthesizing module 'ram8' [E:/source/VIVADOScource/CPU/CPU.runs/synth_1/.Xil/Vivado-41124-zwfpc/realtime/ram8_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'ram8' (20#1) [E:/source/VIVADOScource/CPU/CPU.runs/synth_1/.Xil/Vivado-41124-zwfpc/realtime/ram8_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'ram8' [E:/source/VIVADOScource/CPU/CPU.runs/synth_1/.Xil/Vivado-34632-zwfpc/realtime/ram8_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'ram8' (24#1) [E:/source/VIVADOScource/CPU/CPU.runs/synth_1/.Xil/Vivado-34632-zwfpc/realtime/ram8_stub.v:6]
 WARNING: [Synth 8-6014] Unused sequential element localStdOutEnable_reg was removed.  [E:/source/VIVADOScource/CPU/CPU.srcs/sources_1/new/StdOutRam.v:20]
-INFO: [Synth 8-6155] done synthesizing module 'StdOutRam' (21#1) [E:/source/VIVADOScource/CPU/CPU.srcs/sources_1/new/StdOutRam.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'StdOutRam' (25#1) [E:/source/VIVADOScource/CPU/CPU.srcs/sources_1/new/StdOutRam.v:3]
 INFO: [Synth 8-6157] synthesizing module 'Console' [E:/source/VIVADOScource/CPU/CPU.srcs/sources_1/new/VGATop.v:1]
 INFO: [Synth 8-6157] synthesizing module 'VGADesign' [E:/source/VIVADOScource/CPU/CPU.srcs/sources_1/new/VGADesign.v:1]
 	Parameter h_a bound to: 11'b00001100000 
@@ -84,9 +102,9 @@ INFO: [Synth 8-6157] synthesizing module 'VGADesign' [E:/source/VIVADOScource/CP
 	Parameter v_all bound to: 11'b01000001101 
 	Parameter width bound to: 11'b01010000000 
 	Parameter height bound to: 11'b00111100000 
-INFO: [Synth 8-6157] synthesizing module 'FontRom' [E:/source/VIVADOScource/CPU/CPU.runs/synth_1/.Xil/Vivado-41124-zwfpc/realtime/FontRom_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'FontRom' (22#1) [E:/source/VIVADOScource/CPU/CPU.runs/synth_1/.Xil/Vivado-41124-zwfpc/realtime/FontRom_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'VGADesign' (23#1) [E:/source/VIVADOScource/CPU/CPU.srcs/sources_1/new/VGADesign.v:1]
+INFO: [Synth 8-6157] synthesizing module 'FontRom' [E:/source/VIVADOScource/CPU/CPU.runs/synth_1/.Xil/Vivado-34632-zwfpc/realtime/FontRom_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'FontRom' (26#1) [E:/source/VIVADOScource/CPU/CPU.runs/synth_1/.Xil/Vivado-34632-zwfpc/realtime/FontRom_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'VGADesign' (27#1) [E:/source/VIVADOScource/CPU/CPU.srcs/sources_1/new/VGADesign.v:1]
 INFO: [Synth 8-6157] synthesizing module 'CharStream' [E:/source/VIVADOScource/CPU/CPU.srcs/sources_1/new/CharStream.v:3]
 	Parameter WIDTH bound to: 64 - type: integer 
 	Parameter HEIGHT bound to: 20 - type: integer 
@@ -190,25 +208,11 @@ WARNING: [Synth 8-5788] Register chars_reg[30][32] in module CharStream is has b
 WARNING: [Synth 8-5788] Register chars_reg[30][31] in module CharStream is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [E:/source/VIVADOScource/CPU/CPU.srcs/sources_1/new/CharStream.v:50]
 WARNING: [Synth 8-5788] Register chars_reg[30][30] in module CharStream is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [E:/source/VIVADOScource/CPU/CPU.srcs/sources_1/new/CharStream.v:50]
 INFO: [Common 17-14] Message 'Synth 8-5788' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
-INFO: [Synth 8-6155] done synthesizing module 'CharStream' (24#1) [E:/source/VIVADOScource/CPU/CPU.srcs/sources_1/new/CharStream.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'CharStream' (28#1) [E:/source/VIVADOScource/CPU/CPU.srcs/sources_1/new/CharStream.v:3]
 WARNING: [Synth 8-6014] Unused sequential element clks_reg was removed.  [E:/source/VIVADOScource/CPU/CPU.srcs/sources_1/new/VGATop.v:19]
-INFO: [Synth 8-6155] done synthesizing module 'Console' (25#1) [E:/source/VIVADOScource/CPU/CPU.srcs/sources_1/new/VGATop.v:1]
-WARNING: [Synth 8-7023] instance 'console' of module 'Console' has 11 connections declared, but only 10 given [E:/source/VIVADOScource/CPU/CPU.srcs/sources_1/new/SOC.v:110]
-INFO: [Synth 8-6157] synthesizing module 'MemoryTransmitter' [E:/source/VIVADOScource/CPU/CPU.srcs/sources_1/new/MemoryTransmitter.v:7]
-INFO: [Synth 8-6157] synthesizing module 'MemoryReceiverAutomation' [E:/source/VIVADOScource/CPU/CPU.srcs/sources_1/new/MemoryReceiverAutomation.v:13]
-INFO: [Synth 8-6155] done synthesizing module 'MemoryReceiverAutomation' (26#1) [E:/source/VIVADOScource/CPU/CPU.srcs/sources_1/new/MemoryReceiverAutomation.v:13]
-WARNING: [Synth 8-7023] instance 'memoryReceiverAutomation' of module 'MemoryReceiverAutomation' has 9 connections declared, but only 8 given [E:/source/VIVADOScource/CPU/CPU.srcs/sources_1/new/MemoryTransmitter.v:60]
-INFO: [Synth 8-6157] synthesizing module 'USBReceiver' [E:/source/VIVADOScource/CPU/CPU.srcs/sources_1/new/USBReceiver.v:86]
-	Parameter BPS bound to: 9600 - type: integer 
-	Parameter FREQ bound to: 25000000 - type: integer 
-	Parameter BPS_CNT bound to: 2604 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'USBReceiver' (27#1) [E:/source/VIVADOScource/CPU/CPU.srcs/sources_1/new/USBReceiver.v:86]
-WARNING: [Synth 8-6014] Unused sequential element rxMemEnabled_reg was removed.  [E:/source/VIVADOScource/CPU/CPU.srcs/sources_1/new/MemoryTransmitter.v:27]
-WARNING: [Synth 8-6014] Unused sequential element clks_reg was removed.  [E:/source/VIVADOScource/CPU/CPU.srcs/sources_1/new/MemoryTransmitter.v:51]
-WARNING: [Synth 8-3848] Net tx in module/entity MemoryTransmitter does not have driver. [E:/source/VIVADOScource/CPU/CPU.srcs/sources_1/new/MemoryTransmitter.v:11]
-INFO: [Synth 8-6155] done synthesizing module 'MemoryTransmitter' (28#1) [E:/source/VIVADOScource/CPU/CPU.srcs/sources_1/new/MemoryTransmitter.v:7]
-WARNING: [Synth 8-7023] instance 'memoryTransmitter' of module 'MemoryTransmitter' has 9 connections declared, but only 8 given [E:/source/VIVADOScource/CPU/CPU.srcs/sources_1/new/SOC.v:123]
-INFO: [Synth 8-6155] done synthesizing module 'SOC' (29#1) [E:/source/VIVADOScource/CPU/CPU.srcs/sources_1/new/SOC.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'Console' (29#1) [E:/source/VIVADOScource/CPU/CPU.srcs/sources_1/new/VGATop.v:1]
+WARNING: [Synth 8-7023] instance 'console' of module 'Console' has 11 connections declared, but only 10 given [E:/source/VIVADOScource/CPU/CPU.srcs/sources_1/new/SOC.v:154]
+INFO: [Synth 8-6155] done synthesizing module 'SOC' (30#1) [E:/source/VIVADOScource/CPU/CPU.srcs/sources_1/new/SOC.v:3]
 WARNING: [Synth 8-3331] design MemoryTransmitter has unconnected port tx
 WARNING: [Synth 8-3331] design CPURam has unconnected port rAddrA[31]
 WARNING: [Synth 8-3331] design CPURam has unconnected port rAddrA[30]
@@ -227,7 +231,6 @@ WARNING: [Synth 8-3331] design CPURam has unconnected port rAddrA[18]
 WARNING: [Synth 8-3331] design CPURam has unconnected port rAddrA[17]
 WARNING: [Synth 8-3331] design CPURam has unconnected port rAddrA[16]
 WARNING: [Synth 8-3331] design CPURam has unconnected port rAddrA[15]
-WARNING: [Synth 8-3331] design CPURam has unconnected port rAddrA[14]
 WARNING: [Synth 8-3331] design CPURam has unconnected port rAddrA[1]
 WARNING: [Synth 8-3331] design CPURam has unconnected port rAddrA[0]
 WARNING: [Synth 8-3331] design CPURam has unconnected port rAddrB[31]
@@ -247,7 +250,6 @@ WARNING: [Synth 8-3331] design CPURam has unconnected port rAddrB[18]
 WARNING: [Synth 8-3331] design CPURam has unconnected port rAddrB[17]
 WARNING: [Synth 8-3331] design CPURam has unconnected port rAddrB[16]
 WARNING: [Synth 8-3331] design CPURam has unconnected port rAddrB[15]
-WARNING: [Synth 8-3331] design CPURam has unconnected port rAddrB[14]
 WARNING: [Synth 8-3331] design CPURam has unconnected port wAddrB[31]
 WARNING: [Synth 8-3331] design CPURam has unconnected port wAddrB[30]
 WARNING: [Synth 8-3331] design CPURam has unconnected port wAddrB[29]
@@ -265,11 +267,18 @@ WARNING: [Synth 8-3331] design CPURam has unconnected port wAddrB[18]
 WARNING: [Synth 8-3331] design CPURam has unconnected port wAddrB[17]
 WARNING: [Synth 8-3331] design CPURam has unconnected port wAddrB[16]
 WARNING: [Synth 8-3331] design CPURam has unconnected port wAddrB[15]
-WARNING: [Synth 8-3331] design CPURam has unconnected port wAddrB[14]
 WARNING: [Synth 8-3331] design Execute has unconnected port regWriteEnable
 WARNING: [Synth 8-3331] design FetchDecode has unconnected port branchEnable
+WARNING: [Synth 8-3331] design CPUTop has unconnected port debug[7]
+WARNING: [Synth 8-3331] design CPUTop has unconnected port debug[6]
+WARNING: [Synth 8-3331] design CPUTop has unconnected port debug[5]
+WARNING: [Synth 8-3331] design CPUTop has unconnected port debug[4]
+WARNING: [Synth 8-3331] design CPUTop has unconnected port debug[3]
+WARNING: [Synth 8-3331] design CPUTop has unconnected port debug[2]
+WARNING: [Synth 8-3331] design CPUTop has unconnected port debug[1]
+WARNING: [Synth 8-3331] design CPUTop has unconnected port debug[0]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:45 ; elapsed = 00:00:47 . Memory (MB): peak = 1290.141 ; gain = 662.945
+Finished RTL Elaboration : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 1294.180 ; gain = 666.926
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -282,10 +291,10 @@ Report Check Netlist:
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:51 ; elapsed = 00:00:52 . Memory (MB): peak = 1290.141 ; gain = 662.945
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:27 ; elapsed = 00:00:28 . Memory (MB): peak = 1294.180 ; gain = 666.926
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:51 ; elapsed = 00:00:52 . Memory (MB): peak = 1290.141 ; gain = 662.945
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:27 ; elapsed = 00:00:28 . Memory (MB): peak = 1294.180 ; gain = 666.926
 ---------------------------------------------------------------------------------
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
@@ -297,21 +306,23 @@ Parsing XDC File [e:/source/VIVADOScource/CPU/CPU.srcs/sources_1/ip/VGAClock/VGA
 Finished Parsing XDC File [e:/source/VIVADOScource/CPU/CPU.srcs/sources_1/ip/VGAClock/VGAClock/VGAClock_in_context.xdc] for cell 'clk60'
 Parsing XDC File [e:/source/VIVADOScource/CPU/CPU.srcs/sources_1/ip/FontRom/FontRom/FontRom_in_context.xdc] for cell 'console/design1/fontrom'
 Finished Parsing XDC File [e:/source/VIVADOScource/CPU/CPU.srcs/sources_1/ip/FontRom/FontRom/FontRom_in_context.xdc] for cell 'console/design1/fontrom'
-Parsing XDC File [E:/source/VIVADOScource/CPU/CPU.runs/synth_1/.Xil/Vivado-41124-zwfpc/ram/ram/ram_in_context.xdc] for cell 'cpuRam/ram1'
-Finished Parsing XDC File [E:/source/VIVADOScource/CPU/CPU.runs/synth_1/.Xil/Vivado-41124-zwfpc/ram/ram/ram_in_context.xdc] for cell 'cpuRam/ram1'
+Parsing XDC File [E:/source/VIVADOScource/CPU/CPU.runs/synth_1/.Xil/Vivado-34632-zwfpc/ram/ram/ram_in_context.xdc] for cell 'cpuRam/ram1'
+Finished Parsing XDC File [E:/source/VIVADOScource/CPU/CPU.runs/synth_1/.Xil/Vivado-34632-zwfpc/ram/ram/ram_in_context.xdc] for cell 'cpuRam/ram1'
 Parsing XDC File [E:/source/VIVADOScource/CPU/CPU.srcs/constrs_1/new/cons.xdc]
 Finished Parsing XDC File [E:/source/VIVADOScource/CPU/CPU.srcs/constrs_1/new/cons.xdc]
 INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [E:/source/VIVADOScource/CPU/CPU.srcs/constrs_1/new/cons.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/SOC_propImpl.xdc].
 Resolution: To avoid this warning, move constraints listed in [.Xil/SOC_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [E:/source/VIVADOScource/CPU/CPU.runs/synth_1/dont_touch.xdc]
+Finished Parsing XDC File [E:/source/VIVADOScource/CPU/CPU.runs/synth_1/dont_touch.xdc]
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.017 . Memory (MB): peak = 1397.059 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.011 . Memory (MB): peak = 1394.355 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.313 . Memory (MB): peak = 1397.059 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.188 . Memory (MB): peak = 1394.355 ; gain = 0.000
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:01:08 ; elapsed = 00:01:10 . Memory (MB): peak = 1397.059 ; gain = 769.863
+Finished Constraint Validation : Time (s): cpu = 00:00:37 ; elapsed = 00:00:39 . Memory (MB): peak = 1394.355 ; gain = 767.102
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-5580] Multithreading enabled for synth_design using a maximum of 2 processes.
 ---------------------------------------------------------------------------------
@@ -319,7 +330,7 @@ Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a35tcpg236-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:01:08 ; elapsed = 00:01:10 . Memory (MB): peak = 1397.059 ; gain = 769.863
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:37 ; elapsed = 00:00:39 . Memory (MB): peak = 1394.355 ; gain = 767.102
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
@@ -331,7 +342,7 @@ Applied set_property DONT_TOUCH = true for clk60. (constraint file  auto generat
 Applied set_property DONT_TOUCH = true for console/design1/fontrom. (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for cpuRam/ram1. (constraint file  auto generated constraint, line ).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:01:08 ; elapsed = 00:01:10 . Memory (MB): peak = 1397.059 ; gain = 769.863
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:38 ; elapsed = 00:00:39 . Memory (MB): peak = 1394.355 ; gain = 767.102
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-5546] ROM "regEnable1" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5587] ROM size for "regWriteEnable" is below threshold of ROM address width. It will be mapped to LUTs
@@ -345,12 +356,12 @@ INFO: [Synth 8-5587] ROM size for "padTypeOffset" is below threshold of ROM addr
 INFO: [Synth 8-5546] ROM "loadRequest" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [E:/source/VIVADOScource/CPU/CPU.srcs/sources_1/new/Division.v:90]
 INFO: [Synth 8-802] inferred FSM for state register 'status_reg' in module 'Division'
-INFO: [Synth 8-5587] ROM size for "writeEnable" is below threshold of ROM address width. It will be mapped to LUTs
-INFO: [Synth 8-5546] ROM "writeHiData" won't be mapped to RAM because it is too sparse
-INFO: [Synth 8-5546] ROM "writeLoData" won't be mapped to RAM because it is too sparse
-INFO: [Synth 8-5546] ROM "writeMemEnable" won't be mapped to RAM because it is too sparse
-INFO: [Synth 8-5587] ROM size for "writeMemAddr" is below threshold of ROM address width. It will be mapped to LUTs
 INFO: [Synth 8-5546] ROM "divStart" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "writeHiEnable" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "writeLoEnable" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "writeMemEnable" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "writeData" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5587] ROM size for "writeMemAddr" is below threshold of ROM address width. It will be mapped to LUTs
 WARNING: [Synth 8-327] inferring latch for variable 'hlt_reg' [E:/source/VIVADOScource/CPU/CPU.srcs/sources_1/new/Control.v:40]
 WARNING: [Synth 8-327] inferring latch for variable 'regTarget_reg' [E:/source/VIVADOScource/CPU/CPU.srcs/sources_1/new/Decode.v:125]
 WARNING: [Synth 8-327] inferring latch for variable 'regAddr1_reg' [E:/source/VIVADOScource/CPU/CPU.srcs/sources_1/new/Decode.v:90]
@@ -375,26 +386,26 @@ WARNING: [Synth 8-327] inferring latch for variable 'padType2_reg' [E:/source/VI
 INFO: [Synth 8-3354] encoded FSM with state register 'status_reg' using encoding 'sequential' in module 'Division'
 WARNING: [Synth 8-327] inferring latch for variable 'divData1_reg' [E:/source/VIVADOScource/CPU/CPU.srcs/sources_1/new/Execute.v:67]
 WARNING: [Synth 8-327] inferring latch for variable 'divData2_reg' [E:/source/VIVADOScource/CPU/CPU.srcs/sources_1/new/Execute.v:68]
-WARNING: [Synth 8-327] inferring latch for variable 'divStart_reg' [E:/source/VIVADOScource/CPU/CPU.srcs/sources_1/new/Execute.v:65]
 WARNING: [Synth 8-327] inferring latch for variable 'writeData_reg' [E:/source/VIVADOScource/CPU/CPU.srcs/sources_1/new/Execute.v:55]
-WARNING: [Synth 8-327] inferring latch for variable 'writeEnable_reg' [E:/source/VIVADOScource/CPU/CPU.srcs/sources_1/new/Execute.v:56]
 WARNING: [Synth 8-327] inferring latch for variable 'writeAddr_reg' [E:/source/VIVADOScource/CPU/CPU.srcs/sources_1/new/Execute.v:57]
 WARNING: [Synth 8-327] inferring latch for variable 'writeHiData_reg' [E:/source/VIVADOScource/CPU/CPU.srcs/sources_1/new/Execute.v:58]
-WARNING: [Synth 8-327] inferring latch for variable 'writeHiEnable_reg' [E:/source/VIVADOScource/CPU/CPU.srcs/sources_1/new/Execute.v:60]
 WARNING: [Synth 8-327] inferring latch for variable 'writeLoData_reg' [E:/source/VIVADOScource/CPU/CPU.srcs/sources_1/new/Execute.v:59]
-WARNING: [Synth 8-327] inferring latch for variable 'writeLoEnable_reg' [E:/source/VIVADOScource/CPU/CPU.srcs/sources_1/new/Execute.v:61]
-WARNING: [Synth 8-327] inferring latch for variable 'writeMemEnable_reg' [E:/source/VIVADOScource/CPU/CPU.srcs/sources_1/new/Execute.v:62]
 WARNING: [Synth 8-327] inferring latch for variable 'writeMemAddr_reg' [E:/source/VIVADOScource/CPU/CPU.srcs/sources_1/new/Execute.v:63]
-WARNING: [Synth 8-327] inferring latch for variable 'executeRequest_reg' [E:/source/VIVADOScource/CPU/CPU.srcs/sources_1/new/Execute.v:66]
-WARNING: [Synth 8-327] inferring latch for variable 'readMemAddr_reg' [E:/source/VIVADOScource/CPU/CPU.srcs/sources_1/new/Memory.v:54]
-WARNING: [Synth 8-327] inferring latch for variable 'readMemType_reg' [E:/source/VIVADOScource/CPU/CPU.srcs/sources_1/new/Memory.v:55]
-WARNING: [Synth 8-327] inferring latch for variable 'writeMemType_reg' [E:/source/VIVADOScource/CPU/CPU.srcs/sources_1/new/Memory.v:56]
-WARNING: [Synth 8-327] inferring latch for variable 'stdOutData_reg' [E:/source/VIVADOScource/CPU/CPU.srcs/sources_1/new/Memory.v:60]
+WARNING: [Synth 8-327] inferring latch for variable 'writeAddr_reg' [E:/source/VIVADOScource/CPU/CPU.srcs/sources_1/new/Memory.v:50]
+WARNING: [Synth 8-327] inferring latch for variable 'writeHiData_reg' [E:/source/VIVADOScource/CPU/CPU.srcs/sources_1/new/Memory.v:52]
+WARNING: [Synth 8-327] inferring latch for variable 'writeLoData_reg' [E:/source/VIVADOScource/CPU/CPU.srcs/sources_1/new/Memory.v:54]
+WARNING: [Synth 8-327] inferring latch for variable 'writeMemAddr_reg' [E:/source/VIVADOScource/CPU/CPU.srcs/sources_1/new/Memory.v:55]
+WARNING: [Synth 8-327] inferring latch for variable 'readMemAddr_reg' [E:/source/VIVADOScource/CPU/CPU.srcs/sources_1/new/Memory.v:57]
+WARNING: [Synth 8-327] inferring latch for variable 'readMemType_reg' [E:/source/VIVADOScource/CPU/CPU.srcs/sources_1/new/Memory.v:58]
+WARNING: [Synth 8-327] inferring latch for variable 'writeMemType_reg' [E:/source/VIVADOScource/CPU/CPU.srcs/sources_1/new/Memory.v:59]
+WARNING: [Synth 8-327] inferring latch for variable 'stdOutData_reg' [E:/source/VIVADOScource/CPU/CPU.srcs/sources_1/new/Memory.v:63]
+WARNING: [Synth 8-327] inferring latch for variable 'padIn_reg' [E:/source/VIVADOScource/CPU/CPU.srcs/sources_1/new/Memory.v:40]
+WARNING: [Synth 8-327] inferring latch for variable 'padType_reg' [E:/source/VIVADOScource/CPU/CPU.srcs/sources_1/new/Memory.v:42]
 WARNING: [Synth 8-327] inferring latch for variable 'rDataB_reg' [E:/source/VIVADOScource/CPU/CPU.srcs/sources_1/new/CPURam.v:42]
 WARNING: [Synth 8-327] inferring latch for variable 'writeDataB_reg' [E:/source/VIVADOScource/CPU/CPU.srcs/sources_1/new/CPURam.v:34]
 WARNING: [Synth 8-327] inferring latch for variable 'nextStatus_reg' [E:/source/VIVADOScource/CPU/CPU.srcs/sources_1/new/MemoryReceiverAutomation.v:117]
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:01:32 ; elapsed = 00:01:35 . Memory (MB): peak = 1397.059 ; gain = 769.863
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:52 ; elapsed = 00:00:54 . Memory (MB): peak = 1394.355 ; gain = 767.102
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -404,15 +415,15 @@ Report RTL Partitions:
 |1     |CharStream__GB0 |           1|     36845|
 |2     |CharStream__GB1 |           1|     15285|
 |3     |CharStream__GB2 |           1|     14365|
-|4     |VGADesign       |           1|       677|
-|5     |SOC__GC0        |           1|     18083|
+|4     |Console__GC0    |           1|       686|
+|5     |SOC__GC0        |           1|     18906|
 +------+----------------+------------+----------+
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
 ---------------------------------------------------------------------------------
 Detailed RTL Component Info : 
 +---Adders : 
-	   2 Input     32 Bit       Adders := 9     
+	   2 Input     32 Bit       Adders := 10    
 	   3 Input     32 Bit       Adders := 3     
 	   2 Input     22 Bit       Adders := 1     
 	   2 Input     12 Bit       Adders := 1     
@@ -441,23 +452,23 @@ Detailed RTL Component Info :
 	                32x32  Multipliers := 1     
 +---Muxes : 
 	   2 Input     32 Bit        Muxes := 69    
-	  19 Input     32 Bit        Muxes := 2     
-	   3 Input     32 Bit        Muxes := 2     
-	   4 Input     32 Bit        Muxes := 4     
+	  21 Input     32 Bit        Muxes := 3     
+	   3 Input     32 Bit        Muxes := 3     
+	   4 Input     32 Bit        Muxes := 5     
 	  12 Input     32 Bit        Muxes := 1     
 	   9 Input     32 Bit        Muxes := 2     
 	   6 Input     32 Bit        Muxes := 1     
 	   2 Input     16 Bit        Muxes := 1     
-	   2 Input     14 Bit        Muxes := 1     
+	   2 Input     15 Bit        Muxes := 1     
 	   2 Input     12 Bit        Muxes := 3     
 	   2 Input     11 Bit        Muxes := 2     
-	   2 Input      8 Bit        Muxes := 10    
+	   2 Input      8 Bit        Muxes := 11    
 	  11 Input      8 Bit        Muxes := 1     
 	   4 Input      8 Bit        Muxes := 1     
 	   2 Input      6 Bit        Muxes := 8     
-	   2 Input      5 Bit        Muxes := 12    
+	   2 Input      5 Bit        Muxes := 11    
 	   8 Input      5 Bit        Muxes := 1     
-	  19 Input      5 Bit        Muxes := 1     
+	  21 Input      5 Bit        Muxes := 1     
 	  15 Input      5 Bit        Muxes := 1     
 	   3 Input      5 Bit        Muxes := 1     
 	   4 Input      5 Bit        Muxes := 1     
@@ -465,29 +476,30 @@ Detailed RTL Component Info :
 	  13 Input      5 Bit        Muxes := 1     
 	   5 Input      4 Bit        Muxes := 1     
 	   4 Input      4 Bit        Muxes := 2     
-	  19 Input      4 Bit        Muxes := 3     
+	  21 Input      4 Bit        Muxes := 3     
 	  15 Input      4 Bit        Muxes := 1     
-	  17 Input      4 Bit        Muxes := 1     
+	  19 Input      4 Bit        Muxes := 1     
 	   9 Input      4 Bit        Muxes := 1     
 	   2 Input      4 Bit        Muxes := 2     
-	   2 Input      3 Bit        Muxes := 2     
-	  19 Input      3 Bit        Muxes := 1     
-	   8 Input      3 Bit        Muxes := 1     
-	  19 Input      2 Bit        Muxes := 7     
-	  15 Input      2 Bit        Muxes := 2     
+	   2 Input      3 Bit        Muxes := 3     
+	   7 Input      3 Bit        Muxes := 1     
+	  21 Input      2 Bit        Muxes := 7     
+	  15 Input      2 Bit        Muxes := 3     
 	   2 Input      2 Bit        Muxes := 9     
-	   4 Input      2 Bit        Muxes := 4     
+	   4 Input      2 Bit        Muxes := 3     
 	   9 Input      2 Bit        Muxes := 1     
-	  17 Input      2 Bit        Muxes := 2     
+	  19 Input      2 Bit        Muxes := 2     
+	   5 Input      2 Bit        Muxes := 1     
 	   3 Input      2 Bit        Muxes := 1     
-	   2 Input      1 Bit        Muxes := 2297  
-	   7 Input      1 Bit        Muxes := 3     
-	   3 Input      1 Bit        Muxes := 14    
-	  15 Input      1 Bit        Muxes := 14    
-	  19 Input      1 Bit        Muxes := 8     
-	   5 Input      1 Bit        Muxes := 1     
-	  17 Input      1 Bit        Muxes := 11    
-	  10 Input      1 Bit        Muxes := 1     
+	   8 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 2302  
+	   7 Input      1 Bit        Muxes := 2     
+	   3 Input      1 Bit        Muxes := 20    
+	  15 Input      1 Bit        Muxes := 12    
+	  21 Input      1 Bit        Muxes := 9     
+	  19 Input      1 Bit        Muxes := 10    
+	   9 Input      1 Bit        Muxes := 1     
+	  12 Input      1 Bit        Muxes := 1     
 	   6 Input      1 Bit        Muxes := 2     
 ---------------------------------------------------------------------------------
 Finished RTL Component Statistics 
@@ -503,9 +515,24 @@ Detailed RTL Component Info :
 +---Registers : 
 	               22 Bit    Registers := 1     
 +---Muxes : 
-	   2 Input     32 Bit        Muxes := 2     
+	   2 Input     32 Bit        Muxes := 4     
 	   2 Input      2 Bit        Muxes := 1     
 	   2 Input      1 Bit        Muxes := 1     
+Module CharStream 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     11 Bit       Adders := 1     
+	   2 Input      6 Bit       Adders := 1     
+	   2 Input      5 Bit       Adders := 1     
++---Registers : 
+	               11 Bit    Registers := 2     
+	                8 Bit    Registers := 2048  
+	                6 Bit    Registers := 1     
+	                5 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 3     
+	   2 Input      6 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 2240  
 Module VGADesign 
 Detailed RTL Component Info : 
 +---Adders : 
@@ -522,21 +549,14 @@ Detailed RTL Component Info :
 	   2 Input      6 Bit        Muxes := 2     
 	   2 Input      5 Bit        Muxes := 5     
 	   2 Input      1 Bit        Muxes := 10    
-Module CharStream 
+Module Console 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module TimeClock 
 Detailed RTL Component Info : 
 +---Adders : 
-	   2 Input     11 Bit       Adders := 1     
-	   2 Input      6 Bit       Adders := 1     
-	   2 Input      5 Bit       Adders := 1     
-+---Registers : 
-	               11 Bit    Registers := 2     
-	                8 Bit    Registers := 2048  
-	                6 Bit    Registers := 1     
-	                5 Bit    Registers := 1     
-+---Muxes : 
-	   2 Input      8 Bit        Muxes := 3     
-	   2 Input      6 Bit        Muxes := 1     
-	   2 Input      1 Bit        Muxes := 2240  
+	   2 Input     32 Bit       Adders := 1     
 Module TimeDisplay 
 Detailed RTL Component Info : 
 +---Adders : 
@@ -607,21 +627,18 @@ Detailed RTL Component Info :
 	   3 Input     32 Bit       Adders := 1     
 	   2 Input     32 Bit       Adders := 1     
 +---Muxes : 
-	  19 Input     32 Bit        Muxes := 2     
+	  21 Input     32 Bit        Muxes := 3     
 	   3 Input     32 Bit        Muxes := 1     
 	   4 Input     32 Bit        Muxes := 1     
 	   2 Input      6 Bit        Muxes := 2     
-	  19 Input      5 Bit        Muxes := 1     
+	  21 Input      5 Bit        Muxes := 1     
 	  15 Input      5 Bit        Muxes := 1     
-	  19 Input      4 Bit        Muxes := 3     
-	  19 Input      3 Bit        Muxes := 1     
-	  19 Input      2 Bit        Muxes := 7     
+	  21 Input      4 Bit        Muxes := 3     
+	  21 Input      2 Bit        Muxes := 7     
 	  15 Input      2 Bit        Muxes := 1     
 	  15 Input      1 Bit        Muxes := 8     
 	   3 Input      1 Bit        Muxes := 6     
-	  19 Input      1 Bit        Muxes := 8     
-	   2 Input      1 Bit        Muxes := 2     
-	   5 Input      1 Bit        Muxes := 1     
+	  21 Input      1 Bit        Muxes := 9     
 Module DecodeExecute 
 Detailed RTL Component Info : 
 +---Registers : 
@@ -672,13 +689,13 @@ Detailed RTL Component Info :
 	   3 Input      5 Bit        Muxes := 1     
 	   4 Input      5 Bit        Muxes := 1     
 	  15 Input      4 Bit        Muxes := 1     
-	  17 Input      4 Bit        Muxes := 1     
-	  17 Input      2 Bit        Muxes := 2     
-	  15 Input      2 Bit        Muxes := 1     
-	  15 Input      1 Bit        Muxes := 6     
-	  17 Input      1 Bit        Muxes := 11    
-	   2 Input      1 Bit        Muxes := 8     
-	   3 Input      1 Bit        Muxes := 1     
+	  19 Input      4 Bit        Muxes := 1     
+	  15 Input      2 Bit        Muxes := 2     
+	  19 Input      2 Bit        Muxes := 2     
+	  15 Input      1 Bit        Muxes := 4     
+	  19 Input      1 Bit        Muxes := 10    
+	   3 Input      1 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 7     
 Module ExecuteMemory 
 Detailed RTL Component Info : 
 +---Registers : 
@@ -693,15 +710,19 @@ Detailed RTL Component Info :
 Module Memory 
 Detailed RTL Component Info : 
 +---Muxes : 
-	   2 Input     32 Bit        Muxes := 5     
-	   2 Input      5 Bit        Muxes := 1     
-	   8 Input      3 Bit        Muxes := 1     
+	   2 Input     32 Bit        Muxes := 3     
+	   4 Input     32 Bit        Muxes := 1     
+	   3 Input     32 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 1     
+	   7 Input      3 Bit        Muxes := 1     
 	   2 Input      2 Bit        Muxes := 2     
-	   4 Input      2 Bit        Muxes := 1     
+	   5 Input      2 Bit        Muxes := 1     
 	   3 Input      2 Bit        Muxes := 1     
-	   2 Input      1 Bit        Muxes := 3     
-	   7 Input      1 Bit        Muxes := 1     
-	  10 Input      1 Bit        Muxes := 1     
+	   8 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 11    
+	   3 Input      1 Bit        Muxes := 5     
+	   9 Input      1 Bit        Muxes := 1     
+	  12 Input      1 Bit        Muxes := 1     
 Module MemoryWriteback 
 Detailed RTL Component Info : 
 +---Registers : 
@@ -718,15 +739,9 @@ Detailed RTL Component Info :
 	   2 Input     32 Bit        Muxes := 5     
 	   4 Input     32 Bit        Muxes := 1     
 	   2 Input     16 Bit        Muxes := 1     
-	   2 Input     14 Bit        Muxes := 1     
+	   2 Input     15 Bit        Muxes := 1     
 	   4 Input      8 Bit        Muxes := 1     
 	   9 Input      4 Bit        Muxes := 1     
-Module StdOutRam 
-Detailed RTL Component Info : 
-+---Adders : 
-	   2 Input     11 Bit       Adders := 1     
-+---Registers : 
-	               11 Bit    Registers := 1     
 Module MemoryReceiverAutomation 
 Detailed RTL Component Info : 
 +---Adders : 
@@ -769,6 +784,12 @@ Module MemoryTransmitter
 Detailed RTL Component Info : 
 +---Registers : 
 	                8 Bit    Registers := 1     
+Module StdOutRam 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     11 Bit       Adders := 1     
++---Registers : 
+	               11 Bit    Registers := 1     
 ---------------------------------------------------------------------------------
 Finished RTL Hierarchical Component Statistics
 ---------------------------------------------------------------------------------
@@ -785,11 +806,13 @@ Finished Part Resource Summary
 Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 Warning: Parallel synthesis criteria is not met 
-DSP Report: Generating DSP fontAddr1, operation Mode is: (A:0x500)*B.
-DSP Report: operator fontAddr1 is absorbed into DSP fontAddr1.
-DSP Report: Generating DSP fontAddr0, operation Mode is: PCIN+(A:0x0):B+C.
-DSP Report: operator fontAddr0 is absorbed into DSP fontAddr0.
-INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 4 [E:/source/VIVADOScource/CPU/CPU.srcs/sources_1/new/Execute.v:146]
+DSP Report: Generating DSP design1/fontAddr1, operation Mode is: (A:0x500)*B2.
+DSP Report: register design1/pixelRow_reg is absorbed into DSP design1/fontAddr1.
+DSP Report: operator design1/fontAddr1 is absorbed into DSP design1/fontAddr1.
+DSP Report: Generating DSP design1/fontAddr0, operation Mode is: PCIN+(A:0x0):B2+C.
+DSP Report: register design1/pixelCol_reg is absorbed into DSP design1/fontAddr0.
+DSP Report: operator design1/fontAddr0 is absorbed into DSP design1/fontAddr0.
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 4 [E:/source/VIVADOScource/CPU/CPU.srcs/sources_1/new/Execute.v:147]
 DSP Report: Generating DSP writeData0, operation Mode is: A*B.
 DSP Report: operator writeData0 is absorbed into DSP writeData0.
 DSP Report: operator writeData0 is absorbed into DSP writeData0.
@@ -802,10 +825,6 @@ DSP Report: operator writeData0 is absorbed into DSP writeData0.
 DSP Report: Generating DSP writeData0, operation Mode is: (PCIN>>17)+A*B.
 DSP Report: operator writeData0 is absorbed into DSP writeData0.
 DSP Report: operator writeData0 is absorbed into DSP writeData0.
-INFO: [Synth 8-3886] merging instance 'i_0/memoryTransmitter/usbReceiver/bps_cnt_reg[14]' (FDC) to 'i_0/memoryTransmitter/usbReceiver/bps_cnt_reg[12]'
-INFO: [Synth 8-3886] merging instance 'i_0/memoryTransmitter/usbReceiver/bps_cnt_reg[15]' (FDC) to 'i_0/memoryTransmitter/usbReceiver/bps_cnt_reg[12]'
-INFO: [Synth 8-3886] merging instance 'i_0/memoryTransmitter/usbReceiver/bps_cnt_reg[13]' (FDC) to 'i_0/memoryTransmitter/usbReceiver/bps_cnt_reg[12]'
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/memoryTransmitter/\usbReceiver/bps_cnt_reg[12] )
 INFO: [Synth 8-3886] merging instance 'i_0/cpuTop/decode/padInOffset_reg[16]' (LDC) to 'i_0/cpuTop/decode/padTypeOffset_reg[3]'
 INFO: [Synth 8-3886] merging instance 'i_0/cpuTop/decode/padInOffset_reg[17]' (LDC) to 'i_0/cpuTop/decode/padTypeOffset_reg[3]'
 INFO: [Synth 8-3886] merging instance 'i_0/cpuTop/decode/padInOffset_reg[18]' (LDC) to 'i_0/cpuTop/decode/padTypeOffset_reg[3]'
@@ -824,32 +843,49 @@ INFO: [Synth 8-3886] merging instance 'i_0/cpuTop/decode/padInOffset_reg[30]' (L
 INFO: [Synth 8-3886] merging instance 'i_0/cpuTop/decode/padInOffset_reg[31]' (LDC) to 'i_0/cpuTop/decode/padTypeOffset_reg[3]'
 INFO: [Synth 8-3886] merging instance 'i_0/cpuTop/decode/padTypeOffset_reg[0]' (LDC) to 'i_0/cpuTop/decode/padTypeOffset_reg[1]'
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/cpuTop/decode/\padTypeOffset_reg[3] )
-INFO: [Synth 8-3886] merging instance 'i_0/memoryTransmitter/memoryReceiverAutomation/rxMemAddr_reg[0]' (FDCE) to 'i_0/memoryTransmitter/memoryReceiverAutomation/rxMemAddr_reg[1]'
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/memoryTransmitter/\memoryReceiverAutomation/rxMemAddr_reg[1] )
+INFO: [Synth 8-3886] merging instance 'i_0/memoryTransmitter/usbReceiver/bps_cnt_reg[14]' (FDC) to 'i_0/memoryTransmitter/usbReceiver/bps_cnt_reg[12]'
+INFO: [Synth 8-3886] merging instance 'i_0/memoryTransmitter/usbReceiver/bps_cnt_reg[15]' (FDC) to 'i_0/memoryTransmitter/usbReceiver/bps_cnt_reg[12]'
+INFO: [Synth 8-3886] merging instance 'i_0/memoryTransmitter/usbReceiver/bps_cnt_reg[13]' (FDC) to 'i_0/memoryTransmitter/usbReceiver/bps_cnt_reg[12]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/memoryTransmitter/\usbReceiver/bps_cnt_reg[12] )
+INFO: [Synth 8-3886] merging instance 'i_0/memoryTransmitter/memoryReceiverAutomation/rxMemAddr_reg[1]' (FDCE) to 'i_0/memoryTransmitter/memoryReceiverAutomation/rxMemAddr_reg[0]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/memoryTransmitter/\memoryReceiverAutomation/rxMemAddr_reg[0] )
 INFO: [Synth 8-3886] merging instance 'i_0/cpuTop/decode/padType2_reg[1]' (LDC) to 'i_0/cpuTop/decode/padType2_reg[3]'
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/cpuTop/decode/\padType2_reg[3] )
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/cpuTop/decode/\padType1_reg[3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/cpuTop/memory/\padType_reg[3] )
+INFO: [Synth 8-3886] merging instance 'i_0/cpuTop/decodeExecute/eOffset_reg[31]' (FDC) to 'i_0/cpuTop/decodeExecute/eOffset_reg[30]'
+INFO: [Synth 8-3886] merging instance 'i_0/cpuTop/decodeExecute/eOffset_reg[30]' (FDC) to 'i_0/cpuTop/decodeExecute/eOffset_reg[29]'
+INFO: [Synth 8-3886] merging instance 'i_0/cpuTop/decodeExecute/eOffset_reg[29]' (FDC) to 'i_0/cpuTop/decodeExecute/eOffset_reg[28]'
+INFO: [Synth 8-3886] merging instance 'i_0/cpuTop/decodeExecute/eOffset_reg[28]' (FDC) to 'i_0/cpuTop/decodeExecute/eOffset_reg[27]'
+INFO: [Synth 8-3886] merging instance 'i_0/cpuTop/decodeExecute/eOffset_reg[27]' (FDC) to 'i_0/cpuTop/decodeExecute/eOffset_reg[26]'
+INFO: [Synth 8-3886] merging instance 'i_0/cpuTop/decodeExecute/eOffset_reg[26]' (FDC) to 'i_0/cpuTop/decodeExecute/eOffset_reg[25]'
+INFO: [Synth 8-3886] merging instance 'i_0/cpuTop/decodeExecute/eOffset_reg[25]' (FDC) to 'i_0/cpuTop/decodeExecute/eOffset_reg[24]'
+INFO: [Synth 8-3886] merging instance 'i_0/cpuTop/decodeExecute/eOffset_reg[24]' (FDC) to 'i_0/cpuTop/decodeExecute/eOffset_reg[23]'
+INFO: [Synth 8-3886] merging instance 'i_0/cpuTop/decodeExecute/eOffset_reg[23]' (FDC) to 'i_0/cpuTop/decodeExecute/eOffset_reg[22]'
+INFO: [Synth 8-3886] merging instance 'i_0/cpuTop/decodeExecute/eOffset_reg[22]' (FDC) to 'i_0/cpuTop/decodeExecute/eOffset_reg[21]'
+INFO: [Synth 8-3886] merging instance 'i_0/cpuTop/decodeExecute/eOffset_reg[21]' (FDC) to 'i_0/cpuTop/decodeExecute/eOffset_reg[20]'
+INFO: [Synth 8-3886] merging instance 'i_0/cpuTop/decodeExecute/eOffset_reg[20]' (FDC) to 'i_0/cpuTop/decodeExecute/eOffset_reg[19]'
+INFO: [Synth 8-3886] merging instance 'i_0/cpuTop/decodeExecute/eOffset_reg[19]' (FDC) to 'i_0/cpuTop/decodeExecute/eOffset_reg[18]'
 WARNING: [Synth 8-3332] Sequential element (padType1_reg[3]) is unused and will be removed from module Decode.
 WARNING: [Synth 8-3332] Sequential element (padType2_reg[3]) is unused and will be removed from module Decode.
 WARNING: [Synth 8-3332] Sequential element (padTypeOffset_reg[3]) is unused and will be removed from module Decode.
-WARNING: [Synth 8-3332] Sequential element (writeMemAddr_reg[31]) is unused and will be removed from module Execute.
-WARNING: [Synth 8-3332] Sequential element (writeMemAddr_reg[30]) is unused and will be removed from module Execute.
-WARNING: [Synth 8-3332] Sequential element (writeMemAddr_reg[29]) is unused and will be removed from module Execute.
-WARNING: [Synth 8-3332] Sequential element (writeMemAddr_reg[28]) is unused and will be removed from module Execute.
-WARNING: [Synth 8-3332] Sequential element (writeMemAddr_reg[27]) is unused and will be removed from module Execute.
-WARNING: [Synth 8-3332] Sequential element (writeMemAddr_reg[26]) is unused and will be removed from module Execute.
-WARNING: [Synth 8-3332] Sequential element (writeMemAddr_reg[25]) is unused and will be removed from module Execute.
-WARNING: [Synth 8-3332] Sequential element (writeMemAddr_reg[24]) is unused and will be removed from module Execute.
-WARNING: [Synth 8-3332] Sequential element (writeMemAddr_reg[23]) is unused and will be removed from module Execute.
-WARNING: [Synth 8-3332] Sequential element (writeMemAddr_reg[22]) is unused and will be removed from module Execute.
-WARNING: [Synth 8-3332] Sequential element (writeMemAddr_reg[21]) is unused and will be removed from module Execute.
-WARNING: [Synth 8-3332] Sequential element (writeMemAddr_reg[20]) is unused and will be removed from module Execute.
-WARNING: [Synth 8-3332] Sequential element (writeMemAddr_reg[19]) is unused and will be removed from module Execute.
-WARNING: [Synth 8-3332] Sequential element (writeMemAddr_reg[18]) is unused and will be removed from module Execute.
-WARNING: [Synth 8-3332] Sequential element (writeMemAddr_reg[17]) is unused and will be removed from module Execute.
-WARNING: [Synth 8-3332] Sequential element (writeMemAddr_reg[16]) is unused and will be removed from module Execute.
-WARNING: [Synth 8-3332] Sequential element (writeMemAddr_reg[15]) is unused and will be removed from module Execute.
-WARNING: [Synth 8-3332] Sequential element (writeMemAddr_reg[14]) is unused and will be removed from module Execute.
+WARNING: [Synth 8-3332] Sequential element (writeMemAddr_reg[31]) is unused and will be removed from module Memory.
+WARNING: [Synth 8-3332] Sequential element (writeMemAddr_reg[30]) is unused and will be removed from module Memory.
+WARNING: [Synth 8-3332] Sequential element (writeMemAddr_reg[29]) is unused and will be removed from module Memory.
+WARNING: [Synth 8-3332] Sequential element (writeMemAddr_reg[28]) is unused and will be removed from module Memory.
+WARNING: [Synth 8-3332] Sequential element (writeMemAddr_reg[27]) is unused and will be removed from module Memory.
+WARNING: [Synth 8-3332] Sequential element (writeMemAddr_reg[26]) is unused and will be removed from module Memory.
+WARNING: [Synth 8-3332] Sequential element (writeMemAddr_reg[25]) is unused and will be removed from module Memory.
+WARNING: [Synth 8-3332] Sequential element (writeMemAddr_reg[24]) is unused and will be removed from module Memory.
+WARNING: [Synth 8-3332] Sequential element (writeMemAddr_reg[23]) is unused and will be removed from module Memory.
+WARNING: [Synth 8-3332] Sequential element (writeMemAddr_reg[22]) is unused and will be removed from module Memory.
+WARNING: [Synth 8-3332] Sequential element (writeMemAddr_reg[21]) is unused and will be removed from module Memory.
+WARNING: [Synth 8-3332] Sequential element (writeMemAddr_reg[20]) is unused and will be removed from module Memory.
+WARNING: [Synth 8-3332] Sequential element (writeMemAddr_reg[19]) is unused and will be removed from module Memory.
+WARNING: [Synth 8-3332] Sequential element (writeMemAddr_reg[18]) is unused and will be removed from module Memory.
+WARNING: [Synth 8-3332] Sequential element (writeMemAddr_reg[17]) is unused and will be removed from module Memory.
+WARNING: [Synth 8-3332] Sequential element (writeMemAddr_reg[16]) is unused and will be removed from module Memory.
+WARNING: [Synth 8-3332] Sequential element (writeMemAddr_reg[15]) is unused and will be removed from module Memory.
 WARNING: [Synth 8-3332] Sequential element (readMemAddr_reg[31]) is unused and will be removed from module Memory.
 WARNING: [Synth 8-3332] Sequential element (readMemAddr_reg[30]) is unused and will be removed from module Memory.
 WARNING: [Synth 8-3332] Sequential element (readMemAddr_reg[29]) is unused and will be removed from module Memory.
@@ -867,32 +903,30 @@ WARNING: [Synth 8-3332] Sequential element (readMemAddr_reg[18]) is unused and w
 WARNING: [Synth 8-3332] Sequential element (readMemAddr_reg[17]) is unused and will be removed from module Memory.
 WARNING: [Synth 8-3332] Sequential element (readMemAddr_reg[16]) is unused and will be removed from module Memory.
 WARNING: [Synth 8-3332] Sequential element (readMemAddr_reg[15]) is unused and will be removed from module Memory.
-WARNING: [Synth 8-3332] Sequential element (readMemAddr_reg[14]) is unused and will be removed from module Memory.
+WARNING: [Synth 8-3332] Sequential element (padType_reg[3]) is unused and will be removed from module Memory.
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:02:40 ; elapsed = 00:02:44 . Memory (MB): peak = 1397.059 ; gain = 769.863
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:01:34 ; elapsed = 00:01:37 . Memory (MB): peak = 1394.355 ; gain = 767.102
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP and Shift Register Reporting
 ---------------------------------------------------------------------------------
 
 DSP: Preliminary Mapping  Report (see note below)
-+------------+------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
-|Module Name | DSP Mapping      | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
-+------------+------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
-|VGADesign   | (A:0x500)*B      | 5      | 11     | -      | -      | 16     | 0    | 0    | -    | -    | -     | 0    | 0    | 
-|VGADesign   | PCIN+(A:0x0):B+C | 30     | 5      | 12     | -      | -1     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
-|Execute     | A*B              | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
-|Execute     | (PCIN>>17)+A*B   | 16     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
-|Execute     | A*B              | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
-|Execute     | (PCIN>>17)+A*B   | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
-+------------+------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
++------------+-------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name | DSP Mapping       | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++------------+-------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|SOC         | (A:0x500)*B2      | 5      | 11     | -      | -      | 16     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|SOC         | PCIN+(A:0x0):B2+C | 30     | 5      | 12     | -      | -1     | 0    | 1    | 0    | -    | -     | 0    | 0    | 
+|Execute     | A*B               | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Execute     | (PCIN>>17)+A*B    | 16     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Execute     | A*B               | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Execute     | (PCIN>>17)+A*B    | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
++------------+-------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
 
 Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
 ---------------------------------------------------------------------------------
 Finished ROM, RAM, DSP and Shift Register Reporting
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [E:/source/VIVADOScource/CPU/CPU.srcs/sources_1/new/VGADesign.v:58]
-INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [E:/source/VIVADOScource/CPU/CPU.srcs/sources_1/new/VGADesign.v:59]
 
 Report RTL Partitions: 
 +------+----------------+------------+----------+
@@ -901,8 +935,8 @@ Report RTL Partitions:
 |1     |CharStream__GB0 |           1|     22455|
 |2     |CharStream__GB1 |           1|      9262|
 |3     |CharStream__GB2 |           1|      8657|
-|4     |VGADesign       |           1|       433|
-|5     |SOC__GC0        |           1|     16368|
+|4     |Console__GC0    |           1|       442|
+|5     |SOC__GC0        |           1|     16906|
 +------+----------------+------------+----------+
 ---------------------------------------------------------------------------------
 Start Applying XDC Timing Constraints
@@ -910,13 +944,13 @@ Start Applying XDC Timing Constraints
 INFO: [Synth 8-5578] Moved timing constraint from pin 'clk60/clk_out1' to pin 'clk60/bbstub_clk_out1/O'
 INFO: [Synth 8-5819] Moved 1 constraints on hierarchical pins to their respective driving/loading pins
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:02:51 ; elapsed = 00:02:55 . Memory (MB): peak = 1397.059 ; gain = 769.863
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:41 ; elapsed = 00:01:44 . Memory (MB): peak = 1394.355 ; gain = 767.102
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:02:54 ; elapsed = 00:02:59 . Memory (MB): peak = 1397.059 ; gain = 769.863
+Finished Timing Optimization : Time (s): cpu = 00:01:43 ; elapsed = 00:01:46 . Memory (MB): peak = 1394.355 ; gain = 767.102
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -926,14 +960,13 @@ Report RTL Partitions:
 |1     |CharStream__GB0 |           1|     22455|
 |2     |CharStream__GB1 |           1|      9262|
 |3     |CharStream__GB2 |           1|      8657|
-|4     |VGADesign       |           1|       435|
-|5     |SOC__GC0        |           1|     16368|
+|4     |Console__GC0    |           1|       445|
+|5     |SOC__GC0        |           1|     16906|
 +------+----------------+------------+----------+
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [E:/source/VIVADOScource/CPU/CPU.srcs/sources_1/new/VGADesign.v:58]
-INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [E:/source/VIVADOScource/CPU/CPU.srcs/sources_1/new/VGADesign.v:59]
+INFO: [Synth 8-3886] merging instance 'cpuTop/decodeExecute/eOffset_reg[17]' (FDC) to 'cpuTop/decodeExecute/eOffset_reg[18]'
 INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [E:/source/VIVADOScource/CPU/CPU.srcs/sources_1/new/DecodeExecute.v:27]
 INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [E:/source/VIVADOScource/CPU/CPU.srcs/sources_1/new/DecodeExecute.v:26]
 INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [E:/source/VIVADOScource/CPU/CPU.srcs/sources_1/new/DecodeExecute.v:26]
@@ -941,7 +974,7 @@ INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM bloc
 INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [E:/source/VIVADOScource/CPU/CPU.srcs/sources_1/new/DecodeExecute.v:26]
 INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [E:/source/VIVADOScource/CPU/CPU.srcs/sources_1/new/DecodeExecute.v:27]
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:03:13 ; elapsed = 00:03:18 . Memory (MB): peak = 1397.059 ; gain = 769.863
+Finished Technology Mapping : Time (s): cpu = 00:01:52 ; elapsed = 00:01:55 . Memory (MB): peak = 1394.355 ; gain = 767.102
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -965,7 +998,7 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:03:19 ; elapsed = 00:03:24 . Memory (MB): peak = 1397.059 ; gain = 769.863
+Finished IO Insertion : Time (s): cpu = 00:01:55 ; elapsed = 00:01:58 . Memory (MB): peak = 1394.355 ; gain = 767.102
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -978,7 +1011,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:03:19 ; elapsed = 00:03:24 . Memory (MB): peak = 1397.059 ; gain = 769.863
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:55 ; elapsed = 00:01:58 . Memory (MB): peak = 1394.355 ; gain = 767.102
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -990,25 +1023,25 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:03:23 ; elapsed = 00:03:28 . Memory (MB): peak = 1397.059 ; gain = 769.863
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:57 ; elapsed = 00:02:00 . Memory (MB): peak = 1394.355 ; gain = 767.102
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:03:23 ; elapsed = 00:03:28 . Memory (MB): peak = 1397.059 ; gain = 769.863
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:57 ; elapsed = 00:02:00 . Memory (MB): peak = 1394.355 ; gain = 767.102
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:03:24 ; elapsed = 00:03:29 . Memory (MB): peak = 1397.059 ; gain = 769.863
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:57 ; elapsed = 00:02:00 . Memory (MB): peak = 1394.355 ; gain = 767.102
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:03:24 ; elapsed = 00:03:29 . Memory (MB): peak = 1397.059 ; gain = 769.863
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:57 ; elapsed = 00:02:00 . Memory (MB): peak = 1394.355 ; gain = 767.102
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -1032,26 +1065,26 @@ Report Cell Usage:
 |2     |VGAClock  |     1|
 |3     |ram       |     1|
 |4     |ram8      |     1|
-|5     |BUFG      |    10|
-|6     |CARRY4    |   475|
-|7     |DSP48E1   |     4|
+|5     |BUFG      |    12|
+|6     |CARRY4    |   503|
+|7     |DSP48E1   |     1|
 |8     |DSP48E1_1 |     1|
-|9     |LUT1      |    86|
-|10    |LUT2      |   843|
-|11    |LUT3      |   911|
-|12    |LUT4      |   497|
-|13    |LUT5      |   851|
-|14    |LUT6      |  8200|
-|15    |MUXF7     |  2209|
-|16    |MUXF8     |   624|
-|17    |FDCE      | 17814|
-|18    |FDPE      |    19|
-|19    |FDRE      |    44|
-|20    |FDSE      |     3|
-|21    |LDC       |   413|
-|22    |LDCP      |     2|
-|23    |LDP       |     1|
-|24    |IBUF      |     3|
+|9     |DSP48E1_2 |     3|
+|10    |LUT1      |    87|
+|11    |LUT2      |   802|
+|12    |LUT3      |   946|
+|13    |LUT4      |   524|
+|14    |LUT5      |   834|
+|15    |LUT6      |  8317|
+|16    |MUXF7     |  2215|
+|17    |MUXF8     |   624|
+|18    |FDCE      | 17720|
+|19    |FDPE      |    25|
+|20    |FDRE      |   200|
+|21    |FDSE      |     3|
+|22    |LDC       |   545|
+|23    |LDP       |     3|
+|24    |IBUF      |     8|
 |25    |OBUF      |    37|
 +------+----------+------+
 
@@ -1059,56 +1092,55 @@ Report Instance Areas:
 +------+-----------------------------+-------------------------+------+
 |      |Instance                     |Module                   |Cells |
 +------+-----------------------------+-------------------------+------+
-|1     |top                          |                         | 33136|
-|2     |  cpuRam                     |CPURam                   |   128|
-|3     |  console                    |Console                  | 26546|
-|4     |    design1                  |VGADesign                |   433|
+|1     |top                          |                         | 33499|
+|2     |  cpuRam                     |CPURam                   |   152|
+|3     |  console                    |Console                  | 26514|
+|4     |    design1                  |VGADesign                |   401|
 |5     |    stream                   |CharStream               | 26113|
-|6     |  cpuTop                     |CPUTop                   |  5320|
-|7     |    control                  |Control                  |    17|
-|8     |    decode                   |Decode                   |   378|
-|9     |    decodeExecute            |DecodeExecute            |   498|
-|10    |    division                 |Division                 |   519|
-|11    |    excuteMemory             |ExecuteMemory            |   333|
-|12    |    execute                  |Execute                  |   300|
+|6     |  cpuTop                     |CPUTop                   |  5566|
+|7     |    control                  |Control                  |    15|
+|8     |    decode                   |Decode                   |   395|
+|9     |    decodeExecute            |DecodeExecute            |   550|
+|10    |    division                 |Division                 |   522|
+|11    |    excuteMemory             |ExecuteMemory            |   248|
+|12    |    execute                  |Execute                  |   307|
 |13    |    fetch                    |Fetch                    |    43|
-|14    |    fetchDecode              |FetchDecode              |   387|
+|14    |    fetchDecode              |FetchDecode              |   394|
 |15    |    hilo                     |HiLo                     |    64|
-|16    |    memory                   |Memory                   |    59|
+|16    |    memory                   |Memory                   |   300|
 |17    |    memoryWriteback          |MemoryWriteback          |   119|
-|18    |    registerFile             |RegisterFile             |  2603|
-|19    |  memoryTransmitter          |MemoryTransmitter        |   353|
-|20    |    memoryReceiverAutomation |MemoryReceiverAutomation |   265|
+|18    |    registerFile             |RegisterFile             |  2609|
+|19    |  memoryTransmitter          |MemoryTransmitter        |   340|
+|20    |    memoryReceiverAutomation |MemoryReceiverAutomation |   252|
 |21    |    usbReceiver              |USBReceiver              |    88|
 |22    |  stdOutRam                  |StdOutRam                |    33|
-|23    |  timeDisplay                |TimeDisplay              |    38|
+|23    |  timeClock                  |TimeClock                |   131|
+|24    |  timeDisplay                |TimeDisplay              |    38|
 +------+-----------------------------+-------------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:03:24 ; elapsed = 00:03:29 . Memory (MB): peak = 1397.059 ; gain = 769.863
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:57 ; elapsed = 00:02:00 . Memory (MB): peak = 1394.355 ; gain = 767.102
 ---------------------------------------------------------------------------------
-Synthesis finished with 0 errors, 0 critical warnings and 72 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:02:22 ; elapsed = 00:03:19 . Memory (MB): peak = 1397.059 ; gain = 662.945
-Synthesis Optimization Complete : Time (s): cpu = 00:03:24 ; elapsed = 00:03:30 . Memory (MB): peak = 1397.059 ; gain = 769.863
+Synthesis finished with 0 errors, 0 critical warnings and 71 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:01:24 ; elapsed = 00:01:55 . Memory (MB): peak = 1394.355 ; gain = 666.926
+Synthesis Optimization Complete : Time (s): cpu = 00:01:58 ; elapsed = 00:02:01 . Memory (MB): peak = 1394.355 ; gain = 767.102
 INFO: [Project 1-571] Translating synthesized netlist
-INFO: [Netlist 29-17] Analyzing 3729 Unisim elements for replacement
+INFO: [Netlist 29-17] Analyzing 3895 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.018 . Memory (MB): peak = 1397.059 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 1394.355 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
-  A total of 416 instances were transformed.
-  LDC => LDCE: 413 instances
-  LDCP => LDCP (GND, LUT3, LUT3, LDCE, VCC): 2 instances
-  LDP => LDPE: 1 instances
+  A total of 548 instances were transformed.
+  LDC => LDCE: 545 instances
+  LDP => LDPE: 3 instances
 
 INFO: [Common 17-83] Releasing license: Synthesis
-131 Infos, 244 Warnings, 0 Critical Warnings and 0 Errors encountered.
+144 Infos, 250 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:03:36 ; elapsed = 00:03:43 . Memory (MB): peak = 1397.059 ; gain = 1010.324
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.020 . Memory (MB): peak = 1397.059 ; gain = 0.000
+synth_design: Time (s): cpu = 00:02:04 ; elapsed = 00:02:09 . Memory (MB): peak = 1394.355 ; gain = 1008.586
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.010 . Memory (MB): peak = 1394.355 ; gain = 0.000
 WARNING: [Constraints 18-5210] No constraints selected for write.
 Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
 INFO: [Common 17-1381] The checkpoint 'E:/source/VIVADOScource/CPU/CPU.runs/synth_1/SOC.dcp' has been generated.
-write_checkpoint: Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1397.059 ; gain = 0.000
 INFO: [runtcl-4] Executing : report_utilization -file SOC_utilization_synth.rpt -pb SOC_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Mon Dec 15 22:33:34 2025...
+INFO: [Common 17-206] Exiting Vivado at Sun Dec 21 13:26:07 2025...

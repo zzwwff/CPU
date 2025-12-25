@@ -56,6 +56,7 @@ read_verilog -library xil_defaultlib {
   E:/source/VIVADOScource/CPU/CPU.srcs/sources_1/new/Padding.v
   E:/source/VIVADOScource/CPU/CPU.srcs/sources_1/new/RegisterFile.v
   E:/source/VIVADOScource/CPU/CPU.srcs/sources_1/new/StdOutRam.v
+  E:/source/VIVADOScource/CPU/CPU.srcs/sources_1/new/TimeClock.v
   E:/source/VIVADOScource/CPU/CPU.srcs/sources_1/new/TimeDisplay.v
   E:/source/VIVADOScource/CPU/CPU.srcs/sources_1/new/USBReceiver.v
   E:/source/VIVADOScource/CPU/CPU.srcs/sources_1/new/VGADesign.v
@@ -87,6 +88,8 @@ foreach dcp [get_files -quiet -all -filter file_type=="Design\ Checkpoint"] {
 read_xdc E:/source/VIVADOScource/CPU/CPU.srcs/constrs_1/new/cons.xdc
 set_property used_in_implementation false [get_files E:/source/VIVADOScource/CPU/CPU.srcs/constrs_1/new/cons.xdc]
 
+read_xdc dont_touch.xdc
+set_property used_in_implementation false [get_files dont_touch.xdc]
 set_param ips.enableIPCacheLiteLoad 1
 close [open __synthesis_is_running__ w]
 

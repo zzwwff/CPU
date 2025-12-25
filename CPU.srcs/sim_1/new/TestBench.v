@@ -12,12 +12,14 @@ module TestBench;
     reg clk;
     wire hlt;
     
-    
+    wire cbutton;
+    assign cbutton = 1;
     SOC soc(
           .CLK(clk),
           .rst(rst),
           .hlt(hlt),
-          .read(0)
+          .read(0),
+          .middleButton(1)
     );
     
     initial begin

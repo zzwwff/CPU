@@ -3,3 +3,15 @@ Time resolution is 1 ps
  Block Memory Generator module loading initial data...
  Block Memory Generator data initialization complete.
 Block Memory Generator module TestBench.soc.cpuRam.ram1.inst.native_mem_module.blk_mem_gen_v8_4_3_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module TestBench.soc.stdOutRam.stdOutRam.inst.native_mem_module.blk_mem_gen_v8_4_3_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module TestBench.soc.console.design1.fontrom.inst.native_mem_module.blk_mem_gen_v8_4_3_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+blk_mem_gen_v8_4_3 collision detected at time: 1835000, Instance: TestBench.soc.stdOutRam.stdOutRam.inst.native_mem_module.blk_mem_gen_v8_4_3_inst, A write address: 0, B  read address: 0
+blk_mem_gen_v8_4_3 collision detected at time: 1875000, Instance: TestBench.soc.stdOutRam.stdOutRam.inst.native_mem_module.blk_mem_gen_v8_4_3_inst, A write address: 0, B  read address: 0
+blk_mem_gen_v8_4_3 collision detected at time: 1915000, Instance: TestBench.soc.stdOutRam.stdOutRam.inst.native_mem_module.blk_mem_gen_v8_4_3_inst, A write address: 0, B  read address: 0
+blk_mem_gen_v8_4_3 collision detected at time: 1955000, Instance: TestBench.soc.stdOutRam.stdOutRam.inst.native_mem_module.blk_mem_gen_v8_4_3_inst, A write address: 0, B  read address: 0
+blk_mem_gen_v8_4_3 collision detected at time: 1995000, Instance: TestBench.soc.stdOutRam.stdOutRam.inst.native_mem_module.blk_mem_gen_v8_4_3_inst, A write address: 0, B  read address: 0
+blk_mem_gen_v8_4_3 collision detected at time: 2035000, Instance: TestBench.soc.stdOutRam.stdOutRam.inst.native_mem_module.blk_mem_gen_v8_4_3_inst, A write address: 0, B  read address: 0
+blk_mem_gen_v8_4_3 collision detected at time: 2075000, Instance: TestBench.soc.stdOutRam.stdOutRam.inst.native_mem_module.blk_mem_gen_v8_4_3_inst, A write address: 0, B  read address: 0
+blk_mem_gen_v8_4_3 collision detected at time: 2115000, Instance: TestBench.soc.stdOutRam.stdOutRam.inst.native_mem_module.blk_mem_gen_v8_4_3_inst, A write address: 0, B  read address: 0

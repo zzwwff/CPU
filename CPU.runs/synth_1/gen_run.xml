@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1765808971">
+<GenRun Id="synth_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1766294561">
   <File Type="PA-TCL" Name="SOC.tcl"/>
   <File Type="RDS-PROPCONSTRS" Name="SOC_drc_synth.rpt"/>
   <File Type="REPORTS-TCL" Name="SOC_reports.tcl"/>
@@ -14,6 +14,13 @@
     <File Path="$PSRCDIR/sources_1/new/Define.v">
       <FileInfo>
         <Attr Name="IsGlobalInclude" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/ip/ram8/ram8.xci">
+      <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>
@@ -159,6 +166,13 @@
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
+    <File Path="$PSRCDIR/sources_1/new/TimeClock.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
     <File Path="$PSRCDIR/sources_1/new/TimeDisplay.v">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
@@ -234,7 +248,6 @@
     <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2019"/>
     <Step Id="synth_design"/>
   </Strategy>
-  <BlockFileSet Type="BlockSrcs" Name="ram8"/>
   <BlockFileSet Type="BlockSrcs" Name="ram"/>
   <BlockFileSet Type="BlockSrcs" Name="VGAClock"/>
   <BlockFileSet Type="BlockSrcs" Name="FontRom"/>
